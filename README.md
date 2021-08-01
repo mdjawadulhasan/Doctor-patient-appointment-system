@@ -1,0 +1,2 @@
+# Health-Management-Desktop-App
+It's a C# .Net desktop app. There are three types of users including admin, doctors, and patient. Patients are allowed to book an appointment, predict their disease with a simple algorithm, View their medical history and blood donors. Doctors will be able to see and print the list of appointments and provide prescriptions to the patient. Admin will be able to see the user's number and will be able to update the donors and doctors list.
