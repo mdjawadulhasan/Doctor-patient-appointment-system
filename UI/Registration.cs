@@ -26,24 +26,24 @@ namespace HMA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Person P = new Person();
-            DonorOperations op = new DonorOperations();
+            //Person P = new Person();
+            //DonorOperations op = new DonorOperations();
 
-            P.FirstName = Sfnametxt.Text;
-            P.LastName = Slnametxt.Text;
-            P.UserName = Susertxt.Text;
+            //P.FirstName = Sfnametxt.Text;
+            //P.LastName = Slnametxt.Text;
+            //P.UserName = Susertxt.Text;
 
 
-            int tmp = op.insert(P);
+            //int tmp = op.InsertDonor(P);
 
-            if (tmp > 0)
-            {
-                MessageBox.Show("Insertion Succesfull");
-            }
-            else
-            {
-                MessageBox.Show("Insertion is not Succesfull");
-            }
+            //if (tmp > 0)
+            //{
+            //    MessageBox.Show("Insertion Succesfull");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Insertion is not Succesfull");
+            //}
         }
     }
 }

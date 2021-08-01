@@ -38,9 +38,9 @@ namespace HMA
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -146,9 +146,9 @@ namespace HMA
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Location = new System.Drawing.Point(929, 2);
+            this.panel1.Location = new System.Drawing.Point(980, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 793);
+            this.panel1.Size = new System.Drawing.Size(217, 793);
             this.panel1.TabIndex = 34;
             // 
             // label8
@@ -162,6 +162,28 @@ namespace HMA
             this.label8.TabIndex = 14;
             this.label8.Text = "Logout";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(51, 517);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(135, 25);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Add Doctor";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(12, 320);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(202, 25);
+            this.label12.TabIndex = 6;
+            this.label12.Text = "Add Blood Donor";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -172,28 +194,6 @@ namespace HMA
             this.label13.Size = new System.Drawing.Size(85, 25);
             this.label13.TabIndex = 4;
             this.label13.Text = "Admin";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(30, 326);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(202, 25);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Add Blood Donor";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(63, 517);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(135, 25);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Add Doctor";
             // 
             // pictureBox5
             // 

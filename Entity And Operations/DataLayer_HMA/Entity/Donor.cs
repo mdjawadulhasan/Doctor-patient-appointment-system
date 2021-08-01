@@ -20,5 +20,10 @@ namespace DataLayer_HMA.Entity
             this.BloodGroup = BloodGroup;
             this.address = address;
         }
+        public Donor(Address address)
+        {
+            this.address = address;
+        }
+
     }
 }

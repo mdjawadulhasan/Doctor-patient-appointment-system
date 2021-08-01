@@ -65,3 +65,4 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\HMA.pdb
 C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.dll
 C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.pdb
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.AddDonor.resources

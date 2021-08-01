@@ -1,6 +1,7 @@
 ﻿using DataLayer_HMA.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,14 +11,39 @@ namespace DataLayer_HMA.Operations
 {
     public class DonorOperations
     {
-        public int insert(Person pp)
+
+        DBConnection db = new DBConnection();
+        public void InsertDonor(Donor d)
         {
-            SqlConnection con = new SqlConnection("Data Source=JAWAD;Initial Catalog=HealthManagementAppDB;Integrated Security=True");
+            
+
+            string Query = "insert into DonorTbl  values('" + d.FirstName + "','" + d.FirstName + "','" + d.Phone + "','" + d.BloodGroup + "','" + d.address.City + "','" + d.address.Area + "')";
+            try
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+        }
+
+
+        public DataSet ShowDonors()
+        {
+            string Query="select *from DonorTbl";
+            SqlConnection con = new SqlConnection(db.connect);
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into Stb  values('" + pp.FirstName + "','" + pp.LastName + "','" + pp.UserName + "')", con);
-            int flag = cmd.ExecuteNonQuery();
-            con.Close();
-            return flag;
+            SqlCommand cmd = new SqlCommand(Query,con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
         }
     }
 }
