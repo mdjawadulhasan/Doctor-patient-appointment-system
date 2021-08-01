@@ -1,0 +1,67 @@
+C:\Users\Lenovo\source\repos\HMA\bin\Debug\HMA.exe.config
+C:\Users\Lenovo\source\repos\HMA\bin\Debug\HMA.exe
+C:\Users\Lenovo\source\repos\HMA\bin\Debug\HMA.pdb
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.Form1.resources
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.Properties.Resources.resources
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.csproj.GenerateResource.cache
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.exe
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.pdb
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.Registration.resources
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.loginorsignup.resources
+C:\Users\Lenovo\source\repos\HMA\obj\Debug\HMA.Patient.resources
+C:\Users\Lenovo\Desktop\HMA\bin\Debug\HMA.exe.config
+C:\Users\Lenovo\Desktop\HMA\bin\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\HMA\bin\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.loginorsignup.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Patient.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Registration.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Login.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Admin.resources
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.Doctor.resources
+C:\Users\Lenovo\Desktop\HMA\bin\Debug\DataLayer_HMA.dll
+C:\Users\Lenovo\Desktop\HMA\bin\Debug\DataLayer_HMA.pdb
+C:\Users\Lenovo\Desktop\HMA\obj\Debug\HMA.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\bin\Debug\HMA.exe.config
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\bin\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\bin\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\bin\Debug\DataLayer_HMA.dll
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\bin\Debug\DataLayer_HMA.pdb
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Admin.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Doctor.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Login.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.loginorsignup.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Patient.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.Registration.resources
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.csproj.CopyComplete
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Admin.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Doctor.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Login.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.loginorsignup.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Patient.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Registration.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\HMA.exe.config
+C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\HMA.exe
+C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\HMA.pdb
+C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.dll
+C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.pdb
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.CopyComplete

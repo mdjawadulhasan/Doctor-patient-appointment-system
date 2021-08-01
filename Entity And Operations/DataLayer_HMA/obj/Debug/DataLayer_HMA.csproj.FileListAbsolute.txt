@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Desktop\DataLayer_HMA\bin\Debug\DataLayer_HMA.dll
+C:\Users\Lenovo\Desktop\DataLayer_HMA\bin\Debug\DataLayer_HMA.pdb
+C:\Users\Lenovo\Desktop\DataLayer_HMA\obj\Debug\DataLayer_HMA.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\DataLayer_HMA\obj\Debug\DataLayer_HMA.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\DataLayer_HMA\obj\Debug\DataLayer_HMA.dll
+C:\Users\Lenovo\Desktop\DataLayer_HMA\obj\Debug\DataLayer_HMA.pdb
