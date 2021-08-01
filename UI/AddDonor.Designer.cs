@@ -29,6 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -167,9 +169,14 @@ namespace HMA
             this.Dgendercb.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dgendercb.FormattingEnabled = true;
             this.Dgendercb.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Others"});
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
             this.Dgendercb.Location = new System.Drawing.Point(651, 142);
             this.Dgendercb.Name = "Dgendercb";
             this.Dgendercb.Size = new System.Drawing.Size(175, 39);
@@ -285,7 +292,7 @@ namespace HMA
             this.Addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.ForeColor = System.Drawing.Color.White;
-            this.Addbtn.Location = new System.Drawing.Point(335, 285);
+            this.Addbtn.Location = new System.Drawing.Point(337, 277);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(170, 48);
             this.Addbtn.TabIndex = 182;
@@ -300,12 +307,13 @@ namespace HMA
             this.Editvbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Editvbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editvbtn.ForeColor = System.Drawing.Color.White;
-            this.Editvbtn.Location = new System.Drawing.Point(553, 285);
+            this.Editvbtn.Location = new System.Drawing.Point(574, 277);
             this.Editvbtn.Name = "Editvbtn";
             this.Editvbtn.Size = new System.Drawing.Size(170, 48);
             this.Editvbtn.TabIndex = 183;
             this.Editvbtn.Text = "EDIT";
             this.Editvbtn.UseVisualStyleBackColor = false;
+            this.Editvbtn.Click += new System.EventHandler(this.Editvbtn_Click);
             // 
             // Removebtn
             // 
@@ -314,7 +322,7 @@ namespace HMA
             this.Removebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Removebtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Removebtn.ForeColor = System.Drawing.Color.White;
-            this.Removebtn.Location = new System.Drawing.Point(763, 285);
+            this.Removebtn.Location = new System.Drawing.Point(779, 277);
             this.Removebtn.Name = "Removebtn";
             this.Removebtn.Size = new System.Drawing.Size(170, 48);
             this.Removebtn.TabIndex = 184;
@@ -323,13 +331,33 @@ namespace HMA
             // 
             // DonorDGV
             // 
-            this.DonorDGV.BackgroundColor = System.Drawing.Color.LightCyan;
+            this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DonorDGV.Location = new System.Drawing.Point(234, 354);
+            this.DonorDGV.EnableHeadersVisualStyles = false;
+            this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
+            this.DonorDGV.Location = new System.Drawing.Point(234, 370);
             this.DonorDGV.Name = "DonorDGV";
+            this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DonorDGV.RowHeadersVisible = false;
             this.DonorDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DonorDGV.RowTemplate.Height = 24;
-            this.DonorDGV.Size = new System.Drawing.Size(970, 317);
+            this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DonorDGV.Size = new System.Drawing.Size(962, 317);
             this.DonorDGV.TabIndex = 185;
             // 
             // AddDonor

@@ -17,7 +17,7 @@ namespace DataLayer_HMA.Operations
         {
             
 
-            string Query = "insert into DonorTbl  values('" + d.FirstName + "','" + d.FirstName + "','" + d.Phone + "','" + d.BloodGroup + "','" + d.address.City + "','" + d.address.Area + "')";
+            string Query = "insert into DonorTbl  values('" + d.FirstName + "','" + d.LastName + "','" + d.Phone + "','" + d.BloodGroup + "','" + d.address.City + "','" + d.address.Area + "')";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

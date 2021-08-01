@@ -44,6 +44,18 @@ namespace HMA
         private void AddDonor_Load(object sender, EventArgs e)
         {
             populateData();
+            DonorDGV.Columns["DoID"].HeaderText = "ID";
+            DonorDGV.Columns["Dfname"].HeaderText = "FirstName";
+            DonorDGV.Columns["Dlname"].HeaderText = "Last Name";
+            DonorDGV.Columns["Dphone"].HeaderText = "Phone NO.";
+            DonorDGV.Columns["DBGrp"].HeaderText = "Blood GROUP";
+            DonorDGV.Columns["Dcity"].HeaderText = "City";
+            DonorDGV.Columns["Darea"].HeaderText = "Area";
+        }
+
+        private void Editvbtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
