@@ -29,8 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,7 +40,7 @@ namespace HMA
             this.label13 = new System.Windows.Forms.Label();
             this.Dfnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Dgendercb = new System.Windows.Forms.ComboBox();
+            this.DBloodGrpcb = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Dlnametxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -163,12 +163,12 @@ namespace HMA
             this.label2.TabIndex = 170;
             this.label2.Text = "First Name :";
             // 
-            // Dgendercb
+            // DBloodGrpcb
             // 
-            this.Dgendercb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.Dgendercb.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dgendercb.FormattingEnabled = true;
-            this.Dgendercb.Items.AddRange(new object[] {
+            this.DBloodGrpcb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.DBloodGrpcb.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DBloodGrpcb.FormattingEnabled = true;
+            this.DBloodGrpcb.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -177,21 +177,21 @@ namespace HMA
             "AB-",
             "O+",
             "O-"});
-            this.Dgendercb.Location = new System.Drawing.Point(651, 142);
-            this.Dgendercb.Name = "Dgendercb";
-            this.Dgendercb.Size = new System.Drawing.Size(175, 39);
-            this.Dgendercb.TabIndex = 175;
+            this.DBloodGrpcb.Location = new System.Drawing.Point(642, 142);
+            this.DBloodGrpcb.Name = "DBloodGrpcb";
+            this.DBloodGrpcb.Size = new System.Drawing.Size(175, 39);
+            this.DBloodGrpcb.TabIndex = 175;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(646, 112);
+            this.label7.Location = new System.Drawing.Point(646, 110);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 29);
+            this.label7.Size = new System.Drawing.Size(151, 29);
             this.label7.TabIndex = 174;
-            this.label7.Text = "Gender :";
+            this.label7.Text = "Blood Group:";
             // 
             // Dlnametxt
             // 
@@ -328,20 +328,21 @@ namespace HMA
             this.Removebtn.TabIndex = 184;
             this.Removebtn.Text = "REMOVE";
             this.Removebtn.UseVisualStyleBackColor = false;
+            this.Removebtn.Click += new System.EventHandler(this.Removebtn_Click);
             // 
             // DonorDGV
             // 
             this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DonorDGV.EnableHeadersVisualStyles = false;
             this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -350,15 +351,16 @@ namespace HMA
             this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DonorDGV.RowHeadersVisible = false;
             this.DonorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DonorDGV.RowTemplate.Height = 24;
             this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DonorDGV.Size = new System.Drawing.Size(962, 317);
             this.DonorDGV.TabIndex = 185;
+            this.DonorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DonorDGV_CellContentClick);
             // 
             // AddDonor
             // 
@@ -376,7 +378,7 @@ namespace HMA
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Dphontxt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Dgendercb);
+            this.Controls.Add(this.DBloodGrpcb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Dlnametxt);
             this.Controls.Add(this.label3);
@@ -408,7 +410,7 @@ namespace HMA
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox Dfnametxt;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox Dgendercb;
+        private System.Windows.Forms.ComboBox DBloodGrpcb;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Dlnametxt;
         private System.Windows.Forms.Label label3;
