@@ -19,6 +19,8 @@ namespace HMA
             InitializeComponent();
         }
 
+        
+
         private void Addbtn_Click(object sender, EventArgs e)
         {
             Doctor dr = new Doctor();
@@ -34,6 +36,21 @@ namespace HMA
             dr.Appoinment_CallNo = DtApt.Text;
 
             OP.InsertDoctor(dr);
+
+        }
+        void populateData()
+        {
+            DoctorOperations OP = new DoctorOperations();
+            DataSet ds = OP.ShowDoctors();
+            DoctorDGV.DataSource = ds.Tables[0];
+        }
+        private void AddDoctor_Load(object sender, EventArgs e)
+        {
+            populateData();
+        }
+
+        private void DoctorDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

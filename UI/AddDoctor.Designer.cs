@@ -29,9 +29,9 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.DonorDGV = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.DoctorDGV = new System.Windows.Forms.DataGridView();
             this.Removebtn = new System.Windows.Forms.Button();
             this.Editvbtn = new System.Windows.Forms.Button();
             this.Addbtn = new System.Windows.Forms.Button();
@@ -58,43 +58,44 @@ namespace HMA
             this.label7 = new System.Windows.Forms.Label();
             this.Dtvisithrs = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DoctorDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // DonorDGV
+            // DoctorDGV
             // 
-            this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DonorDGV.EnableHeadersVisualStyles = false;
-            this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
-            this.DonorDGV.Location = new System.Drawing.Point(250, 450);
-            this.DonorDGV.Name = "DonorDGV";
-            this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DonorDGV.RowHeadersVisible = false;
-            this.DonorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DonorDGV.RowTemplate.Height = 24;
-            this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DonorDGV.Size = new System.Drawing.Size(962, 317);
-            this.DonorDGV.TabIndex = 202;
+            this.DoctorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.DoctorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DoctorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DoctorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DoctorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DoctorDGV.EnableHeadersVisualStyles = false;
+            this.DoctorDGV.GridColor = System.Drawing.Color.MidnightBlue;
+            this.DoctorDGV.Location = new System.Drawing.Point(250, 450);
+            this.DoctorDGV.Name = "DoctorDGV";
+            this.DoctorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DoctorDGV.RowHeadersVisible = false;
+            this.DoctorDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DoctorDGV.RowTemplate.Height = 24;
+            this.DoctorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DoctorDGV.Size = new System.Drawing.Size(962, 317);
+            this.DoctorDGV.TabIndex = 202;
+            this.DoctorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DoctorDGV_CellContentClick);
             // 
             // Removebtn
             // 
@@ -414,7 +415,7 @@ namespace HMA
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Dtvisitingdys);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.DonorDGV);
+            this.Controls.Add(this.DoctorDGV);
             this.Controls.Add(this.Removebtn);
             this.Controls.Add(this.Editvbtn);
             this.Controls.Add(this.Addbtn);
@@ -432,7 +433,8 @@ namespace HMA
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddDoctor";
             this.Text = "AddDoctor";
-            ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).EndInit();
+            this.Load += new System.EventHandler(this.AddDoctor_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DoctorDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -445,7 +447,7 @@ namespace HMA
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DonorDGV;
+        private System.Windows.Forms.DataGridView DoctorDGV;
         private System.Windows.Forms.Button Removebtn;
         private System.Windows.Forms.Button Editvbtn;
         private System.Windows.Forms.Button Addbtn;

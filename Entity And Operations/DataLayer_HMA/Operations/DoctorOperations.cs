@@ -14,8 +14,6 @@ namespace DataLayer_HMA.Operations
         DBConnection db = new DBConnection();
         public void InsertDoctor(Doctor d)
         {
-
-
             string Query = "insert into DoctorTbl  values('" + d.FirstName + "','" + d.LastName + "','" + d.Degree + "','" + d.Department + "','" + d.Chammber + "','" + d.Visitng_Hours+ "','" + d.visiting_days + "','" + d.Appoinment_CallNo + "')";
             try
             {
@@ -33,9 +31,9 @@ namespace DataLayer_HMA.Operations
         }
 
 
-        public DataSet ShowDonors()
+        public DataSet ShowDoctors()
         {
-            string Query = "select *from DonorTbl";
+            string Query = "select *from DoctorTbl";
             SqlConnection con = new SqlConnection(db.connect);
             con.Open();
             SqlCommand cmd = new SqlCommand(Query, con);
