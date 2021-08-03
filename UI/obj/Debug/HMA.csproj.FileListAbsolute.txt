@@ -49,10 +49,8 @@ C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.exe
 C:\Users\Lenovo\Desktop\Health-Management-Desktop-App-master\obj\Debug\HMA.pdb
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csprojAssemblyReference.cache
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Admin.resources
-C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Doctor.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Login.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.loginorsignup.resources
-C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Patient.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Properties.Resources.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Registration.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.GenerateResource.cache
@@ -66,3 +64,6 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.dll
 C:\Users\Lenovo\Desktop\Health Management APP\UI\bin\Debug\DataLayer_HMA.pdb
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.csproj.CopyComplete
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.AddDonor.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.AddDoctor.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Doctor_UI.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Patient_UI.resources

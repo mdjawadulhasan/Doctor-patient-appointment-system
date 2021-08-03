@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataLayer_HMA.Entity;
+using DataLayer_HMA.Operations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,17 +12,17 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class Patient : Form
+    public partial class AddDoctor : Form
     {
-        public Patient()
+        public AddDoctor()
         {
             InitializeComponent();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void Addbtn_Click(object sender, EventArgs e)
         {
-            new Login().Show();
-            this.Hide();
+          
+            
         }
     }
 }

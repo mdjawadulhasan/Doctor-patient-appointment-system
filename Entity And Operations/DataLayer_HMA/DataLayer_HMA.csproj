@@ -46,6 +46,7 @@
     <Compile Include="Entity\Donor.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Operations\DBConnection.cs" />
+    <Compile Include="Operations\DoctorOperations.cs" />
     <Compile Include="Operations\DonorOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

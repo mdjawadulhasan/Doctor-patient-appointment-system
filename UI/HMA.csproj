@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDoctor.Designer.cs">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddDonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,11 +64,11 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor.cs">
+    <Compile Include="Doctor_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctor.Designer.cs">
-      <DependentUpon>Doctor.cs</DependentUpon>
+    <Compile Include="Doctor_UI.Designer.cs">
+      <DependentUpon>Doctor_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -76,11 +82,11 @@
     <Compile Include="loginorsignup.Designer.cs">
       <DependentUpon>loginorsignup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patient.cs">
+    <Compile Include="Patient_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patient.Designer.cs">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <Compile Include="Patient_UI.Designer.cs">
+      <DependentUpon>Patient_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,14 +96,17 @@
     <Compile Include="Registration.Designer.cs">
       <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddDoctor.resx">
+      <DependentUpon>AddDoctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddDonor.resx">
       <DependentUpon>AddDonor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Doctor.resx">
-      <DependentUpon>Doctor.cs</DependentUpon>
+    <EmbeddedResource Include="Doctor_UI.resx">
+      <DependentUpon>Doctor_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -105,8 +114,8 @@
     <EmbeddedResource Include="loginorsignup.resx">
       <DependentUpon>loginorsignup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patient.resx">
-      <DependentUpon>Patient.cs</DependentUpon>
+    <EmbeddedResource Include="Patient_UI.resx">
+      <DependentUpon>Patient_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

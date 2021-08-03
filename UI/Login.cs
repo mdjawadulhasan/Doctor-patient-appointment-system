@@ -34,7 +34,7 @@ namespace HMA
             if (textusrname.Text == "admin" || textpassword.Text == "admin")
             {
                 MessageBox.Show("Login Succesfull");
-                 new Patient().Show();
+                 new Patient_UI().Show();
             this.Hide();
             }
             else

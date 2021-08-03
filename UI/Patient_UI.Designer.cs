@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class Patient
+    partial class Patient_UI
     {
         /// <summary>
         /// Required designer variable.

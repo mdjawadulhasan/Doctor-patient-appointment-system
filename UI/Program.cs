@@ -16,7 +16,7 @@ namespace HMA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddDonor());
+            Application.Run(new AddDoctor());
         }
     }
 }

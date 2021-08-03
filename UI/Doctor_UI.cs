@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class Doctor : Form
+    public partial class Doctor_UI : Form
     {
-        public Doctor()
+        public Doctor_UI()
         {
             InitializeComponent();
         }
