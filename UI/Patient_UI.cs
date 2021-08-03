@@ -19,8 +19,7 @@ namespace HMA
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            new Login().Show();
-            this.Hide();
+            
         }
     }
 }

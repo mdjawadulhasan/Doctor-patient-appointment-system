@@ -47,10 +47,20 @@ namespace HMA
         }
         private void AddDoctor_Load(object sender, EventArgs e)
         {
+
             populateData();
+            DoctorDGV.Columns["Dtfname"].HeaderText = "ID";
+            DoctorDGV.Columns["Dtlname"].HeaderText = "First Name";
+            DoctorDGV.Columns["Dtdegree"].HeaderText = "Last Name";
+            DoctorDGV.Columns["Dtdept"].HeaderText = "Department";
+            DoctorDGV.Columns["Dtchamber"].HeaderText = "Chamber";
+            DoctorDGV.Columns["Dtvhours"].HeaderText = "Visiting Hours";
+            DoctorDGV.Columns["Dtvdays"].HeaderText = "Visiting Days";
+            DoctorDGV.Columns["Dtaptcall"].HeaderText = "For Appointmnent";
+            
         }
 
-       
+
 
         private void Editvbtn_Click(object sender, EventArgs e)
         {
@@ -62,7 +72,7 @@ namespace HMA
             }
             else
             {
-               
+
                 dr.FirstName = Dtfnametxt.Text;
                 dr.LastName = Dtlnametxt.Text;
                 dr.visiting_days = Dtvisitingdys.Text;
@@ -89,14 +99,20 @@ namespace HMA
         int key = 0;
         private void DoctorDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Dtfnametxt.Text = DoctorDGV.SelectedRows[0].Cells[1].Value.ToString();
-            Dtlnametxt.Text = DoctorDGV.SelectedRows[0].Cells[2].Value.ToString();
-            Dtdegree.Text = DoctorDGV.SelectedRows[0].Cells[3].Value.ToString();
-            Dtdept.Text = DoctorDGV.SelectedRows[0].Cells[4].Value.ToString();
-            Dtcham.Text = DoctorDGV.SelectedRows[0].Cells[5].Value.ToString();
-            Dtvisithrs.Text = DoctorDGV.SelectedRows[0].Cells[6].Value.ToString();
-            Dtvisitingdys.Text = DoctorDGV.SelectedRows[0].Cells[7].Value.ToString();
-            DtApt.Text = DoctorDGV.SelectedRows[0].Cells[8].Value.ToString();
+
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.DoctorDGV.Rows[e.RowIndex];
+
+                Dtfnametxt.Text = row.Cells["Dtfname"].Value.ToString();
+                Dtlnametxt.Text = row.Cells["Dtlname"].Value.ToString();
+                Dtdegree.Text = row.Cells["Dtdegree"].Value.ToString();
+                Dtdept.Text = row.Cells["Dtdept"].Value.ToString();
+                Dtcham.Text = row.Cells["Dtchamber"].Value.ToString();
+                Dtvisithrs.Text = row.Cells["Dtvhours"].Value.ToString();
+                Dtvisitingdys.Text = row.Cells["Dtvdays"].Value.ToString();
+                DtApt.Text = row.Cells["Dtaptcall"].Value.ToString();
+            }
 
             if (Dtfnametxt.Text == "")
             {
@@ -129,6 +145,18 @@ namespace HMA
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            new AddDonor().Show();
+            this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            new Admin().Show();
+            this.Close();
         }
     }
 }

@@ -87,26 +87,31 @@ namespace HMA
         int key = 0;
         private void DonorDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            Dfnametxt.Text = DonorDGV.SelectedRows[0].Cells[1].Value.ToString();
-            Dlnametxt.Text = DonorDGV.SelectedRows[0].Cells[2].Value.ToString();
-            Dphontxt.Text = DonorDGV.SelectedRows[0].Cells[3].Value.ToString();
-            DBloodGrpcb.Text = DonorDGV.SelectedRows[0].Cells[4].Value.ToString();
-            Dcitytxt.Text = DonorDGV.SelectedRows[0].Cells[5].Value.ToString();
-            Dareatxt.Text = DonorDGV.SelectedRows[0].Cells[6].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.DonorDGV.Rows[e.RowIndex];
+                Dfnametxt.Text = row.Cells["Dfname"].Value.ToString();
+                Dlnametxt.Text = row.Cells["Dlfname"].Value.ToString();
+                Dphontxt.Text = row.Cells["Dphone"].Value.ToString();
+                DBloodGrpcb.Text = row.Cells["DBGrp"].Value.ToString();
+                Dcitytxt.Text = row.Cells["Dcity"].Value.ToString();
+                Dareatxt.Text = row.Cells["Darea"].Value.ToString();
+            }
+
+
             if (Dfnametxt.Text == "")
             {
                 key = 0;
             }
             else
             {
-                key =Convert.ToInt32(DonorDGV.SelectedRows[0].Cells[0].Value.ToString());
+                key = Convert.ToInt32(DonorDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
         private void Removebtn_Click(object sender, EventArgs e)
         {
-          
+
             DonorOperations op = new DonorOperations();
             if (key == 0)
             {
@@ -116,7 +121,7 @@ namespace HMA
             {
                 try
                 {
-                    
+
                     op.DeleteDonors(key);
                     MessageBox.Show("Patient Succesfully Deleted");
                     populateData();
@@ -126,6 +131,18 @@ namespace HMA
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            new AddDoctor().Show();
+            this.Close();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            new Admin().Show();
+            this.Close();
         }
     }
 }

@@ -29,46 +29,47 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.signupbtn = new System.Windows.Forms.Button();
+            this.loginbtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rolecb = new System.Windows.Forms.ComboBox();
+            this.adminlb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // signupbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(176, 399);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(478, 55);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "SIGN UP";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.signupbtn.BackColor = System.Drawing.Color.Teal;
+            this.signupbtn.FlatAppearance.BorderSize = 2;
+            this.signupbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.signupbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupbtn.ForeColor = System.Drawing.Color.White;
+            this.signupbtn.Location = new System.Drawing.Point(176, 399);
+            this.signupbtn.Name = "signupbtn";
+            this.signupbtn.Size = new System.Drawing.Size(478, 55);
+            this.signupbtn.TabIndex = 19;
+            this.signupbtn.Text = "SIGN UP";
+            this.signupbtn.UseVisualStyleBackColor = false;
+            this.signupbtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // loginbtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(176, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(478, 47);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.loginbtn.BackColor = System.Drawing.Color.Teal;
+            this.loginbtn.FlatAppearance.BorderSize = 2;
+            this.loginbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.loginbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginbtn.ForeColor = System.Drawing.Color.White;
+            this.loginbtn.Location = new System.Drawing.Point(176, 329);
+            this.loginbtn.Name = "loginbtn";
+            this.loginbtn.Size = new System.Drawing.Size(478, 47);
+            this.loginbtn.TabIndex = 18;
+            this.loginbtn.Text = "LOG IN";
+            this.loginbtn.UseVisualStyleBackColor = false;
+            this.loginbtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -113,21 +114,31 @@ namespace HMA
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // comboBox1
+            // rolecb
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Teal;
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.White;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.rolecb.BackColor = System.Drawing.Color.Teal;
+            this.rolecb.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rolecb.ForeColor = System.Drawing.Color.White;
+            this.rolecb.FormattingEnabled = true;
+            this.rolecb.Items.AddRange(new object[] {
             "Patient",
-            "Doctor",
-            "Admin"});
-            this.comboBox1.Location = new System.Drawing.Point(524, 285);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 30);
-            this.comboBox1.TabIndex = 23;
-            this.comboBox1.Text = "Select Role";
+            "Doctor"});
+            this.rolecb.Location = new System.Drawing.Point(524, 285);
+            this.rolecb.Name = "rolecb";
+            this.rolecb.Size = new System.Drawing.Size(130, 30);
+            this.rolecb.TabIndex = 23;
+            this.rolecb.Text = "Select Role";
+            // 
+            // adminlb
+            // 
+            this.adminlb.AutoSize = true;
+            this.adminlb.Font = new System.Drawing.Font("NSimSun", 15.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.adminlb.Location = new System.Drawing.Point(379, 470);
+            this.adminlb.Name = "adminlb";
+            this.adminlb.Size = new System.Drawing.Size(87, 27);
+            this.adminlb.TabIndex = 24;
+            this.adminlb.Text = "Admin";
+            this.adminlb.Click += new System.EventHandler(this.adminlb_Click);
             // 
             // loginorsignup
             // 
@@ -135,16 +146,18 @@ namespace HMA
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(972, 574);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.adminlb);
+            this.Controls.Add(this.rolecb);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.signupbtn);
+            this.Controls.Add(this.loginbtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginorsignup";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.loginorsignup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -154,11 +167,12 @@ namespace HMA
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button signupbtn;
+        private System.Windows.Forms.Button loginbtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox rolecb;
+        private System.Windows.Forms.Label adminlb;
     }
 }

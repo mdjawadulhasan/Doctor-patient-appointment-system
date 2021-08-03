@@ -64,6 +64,7 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminOperations.cs" />
     <Compile Include="Doctor_UI.cs">
       <SubType>Form</SubType>
     </Compile>

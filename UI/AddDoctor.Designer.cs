@@ -29,8 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DoctorDGV = new System.Windows.Forms.DataGridView();
             this.Removebtn = new System.Windows.Forms.Button();
             this.Editvbtn = new System.Windows.Forms.Button();
@@ -71,14 +71,14 @@ namespace HMA
             this.DoctorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DoctorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DoctorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DoctorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DoctorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.DoctorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DoctorDGV.EnableHeadersVisualStyles = false;
             this.DoctorDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -87,11 +87,11 @@ namespace HMA
             this.DoctorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DoctorDGV.RowHeadersVisible = false;
             this.DoctorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.DoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            this.DoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.DoctorDGV.RowTemplate.Height = 24;
             this.DoctorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DoctorDGV.Size = new System.Drawing.Size(1262, 317);
@@ -265,9 +265,9 @@ namespace HMA
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(83, 618);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 25);
+            this.label8.Size = new System.Drawing.Size(67, 25);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Logout";
+            this.label8.Text = "Back";
             // 
             // pictureBox6
             // 
@@ -278,6 +278,7 @@ namespace HMA
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label11
             // 
@@ -286,9 +287,9 @@ namespace HMA
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(34, 402);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(135, 25);
+            this.label11.Size = new System.Drawing.Size(130, 25);
             this.label11.TabIndex = 8;
-            this.label11.Text = "Add Doctor";
+            this.label11.Text = "Add Donor";
             // 
             // pictureBox9
             // 
@@ -299,6 +300,7 @@ namespace HMA
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 7;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // label13
             // 

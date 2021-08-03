@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer_HMA.Entity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,10 @@ namespace HMA
 {
     public partial class Login : Form
     {
-       
-        public Login()
+        int persontype;
+        public Login(Person p)
         {
+            persontype = p.PersonType;
             InitializeComponent();
             textpassword.PasswordChar = '*';
         }
@@ -31,19 +33,15 @@ namespace HMA
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (textusrname.Text == "admin" || textpassword.Text == "admin")
+            if(persontype==3)
             {
-                MessageBox.Show("Login Succesfull");
-                 new Patient_UI().Show();
-            this.Hide();
+                if(textpassword.Text=="admin" && textusrname.Text=="admin")
+                {
+                    new Admin().Show();
+                    
+                    this.Close();
+                }
             }
-            else
-            {
-                textusrname.Clear();
-                textpassword.Clear();
-                MessageBox.Show("Credentials is not correct");
-            }
-           
         }
     }
 }

@@ -29,8 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@ namespace HMA
             this.Editvbtn = new System.Windows.Forms.Button();
             this.Removebtn = new System.Windows.Forms.Button();
             this.DonorDGV = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -94,9 +95,9 @@ namespace HMA
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(83, 618);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 25);
+            this.label8.Size = new System.Drawing.Size(67, 25);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Logout";
+            this.label8.Text = "Back";
             // 
             // pictureBox6
             // 
@@ -107,13 +108,14 @@ namespace HMA
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(34, 402);
+            this.label11.Location = new System.Drawing.Point(34, 404);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(135, 25);
             this.label11.TabIndex = 8;
@@ -122,12 +124,13 @@ namespace HMA
             // pictureBox9
             // 
             this.pictureBox9.Image = global::HMA.Properties.Resources.doctor;
-            this.pictureBox9.Location = new System.Drawing.Point(59, 285);
+            this.pictureBox9.Location = new System.Drawing.Point(56, 294);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(81, 91);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 7;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // label13
             // 
@@ -335,14 +338,14 @@ namespace HMA
             this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DonorDGV.EnableHeadersVisualStyles = false;
             this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -351,16 +354,26 @@ namespace HMA
             this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DonorDGV.RowHeadersVisible = false;
             this.DonorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DonorDGV.RowTemplate.Height = 24;
             this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DonorDGV.Size = new System.Drawing.Size(962, 317);
             this.DonorDGV.TabIndex = 185;
             this.DonorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DonorDGV_CellContentClick);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(610, 344);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(100, 23);
+            this.label12.TabIndex = 211;
+            this.label12.Text = "Donor List";
             // 
             // AddDonor
             // 
@@ -368,6 +381,7 @@ namespace HMA
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1208, 699);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.DonorDGV);
             this.Controls.Add(this.Removebtn);
             this.Controls.Add(this.Editvbtn);
@@ -424,5 +438,6 @@ namespace HMA
         private System.Windows.Forms.Button Editvbtn;
         private System.Windows.Forms.Button Removebtn;
         private System.Windows.Forms.DataGridView DonorDGV;
+        private System.Windows.Forms.Label label12;
     }
 }
