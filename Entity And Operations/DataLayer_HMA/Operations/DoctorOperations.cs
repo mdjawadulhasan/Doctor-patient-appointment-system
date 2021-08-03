@@ -43,9 +43,9 @@ namespace DataLayer_HMA.Operations
             return ds;
         }
 
-        public void UpdateDonors(int key, Donor d)
+        public void UpdateDoctors(int key, Doctor d)
         {
-            string Query = "Update DonorTbl set Dfname='" + d.FirstName + "',Dlname='" + d.LastName + "',Dphone='" + d.Phone + "',DBGrp='" + d.BloodGroup + "',Dcity='" + d.address.City + "',Darea='" + d.address.Area + "' where DoID=" + key + ";";
+            string Query = "Update DoctorTbl set Dtfname='" + d.FirstName + "',Dtlname='" + d.LastName + "',Dtdegree='" + d.Degree + "',Dtdept='" + d.Department + "',Dtchamber='" + d.Chammber + "',Dtvhours='" + d.Visitng_Hours + "',Dtvdays='" + d.visiting_days + "',Dtaptcall='" + d.Appoinment_CallNo + "' where Did=" + key + ";";
             SqlConnection con = new SqlConnection(db.connect);
             con.Open();
             SqlCommand cmd = new SqlCommand(Query, con);

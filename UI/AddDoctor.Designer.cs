@@ -124,6 +124,7 @@ namespace HMA
             this.Editvbtn.TabIndex = 200;
             this.Editvbtn.Text = "EDIT";
             this.Editvbtn.UseVisualStyleBackColor = false;
+            this.Editvbtn.Click += new System.EventHandler(this.Editvbtn_Click);
             // 
             // Addbtn
             // 

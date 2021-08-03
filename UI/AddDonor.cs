@@ -61,7 +61,7 @@ namespace HMA
             DonorOperations op = new DonorOperations();
             if (key == 0)
             {
-                MessageBox.Show("select the student");
+                MessageBox.Show("Select the Patient");
             }
             else
             {
@@ -74,7 +74,7 @@ namespace HMA
                 try
                 {
                     op.UpdateDonors(key, d);
-                    MessageBox.Show("Student info Succesfully Updated");
+                    MessageBox.Show("Patient info Succesfully Updated");
                     populateData();
                 }
                 catch (Exception ex)
@@ -110,7 +110,7 @@ namespace HMA
             DonorOperations op = new DonorOperations();
             if (key == 0)
             {
-                MessageBox.Show("select the student");
+                MessageBox.Show("Select the Patient");
             }
             else
             {
@@ -118,7 +118,7 @@ namespace HMA
                 {
                     
                     op.DeleteDonors(key);
-                    MessageBox.Show("Student Succesfully Deleted");
+                    MessageBox.Show("Patient Succesfully Deleted");
                     populateData();
                 }
                 catch (Exception ex)
