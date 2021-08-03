@@ -29,8 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DonorDGV = new System.Windows.Forms.DataGridView();
             this.Removebtn = new System.Windows.Forms.Button();
             this.Editvbtn = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@ namespace HMA
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Dtvisiting = new System.Windows.Forms.TextBox();
+            this.Dtvisitingdys = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.DtApt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -70,14 +70,14 @@ namespace HMA
             this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DonorDGV.EnableHeadersVisualStyles = false;
             this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -86,11 +86,11 @@ namespace HMA
             this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DonorDGV.RowHeadersVisible = false;
             this.DonorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DonorDGV.RowTemplate.Height = 24;
             this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DonorDGV.Size = new System.Drawing.Size(962, 317);
@@ -333,17 +333,17 @@ namespace HMA
             this.panel1.Size = new System.Drawing.Size(228, 779);
             this.panel1.TabIndex = 186;
             // 
-            // Dtvisiting
+            // Dtvisitingdys
             // 
-            this.Dtvisiting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.Dtvisiting.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Dtvisiting.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dtvisiting.ForeColor = System.Drawing.Color.Black;
-            this.Dtvisiting.Location = new System.Drawing.Point(692, 187);
-            this.Dtvisiting.Multiline = true;
-            this.Dtvisiting.Name = "Dtvisiting";
-            this.Dtvisiting.Size = new System.Drawing.Size(500, 46);
-            this.Dtvisiting.TabIndex = 204;
+            this.Dtvisitingdys.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Dtvisitingdys.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Dtvisitingdys.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dtvisitingdys.ForeColor = System.Drawing.Color.Black;
+            this.Dtvisitingdys.Location = new System.Drawing.Point(692, 187);
+            this.Dtvisitingdys.Multiline = true;
+            this.Dtvisitingdys.Name = "Dtvisitingdys";
+            this.Dtvisitingdys.Size = new System.Drawing.Size(500, 46);
+            this.Dtvisitingdys.TabIndex = 204;
             // 
             // label6
             // 
@@ -412,7 +412,7 @@ namespace HMA
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Dtvisithrs);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.Dtvisiting);
+            this.Controls.Add(this.Dtvisitingdys);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.DonorDGV);
             this.Controls.Add(this.Removebtn);
@@ -466,7 +466,7 @@ namespace HMA
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox Dtvisiting;
+        private System.Windows.Forms.TextBox Dtvisitingdys;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox DtApt;
         private System.Windows.Forms.Label label7;

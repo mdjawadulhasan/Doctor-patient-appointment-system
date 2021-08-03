@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Entity\Address.cs" />
+    <Compile Include="Entity\Doctor.cs" />
     <Compile Include="Entity\Donor.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Operations\DBConnection.cs" />

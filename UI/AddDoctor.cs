@@ -21,8 +21,20 @@ namespace HMA
 
         private void Addbtn_Click(object sender, EventArgs e)
         {
-          
+            Doctor dr = new Doctor();
+            DoctorOperations OP = new DoctorOperations();
             
+            dr.FirstName = Dtfnametxt.Text;
+            dr.LastName = Dtlnametxt.Text;
+            dr.visiting_days = Dtvisitingdys.Text;
+            dr.Visitng_Hours = Dtvisithrs.Text;
+            dr.Chammber = Dtcham.Text;
+            dr.Degree = Dtdegree.Text;
+            dr.Department = Dtdept.Text;
+            dr.Appoinment_CallNo = DtApt.Text;
+
+            OP.InsertDoctor(dr);
+
         }
     }
 }

@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 
 namespace DataLayer_HMA.Operations
 {
-    class DoctorOperations
+   public  class DoctorOperations
     {
         DBConnection db = new DBConnection();
-        public void InsertDonor()
+        public void InsertDoctor(Doctor d)
         {
 
 
-            string Query = "insert into DonorTbl  values('" + d.FirstName + "','" + d.LastName + "','" + d.Phone + "','" + d.BloodGroup + "','" + d.address.City + "','" + d.address.Area + "')";
+            string Query = "insert into DoctorTbl  values('" + d.FirstName + "','" + d.LastName + "','" + d.Degree + "','" + d.Department + "','" + d.Chammber + "','" + d.Visitng_Hours+ "','" + d.visiting_days + "','" + d.Appoinment_CallNo + "')";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

@@ -58,7 +58,7 @@ namespace HMA
             this.label11.BackColor = System.Drawing.Color.AliceBlue;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Teal;
-            this.label11.Location = new System.Drawing.Point(275, 231);
+            this.label11.Location = new System.Drawing.Point(545, 186);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 28);
             this.label11.TabIndex = 46;
@@ -97,16 +97,16 @@ namespace HMA
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(935, -22);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(268, 793);
+            this.panel1.Size = new System.Drawing.Size(248, 747);
             this.panel1.TabIndex = 45;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Teal;
             this.pictureBox4.Image = global::HMA.Properties.Resources.L;
-            this.pictureBox4.Location = new System.Drawing.Point(78, 26);
+            this.pictureBox4.Location = new System.Drawing.Point(78, 16);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(101, 101);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +128,7 @@ namespace HMA
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(55, 560);
+            this.label5.Location = new System.Drawing.Point(47, 546);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(177, 25);
             this.label5.TabIndex = 10;
@@ -137,7 +137,7 @@ namespace HMA
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HMA.Properties.Resources.prescription;
-            this.pictureBox1.Location = new System.Drawing.Point(78, 406);
+            this.pictureBox1.Location = new System.Drawing.Point(66, 393);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,7 +171,7 @@ namespace HMA
             this.label8.BackColor = System.Drawing.Color.AliceBlue;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(266, 454);
+            this.label8.Location = new System.Drawing.Point(545, 383);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(111, 28);
             this.label8.TabIndex = 49;
@@ -183,7 +183,7 @@ namespace HMA
             this.label6.BackColor = System.Drawing.Color.AliceBlue;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(266, 384);
+            this.label6.Location = new System.Drawing.Point(545, 320);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(97, 28);
             this.label6.TabIndex = 48;
@@ -195,7 +195,7 @@ namespace HMA
             this.label3.BackColor = System.Drawing.Color.AliceBlue;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(266, 311);
+            this.label3.Location = new System.Drawing.Point(545, 257);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 28);
             this.label3.TabIndex = 47;
@@ -217,9 +217,9 @@ namespace HMA
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Lime;
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
-            this.pictureBox2.Location = new System.Drawing.Point(-9, -25);
+            this.pictureBox2.Location = new System.Drawing.Point(240, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1212, 793);
+            this.pictureBox2.Size = new System.Drawing.Size(954, 745);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;
