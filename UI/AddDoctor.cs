@@ -107,5 +107,28 @@ namespace HMA
                 key = Convert.ToInt32(DoctorDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void Removebtn_Click(object sender, EventArgs e)
+        {
+            DoctorOperations op = new DoctorOperations();
+            if (key == 0)
+            {
+                MessageBox.Show("Select the Doctor");
+            }
+            else
+            {
+                try
+                {
+
+                    op.DeleteDoctors(key);
+                    MessageBox.Show("Doctor Succesfully Deleted");
+                    populateData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
     }
 }

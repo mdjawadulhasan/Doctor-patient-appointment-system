@@ -58,6 +58,7 @@ namespace HMA
             this.label7 = new System.Windows.Forms.Label();
             this.Dtvisithrs = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DoctorDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -81,7 +82,7 @@ namespace HMA
             this.DoctorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DoctorDGV.EnableHeadersVisualStyles = false;
             this.DoctorDGV.GridColor = System.Drawing.Color.MidnightBlue;
-            this.DoctorDGV.Location = new System.Drawing.Point(250, 450);
+            this.DoctorDGV.Location = new System.Drawing.Point(252, 437);
             this.DoctorDGV.Name = "DoctorDGV";
             this.DoctorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DoctorDGV.RowHeadersVisible = false;
@@ -93,7 +94,7 @@ namespace HMA
             this.DoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DoctorDGV.RowTemplate.Height = 24;
             this.DoctorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DoctorDGV.Size = new System.Drawing.Size(962, 317);
+            this.DoctorDGV.Size = new System.Drawing.Size(1262, 317);
             this.DoctorDGV.TabIndex = 202;
             this.DoctorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DoctorDGV_CellContentClick);
             // 
@@ -104,12 +105,13 @@ namespace HMA
             this.Removebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Removebtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Removebtn.ForeColor = System.Drawing.Color.White;
-            this.Removebtn.Location = new System.Drawing.Point(807, 344);
+            this.Removebtn.Location = new System.Drawing.Point(888, 335);
             this.Removebtn.Name = "Removebtn";
             this.Removebtn.Size = new System.Drawing.Size(170, 48);
             this.Removebtn.TabIndex = 201;
             this.Removebtn.Text = "REMOVE";
             this.Removebtn.UseVisualStyleBackColor = false;
+            this.Removebtn.Click += new System.EventHandler(this.Removebtn_Click);
             // 
             // Editvbtn
             // 
@@ -118,7 +120,7 @@ namespace HMA
             this.Editvbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Editvbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Editvbtn.ForeColor = System.Drawing.Color.White;
-            this.Editvbtn.Location = new System.Drawing.Point(602, 344);
+            this.Editvbtn.Location = new System.Drawing.Point(686, 335);
             this.Editvbtn.Name = "Editvbtn";
             this.Editvbtn.Size = new System.Drawing.Size(170, 48);
             this.Editvbtn.TabIndex = 200;
@@ -133,7 +135,7 @@ namespace HMA
             this.Addbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Addbtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.ForeColor = System.Drawing.Color.White;
-            this.Addbtn.Location = new System.Drawing.Point(365, 344);
+            this.Addbtn.Location = new System.Drawing.Point(446, 335);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(170, 48);
             this.Addbtn.TabIndex = 199;
@@ -147,10 +149,10 @@ namespace HMA
             this.Dtdept.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtdept.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtdept.ForeColor = System.Drawing.Color.Black;
-            this.Dtdept.Location = new System.Drawing.Point(693, 112);
+            this.Dtdept.Location = new System.Drawing.Point(842, 119);
             this.Dtdept.Multiline = true;
             this.Dtdept.Name = "Dtdept";
-            this.Dtdept.Size = new System.Drawing.Size(499, 46);
+            this.Dtdept.Size = new System.Drawing.Size(511, 46);
             this.Dtdept.TabIndex = 198;
             // 
             // label4
@@ -158,7 +160,7 @@ namespace HMA
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label4.Location = new System.Drawing.Point(698, 90);
+            this.label4.Location = new System.Drawing.Point(847, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 23);
             this.label4.TabIndex = 197;
@@ -170,10 +172,10 @@ namespace HMA
             this.Dtcham.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtcham.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtcham.ForeColor = System.Drawing.Color.Black;
-            this.Dtcham.Location = new System.Drawing.Point(250, 187);
+            this.Dtcham.Location = new System.Drawing.Point(331, 194);
             this.Dtcham.Multiline = true;
             this.Dtcham.Name = "Dtcham";
-            this.Dtcham.Size = new System.Drawing.Size(406, 46);
+            this.Dtcham.Size = new System.Drawing.Size(467, 46);
             this.Dtcham.TabIndex = 196;
             // 
             // label5
@@ -181,7 +183,7 @@ namespace HMA
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label5.Location = new System.Drawing.Point(247, 161);
+            this.label5.Location = new System.Drawing.Point(328, 168);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 23);
             this.label5.TabIndex = 195;
@@ -193,10 +195,10 @@ namespace HMA
             this.Dtdegree.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtdegree.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtdegree.ForeColor = System.Drawing.Color.Black;
-            this.Dtdegree.Location = new System.Drawing.Point(693, 37);
+            this.Dtdegree.Location = new System.Drawing.Point(842, 44);
             this.Dtdegree.Multiline = true;
             this.Dtdegree.Name = "Dtdegree";
-            this.Dtdegree.Size = new System.Drawing.Size(499, 46);
+            this.Dtdegree.Size = new System.Drawing.Size(511, 46);
             this.Dtdegree.TabIndex = 194;
             // 
             // label1
@@ -204,7 +206,7 @@ namespace HMA
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label1.Location = new System.Drawing.Point(698, 5);
+            this.label1.Location = new System.Drawing.Point(847, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 23);
             this.label1.TabIndex = 193;
@@ -216,10 +218,10 @@ namespace HMA
             this.Dtlnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtlnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtlnametxt.ForeColor = System.Drawing.Color.Black;
-            this.Dtlnametxt.Location = new System.Drawing.Point(250, 112);
+            this.Dtlnametxt.Location = new System.Drawing.Point(331, 119);
             this.Dtlnametxt.Multiline = true;
             this.Dtlnametxt.Name = "Dtlnametxt";
-            this.Dtlnametxt.Size = new System.Drawing.Size(406, 46);
+            this.Dtlnametxt.Size = new System.Drawing.Size(467, 46);
             this.Dtlnametxt.TabIndex = 190;
             // 
             // Dtfnametxt
@@ -228,10 +230,10 @@ namespace HMA
             this.Dtfnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtfnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtfnametxt.ForeColor = System.Drawing.Color.Black;
-            this.Dtfnametxt.Location = new System.Drawing.Point(251, 37);
+            this.Dtfnametxt.Location = new System.Drawing.Point(332, 44);
             this.Dtfnametxt.Multiline = true;
             this.Dtfnametxt.Name = "Dtfnametxt";
-            this.Dtfnametxt.Size = new System.Drawing.Size(405, 46);
+            this.Dtfnametxt.Size = new System.Drawing.Size(466, 46);
             this.Dtfnametxt.TabIndex = 188;
             // 
             // label2
@@ -239,7 +241,7 @@ namespace HMA
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label2.Location = new System.Drawing.Point(246, 5);
+            this.label2.Location = new System.Drawing.Point(327, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 23);
             this.label2.TabIndex = 187;
@@ -314,7 +316,7 @@ namespace HMA
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label3.Location = new System.Drawing.Point(246, 86);
+            this.label3.Location = new System.Drawing.Point(327, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 23);
             this.label3.TabIndex = 189;
@@ -341,10 +343,10 @@ namespace HMA
             this.Dtvisitingdys.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtvisitingdys.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtvisitingdys.ForeColor = System.Drawing.Color.Black;
-            this.Dtvisitingdys.Location = new System.Drawing.Point(692, 187);
+            this.Dtvisitingdys.Location = new System.Drawing.Point(841, 194);
             this.Dtvisitingdys.Multiline = true;
             this.Dtvisitingdys.Name = "Dtvisitingdys";
-            this.Dtvisitingdys.Size = new System.Drawing.Size(500, 46);
+            this.Dtvisitingdys.Size = new System.Drawing.Size(512, 46);
             this.Dtvisitingdys.TabIndex = 204;
             // 
             // label6
@@ -352,7 +354,7 @@ namespace HMA
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label6.Location = new System.Drawing.Point(698, 161);
+            this.label6.Location = new System.Drawing.Point(847, 168);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 23);
             this.label6.TabIndex = 203;
@@ -364,10 +366,10 @@ namespace HMA
             this.DtApt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DtApt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtApt.ForeColor = System.Drawing.Color.Black;
-            this.DtApt.Location = new System.Drawing.Point(691, 276);
+            this.DtApt.Location = new System.Drawing.Point(840, 283);
             this.DtApt.Multiline = true;
             this.DtApt.Name = "DtApt";
-            this.DtApt.Size = new System.Drawing.Size(501, 46);
+            this.DtApt.Size = new System.Drawing.Size(513, 46);
             this.DtApt.TabIndex = 208;
             // 
             // label7
@@ -375,7 +377,7 @@ namespace HMA
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label7.Location = new System.Drawing.Point(698, 250);
+            this.label7.Location = new System.Drawing.Point(847, 257);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(159, 23);
             this.label7.TabIndex = 207;
@@ -387,10 +389,10 @@ namespace HMA
             this.Dtvisithrs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Dtvisithrs.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dtvisithrs.ForeColor = System.Drawing.Color.Black;
-            this.Dtvisithrs.Location = new System.Drawing.Point(249, 276);
+            this.Dtvisithrs.Location = new System.Drawing.Point(330, 283);
             this.Dtvisithrs.Multiline = true;
             this.Dtvisithrs.Name = "Dtvisithrs";
-            this.Dtvisithrs.Size = new System.Drawing.Size(407, 46);
+            this.Dtvisithrs.Size = new System.Drawing.Size(468, 46);
             this.Dtvisithrs.TabIndex = 206;
             // 
             // label9
@@ -398,18 +400,29 @@ namespace HMA
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Bodoni MT", 11.2F);
-            this.label9.Location = new System.Drawing.Point(246, 250);
+            this.label9.Location = new System.Drawing.Point(327, 257);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(135, 23);
             this.label9.TabIndex = 205;
             this.label9.Text = "Visiting Hours :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(673, 411);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(104, 23);
+            this.label10.TabIndex = 209;
+            this.label10.Text = "Doctor List";
             // 
             // AddDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1224, 779);
+            this.ClientSize = new System.Drawing.Size(1571, 779);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.DtApt);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Dtvisithrs);
@@ -475,5 +488,6 @@ namespace HMA
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Dtvisithrs;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -54,9 +54,9 @@ namespace DataLayer_HMA.Operations
             con.Close();
         }
 
-        public void DeleteDonors(int key)
+        public void DeleteDoctors(int key)
         {
-            string Query = "Delete from DonorTbl where DoID=" + key + "";
+            string Query = "Delete from DoctorTbl where Did=" + key + "";
             SqlConnection con = new SqlConnection(db.connect);
             con.Open();
             SqlCommand cmd = new SqlCommand(Query, con);
