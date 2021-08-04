@@ -125,6 +125,7 @@ namespace HMA
             this.btnexit.TabIndex = 30;
             this.btnexit.Text = "EXIT";
             this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click_1);
             // 
             // panel1
             // 
@@ -179,12 +180,12 @@ namespace HMA
             this.pictureBox1.Image = global::HMA.Properties.Resources.Data_integration;
             this.pictureBox1.Location = new System.Drawing.Point(-6, -61);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1024, 728);
+            this.pictureBox1.Size = new System.Drawing.Size(1026, 728);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -193,7 +194,7 @@ namespace HMA
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

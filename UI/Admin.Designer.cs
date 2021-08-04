@@ -273,9 +273,9 @@ namespace HMA
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Lime;
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, -6);
+            this.pictureBox2.Location = new System.Drawing.Point(-8, -6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1209, 770);
+            this.pictureBox2.Size = new System.Drawing.Size(1214, 770);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -299,6 +299,7 @@ namespace HMA
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);

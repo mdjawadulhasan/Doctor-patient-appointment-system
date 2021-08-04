@@ -54,5 +54,10 @@ namespace HMA
             
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

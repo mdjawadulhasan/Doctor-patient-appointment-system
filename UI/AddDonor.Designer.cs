@@ -401,6 +401,7 @@ namespace HMA
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddDonor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddDonor";
             this.Load += new System.EventHandler(this.AddDonor_Load);
             this.panel1.ResumeLayout(false);

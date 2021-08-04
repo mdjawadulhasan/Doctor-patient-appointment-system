@@ -47,5 +47,11 @@ namespace HMA
                 }
             }
         }
+
+        private void btnexit_Click_1(object sender, EventArgs e)
+        {
+            new loginorsignup();
+            this.Close();
+        }
     }
 }
