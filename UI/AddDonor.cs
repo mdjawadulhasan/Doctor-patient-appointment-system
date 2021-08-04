@@ -31,29 +31,29 @@ namespace HMA
             Donor d = new Donor(AD);
             DonorOperations op = new DonorOperations();
 
-            if (Dfnametxt.Text == null || Dfnametxt.Text.Equals(null) || Dfnametxt.Text.Equals(""))
+            if (String.IsNullOrEmpty(Dfnametxt.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("First Name Field Can Not Be Empty!");
             }
-            else if (Dlnametxt.Text == null || Dlnametxt.Text.Equals(null) || Dfnametxt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dlnametxt.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("Last Name Field Can Not Be Empty!");
             }
-            else if (Dphontxt.Text == null || Dphontxt.Text.Equals(null) || Dphontxt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dphontxt.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("Phone  Field Can Not Be Empty!");
             }
-            else if (DBloodGrpcb.SelectedItem == null || DBloodGrpcb.SelectedItem.Equals(null))
+            else if (String.IsNullOrEmpty(DBloodGrpcb.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("Blood Group Field Can Not Be Empty!");
             }
-            else if (Dareatxt.Text == null || Dareatxt.Text.Equals(null) || Dareatxt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dareatxt.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("Area Field Can Not Be Empty!");
             }
-            else if (Dcitytxt.Text == null || Dcitytxt.Text.Equals(null) || Dcitytxt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dcitytxt.Text))
             {
-                MessageBox.Show("Name Field Can Not Be Empty!");
+                MessageBox.Show("City Field Can Not Be Empty!");
             }
 
             else
@@ -101,6 +101,31 @@ namespace HMA
             {
                 MessageBox.Show("Select the Patient");
             }
+            else if (String.IsNullOrEmpty(Dfnametxt.Text))
+            {
+                MessageBox.Show("First Name Field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dlnametxt.Text))
+            {
+                MessageBox.Show("Last Name Field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dphontxt.Text))
+            {
+                MessageBox.Show("Phone  Field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(DBloodGrpcb.Text))
+            {
+                MessageBox.Show("Blood Group Field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dareatxt.Text))
+            {
+                MessageBox.Show("Area Field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dcitytxt.Text))
+            {
+                MessageBox.Show("City Field Can Not Be Empty!");
+            }
+
             else
             {
                 d.FirstName = Dfnametxt.Text;

@@ -26,35 +26,36 @@ namespace HMA
             Doctor dr = new Doctor();
             DoctorOperations OP = new DoctorOperations();
 
-            if (Dtfnametxt.Text == null || Dtfnametxt.Text.Equals(null) || Dtfnametxt.Text.Equals(""))
+            
+            if (String.IsNullOrEmpty(Dtfnametxt.Text))
             {
                 MessageBox.Show("First Name field Can Not Be Empty!");
             }
-            else if (Dtlnametxt.Text == null || Dtlnametxt.Text.Equals(null) || Dtlnametxt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dtlnametxt.Text))
             {
                 MessageBox.Show("Last Name field  Can Not Be Empty!");
-            } 
-            else if (Dtvisitingdys.Text == null || Dtvisitingdys.Text.Equals(null) || Dtvisitingdys.Text.Equals(""))
+            }
+            else if (String.IsNullOrEmpty(Dtvisitingdys.Text))
             {
                 MessageBox.Show("Visiting days field   Can Not Be Empty!");
             }
-            else if (Dtvisithrs.Text == null || Dtvisithrs.Text.Equals(null) || Dtvisithrs.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dtvisithrs.Text))
             {
                 MessageBox.Show("Visiting hours field Can Not Be Empty!");
             }
-            else if (Dtcham.Text == null || Dtcham.Text.Equals(null) || Dtcham.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dtcham.Text))
             {
                 MessageBox.Show("Chamber Name field  Can Not Be Empty!");
             }
-            else if (Dtdegree.Text == null || Dtdegree.Text.Equals(null) || Dtdegree.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dtdegree.Text))
             {
                 MessageBox.Show("Degree field  Can Not Be Empty!");
             }
-            else if (Dtdept.Text == null || Dtdept.Text.Equals(null) || Dtdept.Text.Equals(""))
+            else if (String.IsNullOrEmpty(Dtdept.Text))
             {
                 MessageBox.Show("Department Name field  Can Not Be Empty!");
             }
-            else if (DtApt.Text == null || DtApt.Text.Equals(null) || DtApt.Text.Equals(""))
+            else if (String.IsNullOrEmpty(DtApt.Text))
             {
                 MessageBox.Show("Appointmnet time field Can Not Be Empty!");
             }
@@ -114,6 +115,40 @@ namespace HMA
             {
                 MessageBox.Show("Select the DOCTOR");
             }
+
+            else if (String.IsNullOrEmpty(Dtfnametxt.Text))
+            {
+                MessageBox.Show("First Name field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtlnametxt.Text))
+            {
+                MessageBox.Show("Last Name field  Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtvisitingdys.Text))
+            {
+                MessageBox.Show("Visiting days field   Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtvisithrs.Text))
+            {
+                MessageBox.Show("Visiting hours field Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtcham.Text))
+            {
+                MessageBox.Show("Chamber Name field  Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtdegree.Text))
+            {
+                MessageBox.Show("Degree field  Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(Dtdept.Text))
+            {
+                MessageBox.Show("Department Name field  Can Not Be Empty!");
+            }
+            else if (String.IsNullOrEmpty(DtApt.Text))
+            {
+                MessageBox.Show("Appointmnet time field Can Not Be Empty!");
+            }
+
             else
             {
 

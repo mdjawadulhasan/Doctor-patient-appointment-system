@@ -9,6 +9,8 @@ namespace DataLayer_HMA.Entity
     public class Person
     {
         public string FirstName { get; set; }
+
+        public int id { get; set; }
         public string LastName { get; set; }
         public string Password { get; set; }
         public string UserName { get; set; }
@@ -21,6 +23,8 @@ namespace DataLayer_HMA.Entity
         public string BloodGroup { get; set; }
 
         public string Phone { get; set; }
+
+        
 
         //public enum PersonTypeEnum { Patient = 1, Doctor, Admin }
         public int PersonType { get; set; }
@@ -43,10 +47,11 @@ namespace DataLayer_HMA.Entity
             this.address = address;
         }
 
-        public Person(string firstName, string lastName, string phone, string UserName, string Password)
+        public Person(string firstName, string lastName,int id, string phone, string UserName, string Password)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
+            this.id = id;
             this.Phone = phone;
             this.UserName = UserName;
             this.Password = Password;

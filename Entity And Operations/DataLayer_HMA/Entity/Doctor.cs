@@ -21,10 +21,11 @@ namespace DataLayer_HMA.Entity
 
         }
 
-        public Doctor(string firstName, string lastName, string phone, string UserName, string Password, string Degree, string Department, string Chammber, string visiting_days, string Visitng_Hours, string Appoinment_CallNo):base(firstName,lastName, phone,  UserName, Password)
+        public Doctor(string firstName, string lastName,int id, string phone, string UserName, string Password, string Degree, string Department, string Chammber, string visiting_days, string Visitng_Hours, string Appoinment_CallNo):base(firstName,lastName, id,phone,  UserName, Password)
         {
             this.FirstName = firstName;
             this.LastName = lastName;
+            this.id = id;
             this.Phone = phone;
             this.UserName = UserName;
             this.Password = Password;

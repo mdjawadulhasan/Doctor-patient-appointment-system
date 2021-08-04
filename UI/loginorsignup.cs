@@ -20,25 +20,40 @@ namespace HMA
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)//login
         {
-            //string s = rolecb.SelectedItem.ToString();
-            //if (s == "Patient")
-            //{
-            //    p.PersonType = 1;
-            //}
-            //else if (s == "Doctor")
-            //{
-            //    p.PersonType = 2;
-            //}
-           
-          
+            string s = rolecb.SelectedItem.ToString();
+            if (s == "Patient")
+            {
+                p.PersonType = 1;
+            }
+            else if (s == "Doctor")
+            {
+                p.PersonType = 2;
+            }
+
+            
+            new Login(p).Show();
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)//signup
         {
-            //new Registration().Show();
-            //this.Close();
+            string s = rolecb.SelectedItem.ToString();
+            if (s == "Patient")
+            {
+                p.PersonType = 1;
+            }
+            else if (s == "Doctor")
+            {
+                p.PersonType = 2;
+            }
+
+            if(p.PersonType==2)
+            {
+                new DoctorSIgnup_UI().Show();
+                this.Close();
+            }
         }
 
         private void adminlb_Click(object sender, EventArgs e)

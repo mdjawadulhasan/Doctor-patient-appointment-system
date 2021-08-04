@@ -33,18 +33,24 @@ namespace HMA
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if(persontype==3)
+            string pass = textpassword.Text;
+            string user = textusrname.Text;
+            if (persontype == 3)
             {
-                if(textpassword.Text=="admin" && textusrname.Text=="admin")
+                if (pass == "admin" && user == "admin")
                 {
                     new Admin().Show();
-                    
+
                     this.Close();
                 }
                 else
                 {
                     MessageBox.Show("Credentials Incorrect");
                 }
+            }
+            else if (persontype == 2)
+            {
+                
             }
         }
 
