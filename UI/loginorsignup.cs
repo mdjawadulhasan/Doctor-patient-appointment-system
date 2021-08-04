@@ -14,7 +14,7 @@ namespace HMA
     public partial class loginorsignup : Form
     {
         Person p = new Person();
-       
+
         public loginorsignup()
         {
             InitializeComponent();
@@ -22,37 +22,56 @@ namespace HMA
 
         private void button1_Click(object sender, EventArgs e)//login
         {
-            string s = rolecb.SelectedItem.ToString();
-            if (s == "Patient")
+
+            if (rolecb.SelectedItem == null)
             {
-                p.PersonType = 1;
-            }
-            else if (s == "Doctor")
-            {
-                p.PersonType = 2;
+                MessageBox.Show("Select the role");
             }
 
-            
-            new Login(p).Show();
+            else
+            {
+                string s = rolecb.SelectedItem.ToString();
+                if (s == "Patient")
+                {
+                    p.PersonType = 1;
+                }
+                else if (s == "Doctor")
+                {
+                    p.PersonType = 2;
+                }
+
+
+                new Login(p).Show();
+                this.Hide();
+            }
 
         }
 
         private void button2_Click(object sender, EventArgs e)//signup
         {
-            string s = rolecb.SelectedItem.ToString();
-            if (s == "Patient")
-            {
-                p.PersonType = 1;
-            }
-            else if (s == "Doctor")
-            {
-                p.PersonType = 2;
-            }
 
-            if(p.PersonType==2)
+            if (rolecb.SelectedItem == null)
             {
-                new DoctorSIgnup_UI().Show();
-                this.Close();
+                MessageBox.Show("Select the role");
+            }
+         
+            else
+            {
+                string s = rolecb.SelectedItem.ToString();
+                if (s == "Patient")
+                {
+                    p.PersonType = 1;
+                }
+                else if (s == "Doctor")
+                {
+                    p.PersonType = 2;
+                }
+
+                if (p.PersonType == 2)
+                {
+                    new DoctorSIgnup_UI().Show();
+                    this.Hide();
+                }
             }
         }
 
@@ -60,14 +79,14 @@ namespace HMA
         {
             new Login(p).Show();
             this.Hide();
-            
+
         }
 
         private void loginorsignup_Load(object sender, EventArgs e)
         {
             p.PersonType = 3;
-            
-            
+
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

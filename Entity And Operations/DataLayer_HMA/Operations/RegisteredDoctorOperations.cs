@@ -76,39 +76,39 @@ namespace DataLayer_HMA.Operations
             return count;
         }
 
-        //public Doctor GetPerson(String UserName, String Password)
-        //{
-        //    Doctor D = null;
-        //    String Query = "select Rdid,Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall from RegisteredDtTbl Dtusername='" + UserName + "' AND Dtpassword='" + Password + "';";
-        //    try
-        //    {
-        //        SqlConnection con = new SqlConnection(db.connect);
-        //        con.Open();
-        //        SqlCommand cmd = new SqlCommand(Query, con);
-        //        SqlDataReader reader =cmd.ExecuteReader();
+        public Doctor GetPerson(String UserName, String Password)
+        {
+            Doctor D = null;
+            String Query = "select Rdid,Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall from RegisteredDtTbl where Dtusername='" + UserName + "' AND Dtpassword='" + Password + "';";
+            try
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
 
-        //        while (reader.Read())
-        //        {
-        //            D = new Doctor();
-        //            p.UserName = reader.GetString(0);
-        //            p.FullName = reader.GetString(1);
-        //            p.Password = reader.GetString(2);
-        //            p.Age = reader.GetInt32(3);
-        //            p.Gender = reader.GetInt32(4);
-        //            p.Address = reader.GetString(5);
-        //            p.Mail = reader.GetString(6);
-        //            p.Phone = reader.GetInt32(7);
-        //            p.PersonType = reader.GetInt32(8);
-        //            p.ProfilePic = reader.GetString(9).Trim();
-        //        }
-        //        reader.Close();
-        //        dbc.con.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex.Message);
-        //    }
-        //    return p;
-        //}
+                while (reader.Read())
+                {
+                    D = new Doctor();
+                    D.id= reader.GetInt32(0);
+                    D.FirstName = reader.GetString(1);
+                    D.LastName = reader.GetString(2);
+                    D.Degree = reader.GetString(3);
+                    D.Department = reader.GetString(4);
+                    D.Chammber = reader.GetString(5);
+                    D.Visitng_Hours = reader.GetString(6);
+                    D.visiting_days = reader.GetString(7);
+                    D.Appoinment_CallNo= reader.GetString(8);
+
+                }
+                reader.Close();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return D;
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DataLayer_HMA.Entity;
+using DataLayer_HMA.Operations;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,13 +51,26 @@ namespace HMA
             }
             else if (persontype == 2)
             {
-                
+                RegisteredDoctorOperations op = new RegisteredDoctorOperations();
+                Doctor D = op.GetPerson(user, pass);
+                if (D == null)
+                {
+                    MessageBox.Show("Credentials Incorrect");
+
+                }
+                else
+                {
+                    MessageBox.Show("Login Succesful ! ,"+D.FirstName);
+                    new Doctor_UI(D).Show();
+                    this.Close();
+                }
+
             }
         }
 
         private void btnexit_Click_1(object sender, EventArgs e)
         {
-            new loginorsignup();
+            new loginorsignup().Show();
             this.Close();
         }
     }

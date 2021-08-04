@@ -82,8 +82,8 @@ namespace HMA
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            new loginorsignup();
-            this.Close();
+            new loginorsignup().Show();
+            this.Hide();
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
@@ -104,7 +104,7 @@ namespace HMA
                 MessageBox.Show("This Doctor Already Exists in the system");
             }
 
-            if (String.IsNullOrEmpty(RDtfnametxt.Text))
+            else if (String.IsNullOrEmpty(RDtfnametxt.Text))
             {
                 MessageBox.Show(" First Name Field Can Not Be Empty!");
             }
