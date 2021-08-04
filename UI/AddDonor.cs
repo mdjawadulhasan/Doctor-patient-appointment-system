@@ -31,14 +31,52 @@ namespace HMA
             Donor d = new Donor(AD);
             DonorOperations op = new DonorOperations();
 
-            d.FirstName = Dfnametxt.Text;
-            d.LastName = Dlnametxt.Text;
-            d.Phone = Dphontxt.Text;
-            d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
-            d.address.Area = Dareatxt.Text;
-            d.address.City = Dcitytxt.Text;
-            op.InsertDonor(d);
-            populateData();
+            if (Dfnametxt.Text == null || Dfnametxt.Text.Equals(null) || Dfnametxt.Text.Equals(""))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+            else if (Dlnametxt.Text == null || Dlnametxt.Text.Equals(null) || Dfnametxt.Text.Equals(""))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+            else if (Dphontxt.Text == null || Dphontxt.Text.Equals(null) || Dphontxt.Text.Equals(""))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+            else if (DBloodGrpcb.SelectedItem == null || DBloodGrpcb.SelectedItem.Equals(null))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+            else if (Dareatxt.Text == null || Dareatxt.Text.Equals(null) || Dareatxt.Text.Equals(""))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+            else if (Dcitytxt.Text == null || Dcitytxt.Text.Equals(null) || Dcitytxt.Text.Equals(""))
+            {
+                MessageBox.Show("Name Field Can Not Be Empty!");
+            }
+
+            else
+            {
+                d.FirstName = Dfnametxt.Text;
+                d.LastName = Dlnametxt.Text;
+                d.Phone = Dphontxt.Text;
+                d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
+                d.address.Area = Dareatxt.Text;
+                d.address.City = Dcitytxt.Text;
+
+                try
+                {
+
+                    op.InsertDonor(d);
+                    populateData();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
         }
 
         private void AddDonor_Load(object sender, EventArgs e)
@@ -91,7 +129,7 @@ namespace HMA
             {
                 DataGridViewRow row = this.DonorDGV.Rows[e.RowIndex];
                 Dfnametxt.Text = row.Cells["Dfname"].Value.ToString();
-                Dlnametxt.Text = row.Cells["Dlfname"].Value.ToString();
+                Dlnametxt.Text = row.Cells["Dlname"].Value.ToString();
                 Dphontxt.Text = row.Cells["Dphone"].Value.ToString();
                 DBloodGrpcb.Text = row.Cells["DBGrp"].Value.ToString();
                 Dcitytxt.Text = row.Cells["Dcity"].Value.ToString();

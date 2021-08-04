@@ -41,6 +41,10 @@ namespace HMA
                     
                     this.Close();
                 }
+                else
+                {
+                    MessageBox.Show("Credentials Incorrect");
+                }
             }
         }
     }

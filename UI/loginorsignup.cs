@@ -22,23 +22,23 @@ namespace HMA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string s = rolecb.SelectedItem.ToString();
-            if (s == "Patient")
-            {
-                p.PersonType = 1;
-            }
-            else if (s == "Doctor")
-            {
-                p.PersonType = 2;
-            }
+            //string s = rolecb.SelectedItem.ToString();
+            //if (s == "Patient")
+            //{
+            //    p.PersonType = 1;
+            //}
+            //else if (s == "Doctor")
+            //{
+            //    p.PersonType = 2;
+            //}
            
           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Registration().Show();
-            this.Close();
+            //new Registration().Show();
+            //this.Close();
         }
 
         private void adminlb_Click(object sender, EventArgs e)
