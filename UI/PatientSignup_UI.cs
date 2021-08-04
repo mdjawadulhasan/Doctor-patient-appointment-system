@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class Registration : Form
+    public partial class PatientSignup_UI : Form
     {
-        public Registration()
+        public PatientSignup_UI()
         {
             InitializeComponent();
         }

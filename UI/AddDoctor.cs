@@ -92,9 +92,10 @@ namespace HMA
         {
 
             populateData();
-            DoctorDGV.Columns["Dtfname"].HeaderText = "ID";
-            DoctorDGV.Columns["Dtlname"].HeaderText = "First Name";
-            DoctorDGV.Columns["Dtdegree"].HeaderText = "Last Name";
+            DoctorDGV.Columns["Did"].HeaderText = "ID";
+            DoctorDGV.Columns["Dtfname"].HeaderText = "First Name";
+            DoctorDGV.Columns["Dtlname"].HeaderText = "Last Name";
+            DoctorDGV.Columns["Dtdegree"].HeaderText = "Degree";
             DoctorDGV.Columns["Dtdept"].HeaderText = "Department";
             DoctorDGV.Columns["Dtchamber"].HeaderText = "Chamber";
             DoctorDGV.Columns["Dtvhours"].HeaderText = "Visiting Hours";
