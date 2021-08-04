@@ -31,19 +31,19 @@ namespace HMA
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.RDtvhours = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.RDtvisitingdys = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.RDtcham = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.RDtdegree = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.RDtdept = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.RDtlnametxt = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.textusrname = new System.Windows.Forms.TextBox();
+            this.RDtfnametxt = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@ namespace HMA
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.RDtApt = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.label15 = new System.Windows.Forms.Label();
             this.RegDoctorDGV = new System.Windows.Forms.DataGridView();
@@ -73,6 +73,7 @@ namespace HMA
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.SeacrhBtn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -80,135 +81,136 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.RegDoctorDGV)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox6
+            // RDtvhours
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Teal;
-            this.textBox6.Location = new System.Drawing.Point(207, 441);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(283, 31);
-            this.textBox6.TabIndex = 201;
+            this.RDtvhours.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtvhours.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtvhours.ForeColor = System.Drawing.Color.Teal;
+            this.RDtvhours.Location = new System.Drawing.Point(207, 461);
+            this.RDtvhours.Multiline = true;
+            this.RDtvhours.Name = "RDtvhours";
+            this.RDtvhours.Size = new System.Drawing.Size(283, 31);
+            this.RDtvhours.TabIndex = 201;
+            this.RDtvhours.TextChanged += new System.EventHandler(this.RDtvhours_TextChanged);
             // 
             // flowLayoutPanel7
             // 
             this.flowLayoutPanel7.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(197, 478);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(193, 498);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel7.TabIndex = 200;
             // 
-            // textBox5
+            // RDtvisitingdys
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Teal;
-            this.textBox5.Location = new System.Drawing.Point(207, 383);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(283, 31);
-            this.textBox5.TabIndex = 199;
+            this.RDtvisitingdys.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtvisitingdys.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtvisitingdys.ForeColor = System.Drawing.Color.Teal;
+            this.RDtvisitingdys.Location = new System.Drawing.Point(214, 413);
+            this.RDtvisitingdys.Multiline = true;
+            this.RDtvisitingdys.Name = "RDtvisitingdys";
+            this.RDtvisitingdys.Size = new System.Drawing.Size(283, 31);
+            this.RDtvisitingdys.TabIndex = 199;
             // 
             // flowLayoutPanel6
             // 
             this.flowLayoutPanel6.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(197, 420);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(196, 448);
             this.flowLayoutPanel6.Name = "flowLayoutPanel6";
             this.flowLayoutPanel6.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel6.TabIndex = 198;
             // 
-            // textBox4
+            // RDtcham
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Teal;
-            this.textBox4.Location = new System.Drawing.Point(214, 332);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(283, 31);
-            this.textBox4.TabIndex = 197;
+            this.RDtcham.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtcham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtcham.ForeColor = System.Drawing.Color.Teal;
+            this.RDtcham.Location = new System.Drawing.Point(180, 339);
+            this.RDtcham.Multiline = true;
+            this.RDtcham.Name = "RDtcham";
+            this.RDtcham.Size = new System.Drawing.Size(283, 31);
+            this.RDtcham.TabIndex = 197;
             // 
             // flowLayoutPanel5
             // 
             this.flowLayoutPanel5.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(204, 369);
+            this.flowLayoutPanel5.Location = new System.Drawing.Point(170, 376);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel5.TabIndex = 196;
             // 
-            // textBox3
+            // RDtdegree
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Teal;
-            this.textBox3.Location = new System.Drawing.Point(207, 275);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(283, 31);
-            this.textBox3.TabIndex = 195;
+            this.RDtdegree.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtdegree.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtdegree.ForeColor = System.Drawing.Color.Teal;
+            this.RDtdegree.Location = new System.Drawing.Point(190, 285);
+            this.RDtdegree.Multiline = true;
+            this.RDtdegree.Name = "RDtdegree";
+            this.RDtdegree.Size = new System.Drawing.Size(283, 31);
+            this.RDtdegree.TabIndex = 195;
             // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(197, 312);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(172, 320);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
             this.flowLayoutPanel4.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel4.TabIndex = 194;
             // 
-            // textBox2
+            // RDtdept
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Teal;
-            this.textBox2.Location = new System.Drawing.Point(207, 228);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(283, 31);
-            this.textBox2.TabIndex = 193;
+            this.RDtdept.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtdept.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtdept.ForeColor = System.Drawing.Color.Teal;
+            this.RDtdept.Location = new System.Drawing.Point(192, 241);
+            this.RDtdept.Multiline = true;
+            this.RDtdept.Name = "RDtdept";
+            this.RDtdept.Size = new System.Drawing.Size(283, 31);
+            this.RDtdept.TabIndex = 193;
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(197, 265);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(172, 278);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel3.TabIndex = 192;
             // 
-            // textBox1
+            // RDtlnametxt
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Teal;
-            this.textBox1.Location = new System.Drawing.Point(207, 173);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 31);
-            this.textBox1.TabIndex = 191;
+            this.RDtlnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtlnametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtlnametxt.ForeColor = System.Drawing.Color.Teal;
+            this.RDtlnametxt.Location = new System.Drawing.Point(192, 180);
+            this.RDtlnametxt.Multiline = true;
+            this.RDtlnametxt.Name = "RDtlnametxt";
+            this.RDtlnametxt.Size = new System.Drawing.Size(283, 31);
+            this.RDtlnametxt.TabIndex = 191;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(190, 210);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(175, 217);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel2.TabIndex = 190;
             // 
-            // textusrname
+            // RDtfnametxt
             // 
-            this.textusrname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textusrname.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textusrname.ForeColor = System.Drawing.Color.Teal;
-            this.textusrname.Location = new System.Drawing.Point(207, 129);
-            this.textusrname.Multiline = true;
-            this.textusrname.Name = "textusrname";
-            this.textusrname.Size = new System.Drawing.Size(283, 31);
-            this.textusrname.TabIndex = 189;
+            this.RDtfnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtfnametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtfnametxt.ForeColor = System.Drawing.Color.Teal;
+            this.RDtfnametxt.Location = new System.Drawing.Point(193, 141);
+            this.RDtfnametxt.Multiline = true;
+            this.RDtfnametxt.Name = "RDtfnametxt";
+            this.RDtfnametxt.Size = new System.Drawing.Size(283, 31);
+            this.RDtfnametxt.TabIndex = 189;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(190, 166);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(176, 178);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel1.TabIndex = 188;
@@ -218,7 +220,7 @@ namespace HMA
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(42, 385);
+            this.label10.Location = new System.Drawing.Point(38, 413);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(159, 29);
             this.label10.TabIndex = 187;
@@ -229,7 +231,7 @@ namespace HMA
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(25, 443);
+            this.label9.Location = new System.Drawing.Point(21, 463);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 29);
             this.label9.TabIndex = 186;
@@ -240,7 +242,7 @@ namespace HMA
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(91, 343);
+            this.label8.Location = new System.Drawing.Point(69, 341);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(117, 29);
             this.label8.TabIndex = 185;
@@ -251,7 +253,7 @@ namespace HMA
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(59, 243);
+            this.label7.Location = new System.Drawing.Point(37, 243);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(149, 29);
             this.label7.TabIndex = 184;
@@ -262,7 +264,7 @@ namespace HMA
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 299);
+            this.label1.Location = new System.Drawing.Point(91, 287);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 29);
             this.label1.TabIndex = 183;
@@ -291,6 +293,7 @@ namespace HMA
             this.btnexit.TabIndex = 182;
             this.btnexit.Text = "EXIT";
             this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // button1
             // 
@@ -311,7 +314,7 @@ namespace HMA
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 501);
+            this.label6.Location = new System.Drawing.Point(0, 515);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(205, 29);
             this.label6.TabIndex = 162;
@@ -322,7 +325,7 @@ namespace HMA
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(63, 182);
+            this.label3.Location = new System.Drawing.Point(42, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 29);
             this.label3.TabIndex = 152;
@@ -333,7 +336,7 @@ namespace HMA
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(59, 131);
+            this.label2.Location = new System.Drawing.Point(42, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 29);
             this.label2.TabIndex = 150;
@@ -341,6 +344,7 @@ namespace HMA
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.flowLayoutPanel10);
             this.panel1.Controls.Add(this.textBox8);
@@ -349,21 +353,21 @@ namespace HMA
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.RDtApt);
             this.panel1.Controls.Add(this.flowLayoutPanel8);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.RDtvhours);
             this.panel1.Controls.Add(this.flowLayoutPanel7);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.RDtvisitingdys);
             this.panel1.Controls.Add(this.flowLayoutPanel6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.RDtcham);
             this.panel1.Controls.Add(this.flowLayoutPanel5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.RDtdegree);
             this.panel1.Controls.Add(this.flowLayoutPanel4);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.RDtdept);
             this.panel1.Controls.Add(this.flowLayoutPanel3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.RDtlnametxt);
             this.panel1.Controls.Add(this.flowLayoutPanel2);
-            this.panel1.Controls.Add(this.textusrname);
+            this.panel1.Controls.Add(this.RDtfnametxt);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
@@ -463,21 +467,21 @@ namespace HMA
             this.label5.TabIndex = 204;
             this.label5.Text = "Password :";
             // 
-            // textBox7
+            // RDtApt
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Teal;
-            this.textBox7.Location = new System.Drawing.Point(207, 499);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(283, 31);
-            this.textBox7.TabIndex = 203;
+            this.RDtApt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RDtApt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RDtApt.ForeColor = System.Drawing.Color.Teal;
+            this.RDtApt.Location = new System.Drawing.Point(204, 513);
+            this.RDtApt.Multiline = true;
+            this.RDtApt.Name = "RDtApt";
+            this.RDtApt.Size = new System.Drawing.Size(283, 31);
+            this.RDtApt.TabIndex = 203;
             // 
             // flowLayoutPanel8
             // 
             this.flowLayoutPanel8.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(197, 536);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(194, 550);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel8.TabIndex = 202;
@@ -511,7 +515,7 @@ namespace HMA
             this.RegDoctorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.RegDoctorDGV.EnableHeadersVisualStyles = false;
             this.RegDoctorDGV.GridColor = System.Drawing.Color.MidnightBlue;
-            this.RegDoctorDGV.Location = new System.Drawing.Point(600, 114);
+            this.RegDoctorDGV.Location = new System.Drawing.Point(617, 114);
             this.RegDoctorDGV.Name = "RegDoctorDGV";
             this.RegDoctorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.RegDoctorDGV.RowHeadersVisible = false;
@@ -524,8 +528,9 @@ namespace HMA
             this.RegDoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.RegDoctorDGV.RowTemplate.Height = 24;
             this.RegDoctorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.RegDoctorDGV.Size = new System.Drawing.Size(467, 594);
+            this.RegDoctorDGV.Size = new System.Drawing.Size(454, 594);
             this.RegDoctorDGV.TabIndex = 203;
+            this.RegDoctorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RegDoctorDGV_CellContentClick);
             // 
             // searchtxt
             // 
@@ -571,6 +576,14 @@ namespace HMA
             this.SeacrhBtn.UseVisualStyleBackColor = false;
             this.SeacrhBtn.Click += new System.EventHandler(this.SeacrhBtn_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Location = new System.Drawing.Point(584, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 741);
+            this.panel2.TabIndex = 212;
+            // 
             // DoctorSIgnup_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -601,19 +614,19 @@ namespace HMA
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox RDtvhours;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox RDtvisitingdys;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox RDtcham;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox RDtdegree;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox RDtdept;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox RDtlnametxt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.TextBox textusrname;
+        private System.Windows.Forms.TextBox RDtfnametxt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -636,12 +649,13 @@ namespace HMA
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox RDtApt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel8;
         private System.Windows.Forms.DataGridView RegDoctorDGV;
         private System.Windows.Forms.TextBox searchtxt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button SeacrhBtn;
+        private System.Windows.Forms.Panel panel2;
     }
 }

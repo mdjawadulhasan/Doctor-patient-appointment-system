@@ -18,7 +18,7 @@ namespace HMA
             InitializeComponent();
         }
 
-          void populateData()
+        void populateData()
         {
             RegisteredDoctorOperations OP = new RegisteredDoctorOperations();
             DataSet ds = OP.ShowAllDoctor();
@@ -34,10 +34,37 @@ namespace HMA
 
         private void DoctorSIgnup_UI_Load(object sender, EventArgs e)
         {
-           
+
             populateData();
             RegDoctorDGV.Columns["Dtfname"].HeaderText = "First Name";
             RegDoctorDGV.Columns["Dtlname"].HeaderText = "Last Name";
+        }
+
+        private void RegDoctorDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.RegDoctorDGV.Rows[e.RowIndex];
+                RDtfnametxt.Text = row.Cells["Dtfname"].Value.ToString();
+                RDtlnametxt.Text = row.Cells["Dtlname"].Value.ToString();
+                RDtdegree.Text = row.Cells["Dtdegree"].Value.ToString();
+                RDtdept.Text = row.Cells["Dtdept"].Value.ToString();
+                RDtcham.Text = row.Cells["Dtchamber"].Value.ToString();
+                RDtvhours.Text = row.Cells["Dtvhours"].Value.ToString();
+                RDtvisitingdys.Text = row.Cells["Dtvdays"].Value.ToString();
+                RDtApt.Text = row.Cells["Dtaptcall"].Value.ToString();
+            }
+        }
+
+        private void RDtvhours_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            new loginorsignup();
+            this.Close();
         }
     }
 }
