@@ -28,5 +28,63 @@ namespace DataLayer_HMA.Operations
             }
 
         }
+
+        public int CheckSignup(string username)
+        {
+            int count = 0;
+                                                                 
+            string Query = "select count(*) from PatientTbl where Pusername='" + username + "'";
+            try         
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                
+                count = (Int32)cmd.ExecuteScalar();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return count;
+        }
+
+
+        public Patient GetPatient(String UserName, String Password)
+        {
+            Patient P = null;
+            String Query = "select Pid,Pfname,Plname,Pcontactno,Pgender,Page,Pheight,Pweight,Pbldgrp,PcrnDis,Pusername,PPassword from PatientTbl where Pusername='" + UserName + "' AND Ppassword='" + Password + "';";
+            try
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    P = new Patient();
+                    P.id = reader.GetInt32(0);
+                    P.FirstName = reader.GetString(1);
+                    P.LastName = reader.GetString(2);
+                    P.Phone = reader.GetString(3);
+                    P.Gender = reader.GetString(4);
+                    P.Age = reader.GetInt32(5);
+                    P.HeightInCm= reader.GetInt32(6);
+                    P.WeightInKg = reader.GetInt32(7);
+                    P.BloodGroup = reader.GetString(8);
+                    P.Diseases = reader.GetString(9);
+
+                }
+                reader.Close();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return P;
+        }
     }
 }

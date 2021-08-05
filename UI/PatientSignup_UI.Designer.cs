@@ -36,7 +36,6 @@ namespace HMA
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -151,18 +150,6 @@ namespace HMA
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 154;
             this.pictureBox4.TabStop = false;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(547, 489);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(217, 31);
-            this.textBox7.TabIndex = 155;
             // 
             // label8
             // 
@@ -320,7 +307,7 @@ namespace HMA
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.label9.Font = new System.Drawing.Font("Bodoni MT", 16.2F);
-            this.label9.Location = new System.Drawing.Point(146, 469);
+            this.label9.Location = new System.Drawing.Point(333, 460);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(51, 34);
             this.label9.TabIndex = 169;
@@ -331,7 +318,7 @@ namespace HMA
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
             this.label10.Font = new System.Drawing.Font("Bodoni MT", 16.2F);
-            this.label10.Location = new System.Drawing.Point(326, 469);
+            this.label10.Location = new System.Drawing.Point(141, 460);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 34);
             this.label10.TabIndex = 170;
@@ -362,9 +349,9 @@ namespace HMA
             "AB-",
             "0+",
             "0-"});
-            this.Pbgrptxt.Location = new System.Drawing.Point(419, 462);
+            this.Pbgrptxt.Location = new System.Drawing.Point(409, 455);
             this.Pbgrptxt.Name = "Pbgrptxt";
-            this.Pbgrptxt.Size = new System.Drawing.Size(337, 39);
+            this.Pbgrptxt.Size = new System.Drawing.Size(187, 39);
             this.Pbgrptxt.TabIndex = 172;
             // 
             // label13
@@ -484,6 +471,7 @@ namespace HMA
             this.btnexit.TabIndex = 182;
             this.btnexit.Text = "EXIT";
             this.btnexit.UseVisualStyleBackColor = false;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // label14
             // 
@@ -550,7 +538,6 @@ namespace HMA
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
@@ -593,7 +580,6 @@ namespace HMA
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox5;

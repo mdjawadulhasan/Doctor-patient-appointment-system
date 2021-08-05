@@ -179,7 +179,7 @@ namespace HMA
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(240, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(955, 745);
+            this.pictureBox2.Size = new System.Drawing.Size(955, 747);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;

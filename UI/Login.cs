@@ -52,7 +52,7 @@ namespace HMA
             else if (persontype == 2)
             {
                 RegisteredDoctorOperations op = new RegisteredDoctorOperations();
-                Doctor D = op.GetPerson(user, pass);
+                Doctor D = op.GetDoctor(user, pass);
                 if (D == null)
                 {
                     MessageBox.Show("Credentials Incorrect");
@@ -60,8 +60,25 @@ namespace HMA
                 }
                 else
                 {
-                    MessageBox.Show("Login Succesful ! ,"+D.FirstName);
+                    MessageBox.Show("Login Succesful ! ," + D.FirstName);
                     new Doctor_UI(D).Show();
+                    this.Close();
+                }
+
+            }
+            else if (persontype == 1)
+            {
+                PatientOperations op = new PatientOperations();
+                Patient P = op.GetPatient(user, pass);
+                if (P == null)
+                {
+                    MessageBox.Show("Credentials Incorrect");
+
+                }
+                else
+                {
+                    MessageBox.Show("Login Succesful ! ," + P.FirstName);
+                    new Patient_UI(P).Show();
                     this.Close();
                 }
 

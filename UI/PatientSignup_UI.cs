@@ -29,6 +29,7 @@ namespace HMA
             Patient P = new Patient();
             PatientOperations op = new PatientOperations();
 
+
             bool chk = false;
             string Disease = "";
             if (checkpressureb.Checked == true)
@@ -85,16 +86,25 @@ namespace HMA
             P.Password = Ppasstxt.Text;
             P.Diseases = Disease;
 
-            try
-            {
 
-                op.InsertPatient(P);
-                MessageBox.Show("Signup Succes !");
-            }
-            catch (Exception ex)
+            if (op.CheckSignup(P.UserName) >= 1)
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show("Usrname Already Exixsts, Select Another !");
             }
+            else
+            {
+                try
+                {
+
+                    op.InsertPatient(P);
+                    MessageBox.Show("Signup Succes !");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
 
 
 
@@ -105,7 +115,7 @@ namespace HMA
         {
             if (checknoneb.Checked == true)
             {
-                
+
                 checkpressureb.Checked = false;
                 checksugerb.Checked = false;
                 checkheartdb.Checked = false;
@@ -114,6 +124,12 @@ namespace HMA
                 checkallergyb.Checked = false;
 
             }
+        }
+
+        private void btnexit_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Hide();
         }
     }
 }

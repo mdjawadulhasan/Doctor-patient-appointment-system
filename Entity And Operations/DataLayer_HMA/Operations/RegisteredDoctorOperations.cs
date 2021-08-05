@@ -76,7 +76,7 @@ namespace DataLayer_HMA.Operations
             return count;
         }
 
-        public Doctor GetPerson(String UserName, String Password)
+        public Doctor GetDoctor(String UserName, String Password)
         {
             Doctor D = null;
             String Query = "select Rdid,Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall from RegisteredDtTbl where Dtusername='" + UserName + "' AND Dtpassword='" + Password + "';";

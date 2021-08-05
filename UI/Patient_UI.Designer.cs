@@ -45,11 +45,15 @@ namespace HMA
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.Ptname = new System.Windows.Forms.Label();
+            this.Ptphone = new System.Windows.Forms.Label();
+            this.Ptage = new System.Windows.Forms.Label();
+            this.Ptbgrp = new System.Windows.Forms.Label();
+            this.Ptcrndis = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -77,7 +81,7 @@ namespace HMA
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(260, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1212, 793);
+            this.pictureBox2.Size = new System.Drawing.Size(1212, 789);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -134,6 +138,7 @@ namespace HMA
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
             // 
             // label6
             // 
@@ -235,29 +240,18 @@ namespace HMA
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Teal;
-            this.label13.Location = new System.Drawing.Point(573, 525);
+            this.label13.Location = new System.Drawing.Point(491, 473);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(186, 28);
             this.label13.TabIndex = 39;
             this.label13.Text = "Current Disease :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Teal;
-            this.label12.Location = new System.Drawing.Point(573, 469);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(66, 28);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "BMI:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Teal;
-            this.label11.Location = new System.Drawing.Point(573, 404);
+            this.label11.Location = new System.Drawing.Point(529, 404);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(148, 28);
             this.label11.TabIndex = 37;
@@ -268,7 +262,7 @@ namespace HMA
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Teal;
-            this.label10.Location = new System.Drawing.Point(573, 338);
+            this.label10.Location = new System.Drawing.Point(612, 338);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 28);
             this.label10.TabIndex = 36;
@@ -290,19 +284,68 @@ namespace HMA
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(573, 228);
+            this.label8.Location = new System.Drawing.Point(593, 228);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 28);
             this.label8.TabIndex = 34;
             this.label8.Text = "Name :";
+            // 
+            // Ptname
+            // 
+            this.Ptname.AutoSize = true;
+            this.Ptname.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Ptname.Location = new System.Drawing.Point(709, 228);
+            this.Ptname.Name = "Ptname";
+            this.Ptname.Size = new System.Drawing.Size(0, 28);
+            this.Ptname.TabIndex = 40;
+            // 
+            // Ptphone
+            // 
+            this.Ptphone.AutoSize = true;
+            this.Ptphone.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Ptphone.Location = new System.Drawing.Point(709, 289);
+            this.Ptphone.Name = "Ptphone";
+            this.Ptphone.Size = new System.Drawing.Size(0, 28);
+            this.Ptphone.TabIndex = 41;
+            // 
+            // Ptage
+            // 
+            this.Ptage.AutoSize = true;
+            this.Ptage.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Ptage.Location = new System.Drawing.Point(709, 338);
+            this.Ptage.Name = "Ptage";
+            this.Ptage.Size = new System.Drawing.Size(0, 28);
+            this.Ptage.TabIndex = 42;
+            // 
+            // Ptbgrp
+            // 
+            this.Ptbgrp.AutoSize = true;
+            this.Ptbgrp.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Ptbgrp.Location = new System.Drawing.Point(709, 404);
+            this.Ptbgrp.Name = "Ptbgrp";
+            this.Ptbgrp.Size = new System.Drawing.Size(0, 28);
+            this.Ptbgrp.TabIndex = 43;
+            // 
+            // Ptcrndis
+            // 
+            this.Ptcrndis.AutoSize = true;
+            this.Ptcrndis.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Ptcrndis.Location = new System.Drawing.Point(709, 476);
+            this.Ptcrndis.Name = "Ptcrndis";
+            this.Ptcrndis.Size = new System.Drawing.Size(0, 28);
+            this.Ptcrndis.TabIndex = 45;
             // 
             // Patient_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1213, 789);
+            this.Controls.Add(this.Ptcrndis);
+            this.Controls.Add(this.Ptbgrp);
+            this.Controls.Add(this.Ptage);
+            this.Controls.Add(this.Ptphone);
+            this.Controls.Add(this.Ptname);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -314,6 +357,7 @@ namespace HMA
             this.Name = "Patient_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient";
+            this.Load += new System.EventHandler(this.Patient_UI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -346,10 +390,14 @@ namespace HMA
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label Ptname;
+        private System.Windows.Forms.Label Ptphone;
+        private System.Windows.Forms.Label Ptage;
+        private System.Windows.Forms.Label Ptbgrp;
+        private System.Windows.Forms.Label Ptcrndis;
     }
 }

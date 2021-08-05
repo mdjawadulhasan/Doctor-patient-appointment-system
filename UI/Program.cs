@@ -16,7 +16,7 @@ namespace HMA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PatientSignup_UI());
+            Application.Run(new loginorsignup());
         }
     }
 }
