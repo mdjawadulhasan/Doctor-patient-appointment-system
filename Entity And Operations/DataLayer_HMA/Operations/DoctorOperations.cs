@@ -64,6 +64,18 @@ namespace DataLayer_HMA.Operations
             con.Close();
         }
 
+        public DataSet ShowSpecificDoctor(string s)
+        {
+            string Query = "select * from DoctorTbl where  lower(Dtdept) like '%" + s + "%' OR UPPER(Dtdept) like '%" + s + "%'";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+
     }
 }
 

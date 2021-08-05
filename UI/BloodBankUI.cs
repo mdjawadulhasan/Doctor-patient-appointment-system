@@ -58,5 +58,15 @@ namespace HMA
             new Patient_UI(pt).Show();
             this.Hide();
         }
+
+        private void searchtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -64,7 +64,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdminOperations.cs" />
+    <Compile Include="AppointmentUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentUI.Designer.cs">
+      <DependentUpon>AppointmentUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="BloodBankUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentUI.resx">
+      <DependentUpon>AppointmentUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BloodBankUI.resx">
       <DependentUpon>BloodBankUI.cs</DependentUpon>
@@ -245,6 +253,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\blood-bank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

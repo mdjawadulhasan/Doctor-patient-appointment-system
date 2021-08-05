@@ -15,7 +15,7 @@ namespace DataLayer_HMA.Operations
 
         public DataSet ShowSpecificDoctor(string s)
         {
-            string Query = "select Did, Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall  from DoctorTbl where  lower(Dtfname) like '%" + s + "%'";
+            string Query = "select Did, Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall  from DoctorTbl where  lower(Dtfname) like '%" + s + "%' OR UPPER(Dtfname) like '%" + s + "%'";
             SqlConnection con = new SqlConnection(db.connect);
             con.Open();
             SqlCommand cmd = new SqlCommand(Query, con);

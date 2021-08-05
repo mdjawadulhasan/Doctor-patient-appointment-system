@@ -45,5 +45,11 @@ namespace HMA
             new BloodBankUI(Pt).Show();
             this.Show();
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            new AppointmentUI(Pt).Show();
+            this.Hide();
+        }
     }
 }
