@@ -432,6 +432,7 @@ namespace HMA
             this.checknoneb.TabIndex = 178;
             this.checknoneb.Text = "None";
             this.checknoneb.UseVisualStyleBackColor = true;
+            this.checknoneb.CheckedChanged += new System.EventHandler(this.checknoneb_CheckedChanged);
             // 
             // checkallergyb
             // 

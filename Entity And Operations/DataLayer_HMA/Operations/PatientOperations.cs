@@ -11,22 +11,22 @@ namespace DataLayer_HMA.Operations
    public class PatientOperations
     {
         DBConnection db = new DBConnection();
-        //public void InsertDoctor(Patient  P)
-        //{
-        //    string Query = "insert into DoctorTbl  values('" + d.FirstName + "','" + d.LastName + "','" + d.Degree + "','" + d.Department + "','" + d.Chammber + "','" + d.Visitng_Hours + "','" + d.visiting_days + "','" + d.Appoinment_CallNo + "')";
-        //    try
-        //    {
-        //        SqlConnection con = new SqlConnection(db.connect);
-        //        con.Open();
-        //        SqlCommand cmd = new SqlCommand(Query, con);
-        //        cmd.ExecuteNonQuery();
-        //        con.Close();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex.Message);
-        //    }
+        public void InsertPatient(Patient P)
+        {
+            string Query = "insert into PatientTbl  values('" + P.FirstName + "','" + P.LastName + "','" + P.Phone + "','" + P.Gender + "','" + P.Age + "','" + P.HeightInCm + "','" + P.WeightInKg + "','" + P.BloodGroup + "','" + P.Diseases + "','" + P.UserName + "','" + P.Password + "')";
+            try
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-        //}
+        }
     }
 }

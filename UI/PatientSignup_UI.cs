@@ -39,41 +39,35 @@ namespace HMA
             if (checksugerb.Checked == true)
             {
                 chk = true;
-                Disease = Disease + "  , " + "Diabetes";
+                Disease = Disease + "   " + "Diabetes";
             }
             if (checkheartdb.Checked == true)
             {
                 chk = true;
-                Disease = Disease + "  , " + "Heart Diseases";
+                Disease = Disease + "   " + "Heart Diseases";
             }
             if (checkgastrickb.Checked == true)
             {
                 chk = true;
-                Disease = Disease + "  , " + "Gastrick";
+                Disease = Disease + "   " + "Gastrick";
             }
             if (checkanemiab.Checked == true)
             {
                 chk = true;
-                Disease = Disease + "  , " + "Anemia";
+                Disease = Disease + "   " + "Anemia";
             }
             if (checkallergyb.Checked)
             {
                 chk = true;
-                Disease = Disease + "  , " + "Allergy";
+                Disease = Disease + "   " + "Allergy";
             }
             if (checknoneb.Checked == true)
             {
                 chk = true;
                 Disease = null;
-                checkpressureb.Checked = false;
-                checksugerb.Checked = false;
-                checkheartdb.Checked = false;
-                checkgastrickb.Checked = false;
-                checkanemiab.Checked = false;
-                checkallergyb.Checked = false;
 
             }
-            if(chk==false)
+            if (chk == false)
             {
                 MessageBox.Show("Disease Fild can not be Empty !");
             }
@@ -89,12 +83,37 @@ namespace HMA
             P.BloodGroup = Pbgrptxt.SelectedItem.ToString();
             P.UserName = Pusertxt.Text;
             P.Password = Ppasstxt.Text;
+            P.Diseases = Disease;
 
-            
+            try
+            {
+
+                op.InsertPatient(P);
+                MessageBox.Show("Signup Succes !");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
 
-            
 
+
+        }
+
+        private void checknoneb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checknoneb.Checked == true)
+            {
+                
+                checkpressureb.Checked = false;
+                checksugerb.Checked = false;
+                checkheartdb.Checked = false;
+                checkgastrickb.Checked = false;
+                checkanemiab.Checked = false;
+                checkallergyb.Checked = false;
+
+            }
         }
     }
 }
