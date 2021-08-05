@@ -67,5 +67,17 @@ namespace DataLayer_HMA.Operations
             con.Close();
         }
 
+        public DataSet ShowSpecificDonor(string s)
+        {
+            string Query = "select * from DonorTbl where  DBGrp like '%" + s + "%' OR lower(DBGrp) like '%" + s + "%' ";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+
     }
 }

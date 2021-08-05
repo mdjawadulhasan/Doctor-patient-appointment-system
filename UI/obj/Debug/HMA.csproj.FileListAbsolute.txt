@@ -68,3 +68,4 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Doctor_UI.resourc
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Patient_UI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.DoctorSIgnup_UI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PatientSignup_UI.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.BloodBankUI.resources

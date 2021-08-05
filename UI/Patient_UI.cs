@@ -39,5 +39,11 @@ namespace HMA
             Ptbgrp.Text = Pt.BloodGroup;
             Ptcrndis.Text = Pt.Diseases;
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            new BloodBankUI(Pt).Show();
+            this.Show();
+        }
     }
 }

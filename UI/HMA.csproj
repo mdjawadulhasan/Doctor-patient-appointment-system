@@ -65,6 +65,12 @@
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="AdminOperations.cs" />
+    <Compile Include="BloodBankUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BloodBankUI.Designer.cs">
+      <DependentUpon>BloodBankUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorSIgnup_UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BloodBankUI.resx">
+      <DependentUpon>BloodBankUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorSIgnup_UI.resx">
       <DependentUpon>DoctorSIgnup_UI.cs</DependentUpon>
@@ -233,6 +242,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood-bank1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
