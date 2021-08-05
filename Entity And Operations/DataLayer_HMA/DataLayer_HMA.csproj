@@ -45,11 +45,13 @@
     <Compile Include="Entity\Address.cs" />
     <Compile Include="Entity\Doctor.cs" />
     <Compile Include="Entity\Donor.cs" />
+    <Compile Include="Entity\Patient.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Operations\AdminOperation.cs" />
     <Compile Include="Operations\DBConnection.cs" />
     <Compile Include="Operations\DoctorOperations.cs" />
     <Compile Include="Operations\DonorOperations.cs" />
+    <Compile Include="Operations\PatientOperations.cs" />
     <Compile Include="Operations\RegisteredDoctorOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

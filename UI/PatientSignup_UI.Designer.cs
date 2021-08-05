@@ -32,7 +32,7 @@ namespace HMA
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Sfnametxt = new System.Windows.Forms.TextBox();
+            this.Pfnametxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -40,33 +40,33 @@ namespace HMA
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.Slnametxt = new System.Windows.Forms.TextBox();
-            this.Susertxt = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Plnametxt = new System.Windows.Forms.TextBox();
+            this.Pusertxt = new System.Windows.Forms.TextBox();
+            this.Ppasstxt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Pcontacttxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Pgendercb = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.pheighttxt = new System.Windows.Forms.TextBox();
+            this.Pweighttxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Pbgrptxt = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkpressureb = new System.Windows.Forms.CheckBox();
+            this.checksugerb = new System.Windows.Forms.CheckBox();
+            this.checkheartdb = new System.Windows.Forms.CheckBox();
+            this.checkgastrickb = new System.Windows.Forms.CheckBox();
+            this.checknoneb = new System.Windows.Forms.CheckBox();
+            this.checkallergyb = new System.Windows.Forms.CheckBox();
+            this.checkanemiab = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnexit = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Pagetxt = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -108,17 +108,17 @@ namespace HMA
             this.label2.TabIndex = 150;
             this.label2.Text = "First Name :";
             // 
-            // Sfnametxt
+            // Pfnametxt
             // 
-            this.Sfnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.Sfnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Sfnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sfnametxt.ForeColor = System.Drawing.Color.Black;
-            this.Sfnametxt.Location = new System.Drawing.Point(29, 159);
-            this.Sfnametxt.Multiline = true;
-            this.Sfnametxt.Name = "Sfnametxt";
-            this.Sfnametxt.Size = new System.Drawing.Size(355, 46);
-            this.Sfnametxt.TabIndex = 151;
+            this.Pfnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pfnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Pfnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pfnametxt.ForeColor = System.Drawing.Color.Black;
+            this.Pfnametxt.Location = new System.Drawing.Point(29, 159);
+            this.Pfnametxt.Multiline = true;
+            this.Pfnametxt.Name = "Pfnametxt";
+            this.Pfnametxt.Size = new System.Drawing.Size(355, 46);
+            this.Pfnametxt.TabIndex = 151;
             // 
             // label3
             // 
@@ -196,41 +196,41 @@ namespace HMA
             this.pictureBox5.TabIndex = 158;
             this.pictureBox5.TabStop = false;
             // 
-            // Slnametxt
+            // Plnametxt
             // 
-            this.Slnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.Slnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Slnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Slnametxt.ForeColor = System.Drawing.Color.Black;
-            this.Slnametxt.Location = new System.Drawing.Point(409, 159);
-            this.Slnametxt.Multiline = true;
-            this.Slnametxt.Name = "Slnametxt";
-            this.Slnametxt.Size = new System.Drawing.Size(355, 46);
-            this.Slnametxt.TabIndex = 159;
+            this.Plnametxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Plnametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Plnametxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Plnametxt.ForeColor = System.Drawing.Color.Black;
+            this.Plnametxt.Location = new System.Drawing.Point(409, 159);
+            this.Plnametxt.Multiline = true;
+            this.Plnametxt.Name = "Plnametxt";
+            this.Plnametxt.Size = new System.Drawing.Size(355, 46);
+            this.Plnametxt.TabIndex = 159;
             // 
-            // Susertxt
+            // Pusertxt
             // 
-            this.Susertxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.Susertxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Susertxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Susertxt.ForeColor = System.Drawing.Color.Black;
-            this.Susertxt.Location = new System.Drawing.Point(29, 266);
-            this.Susertxt.Multiline = true;
-            this.Susertxt.Name = "Susertxt";
-            this.Susertxt.Size = new System.Drawing.Size(355, 46);
-            this.Susertxt.TabIndex = 160;
+            this.Pusertxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pusertxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Pusertxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pusertxt.ForeColor = System.Drawing.Color.Black;
+            this.Pusertxt.Location = new System.Drawing.Point(29, 266);
+            this.Pusertxt.Multiline = true;
+            this.Pusertxt.Name = "Pusertxt";
+            this.Pusertxt.Size = new System.Drawing.Size(355, 46);
+            this.Pusertxt.TabIndex = 160;
             // 
-            // textBox2
+            // Ppasstxt
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(411, 266);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(355, 46);
-            this.textBox2.TabIndex = 161;
+            this.Ppasstxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Ppasstxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Ppasstxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ppasstxt.ForeColor = System.Drawing.Color.Black;
+            this.Ppasstxt.Location = new System.Drawing.Point(411, 266);
+            this.Ppasstxt.Multiline = true;
+            this.Ppasstxt.Name = "Ppasstxt";
+            this.Ppasstxt.Size = new System.Drawing.Size(355, 46);
+            this.Ppasstxt.TabIndex = 161;
             // 
             // label6
             // 
@@ -243,17 +243,17 @@ namespace HMA
             this.label6.TabIndex = 162;
             this.label6.Text = "Contact No.";
             // 
-            // textBox6
+            // Pcontacttxt
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(29, 353);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(355, 46);
-            this.textBox6.TabIndex = 163;
+            this.Pcontacttxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pcontacttxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Pcontacttxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pcontacttxt.ForeColor = System.Drawing.Color.Black;
+            this.Pcontacttxt.Location = new System.Drawing.Point(29, 353);
+            this.Pcontacttxt.Multiline = true;
+            this.Pcontacttxt.Name = "Pcontacttxt";
+            this.Pcontacttxt.Size = new System.Drawing.Size(355, 46);
+            this.Pcontacttxt.TabIndex = 163;
             // 
             // label7
             // 
@@ -266,19 +266,19 @@ namespace HMA
             this.label7.TabIndex = 164;
             this.label7.Text = "Gender :";
             // 
-            // comboBox1
+            // Pgendercb
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Pgendercb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pgendercb.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pgendercb.FormattingEnabled = true;
+            this.Pgendercb.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Others"});
-            this.comboBox1.Location = new System.Drawing.Point(409, 353);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(175, 39);
-            this.comboBox1.TabIndex = 165;
+            this.Pgendercb.Location = new System.Drawing.Point(409, 353);
+            this.Pgendercb.Name = "Pgendercb";
+            this.Pgendercb.Size = new System.Drawing.Size(175, 39);
+            this.Pgendercb.TabIndex = 165;
             // 
             // label11
             // 
@@ -291,29 +291,29 @@ namespace HMA
             this.label11.TabIndex = 166;
             this.label11.Text = "Weight :";
             // 
-            // textBox4
+            // pheighttxt
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(29, 455);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(167, 46);
-            this.textBox4.TabIndex = 167;
+            this.pheighttxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.pheighttxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.pheighttxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pheighttxt.ForeColor = System.Drawing.Color.Black;
+            this.pheighttxt.Location = new System.Drawing.Point(29, 455);
+            this.pheighttxt.Multiline = true;
+            this.pheighttxt.Name = "pheighttxt";
+            this.pheighttxt.Size = new System.Drawing.Size(167, 46);
+            this.pheighttxt.TabIndex = 167;
             // 
-            // textBox5
+            // Pweighttxt
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.Color.Black;
-            this.textBox5.Location = new System.Drawing.Point(212, 455);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 46);
-            this.textBox5.TabIndex = 168;
+            this.Pweighttxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pweighttxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Pweighttxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pweighttxt.ForeColor = System.Drawing.Color.Black;
+            this.Pweighttxt.Location = new System.Drawing.Point(212, 455);
+            this.Pweighttxt.Multiline = true;
+            this.Pweighttxt.Name = "Pweighttxt";
+            this.Pweighttxt.Size = new System.Drawing.Size(172, 46);
+            this.Pweighttxt.TabIndex = 168;
             // 
             // label9
             // 
@@ -348,12 +348,12 @@ namespace HMA
             this.label12.TabIndex = 171;
             this.label12.Text = "Blood Group :";
             // 
-            // comboBox2
+            // Pbgrptxt
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.Pbgrptxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pbgrptxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pbgrptxt.FormattingEnabled = true;
+            this.Pbgrptxt.Items.AddRange(new object[] {
             "A+",
             "B+",
             "A-",
@@ -362,10 +362,10 @@ namespace HMA
             "AB-",
             "0+",
             "0-"});
-            this.comboBox2.Location = new System.Drawing.Point(419, 462);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(337, 39);
-            this.comboBox2.TabIndex = 172;
+            this.Pbgrptxt.Location = new System.Drawing.Point(419, 462);
+            this.Pbgrptxt.Name = "Pbgrptxt";
+            this.Pbgrptxt.Size = new System.Drawing.Size(337, 39);
+            this.Pbgrptxt.TabIndex = 172;
             // 
             // label13
             // 
@@ -378,82 +378,82 @@ namespace HMA
             this.label13.TabIndex = 173;
             this.label13.Text = "Select Your Current Dieases :";
             // 
-            // checkBox1
+            // checkpressureb
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(28, 555);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(161, 24);
-            this.checkBox1.TabIndex = 174;
-            this.checkBox1.Text = "Blood Pressure";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkpressureb.AutoSize = true;
+            this.checkpressureb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkpressureb.Location = new System.Drawing.Point(28, 555);
+            this.checkpressureb.Name = "checkpressureb";
+            this.checkpressureb.Size = new System.Drawing.Size(161, 24);
+            this.checkpressureb.TabIndex = 174;
+            this.checkpressureb.Text = "Blood Pressure";
+            this.checkpressureb.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // checksugerb
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(230, 555);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(106, 24);
-            this.checkBox2.TabIndex = 175;
-            this.checkBox2.Text = "Diabetes";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checksugerb.AutoSize = true;
+            this.checksugerb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checksugerb.Location = new System.Drawing.Point(230, 555);
+            this.checksugerb.Name = "checksugerb";
+            this.checksugerb.Size = new System.Drawing.Size(106, 24);
+            this.checksugerb.TabIndex = 175;
+            this.checksugerb.Text = "Diabetes";
+            this.checksugerb.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // checkheartdb
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(389, 555);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(153, 24);
-            this.checkBox3.TabIndex = 176;
-            this.checkBox3.Text = "Heart Disease";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkheartdb.AutoSize = true;
+            this.checkheartdb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkheartdb.Location = new System.Drawing.Point(389, 555);
+            this.checkheartdb.Name = "checkheartdb";
+            this.checkheartdb.Size = new System.Drawing.Size(153, 24);
+            this.checkheartdb.TabIndex = 176;
+            this.checkheartdb.Text = "Heart Disease";
+            this.checkheartdb.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkgastrickb
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(593, 555);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(93, 24);
-            this.checkBox4.TabIndex = 177;
-            this.checkBox4.Text = "Gastric";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkgastrickb.AutoSize = true;
+            this.checkgastrickb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkgastrickb.Location = new System.Drawing.Point(593, 555);
+            this.checkgastrickb.Name = "checkgastrickb";
+            this.checkgastrickb.Size = new System.Drawing.Size(93, 24);
+            this.checkgastrickb.TabIndex = 177;
+            this.checkgastrickb.Text = "Gastric";
+            this.checkgastrickb.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // checknoneb
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(389, 594);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(74, 24);
-            this.checkBox5.TabIndex = 178;
-            this.checkBox5.Text = "None";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checknoneb.AutoSize = true;
+            this.checknoneb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checknoneb.Location = new System.Drawing.Point(389, 594);
+            this.checknoneb.Name = "checknoneb";
+            this.checknoneb.Size = new System.Drawing.Size(74, 24);
+            this.checknoneb.TabIndex = 178;
+            this.checknoneb.Text = "None";
+            this.checknoneb.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // checkallergyb
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(230, 594);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(89, 24);
-            this.checkBox6.TabIndex = 179;
-            this.checkBox6.Text = "Allergy";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkallergyb.AutoSize = true;
+            this.checkallergyb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkallergyb.Location = new System.Drawing.Point(230, 594);
+            this.checkallergyb.Name = "checkallergyb";
+            this.checkallergyb.Size = new System.Drawing.Size(89, 24);
+            this.checkallergyb.TabIndex = 179;
+            this.checkallergyb.Text = "Allergy";
+            this.checkallergyb.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkanemiab
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(28, 594);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(93, 24);
-            this.checkBox7.TabIndex = 180;
-            this.checkBox7.Text = "Anemia";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkanemiab.AutoSize = true;
+            this.checkanemiab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkanemiab.Location = new System.Drawing.Point(28, 594);
+            this.checkanemiab.Name = "checkanemiab";
+            this.checkanemiab.Size = new System.Drawing.Size(93, 24);
+            this.checkanemiab.TabIndex = 180;
+            this.checkanemiab.Text = "Anemia";
+            this.checkanemiab.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -505,47 +505,47 @@ namespace HMA
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox8
+            // Pagetxt
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(639, 351);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(117, 46);
-            this.textBox8.TabIndex = 184;
+            this.Pagetxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.Pagetxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Pagetxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pagetxt.ForeColor = System.Drawing.Color.Black;
+            this.Pagetxt.Location = new System.Drawing.Point(639, 351);
+            this.Pagetxt.Multiline = true;
+            this.Pagetxt.Name = "Pagetxt";
+            this.Pagetxt.Size = new System.Drawing.Size(117, 46);
+            this.Pagetxt.TabIndex = 184;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.Pagetxt);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.btnexit);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.checkBox7);
-            this.panel1.Controls.Add(this.checkBox6);
-            this.panel1.Controls.Add(this.checkBox5);
-            this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Controls.Add(this.checkBox3);
-            this.panel1.Controls.Add(this.checkBox2);
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.checkanemiab);
+            this.panel1.Controls.Add(this.checkallergyb);
+            this.panel1.Controls.Add(this.checknoneb);
+            this.panel1.Controls.Add(this.checkgastrickb);
+            this.panel1.Controls.Add(this.checkheartdb);
+            this.panel1.Controls.Add(this.checksugerb);
+            this.panel1.Controls.Add(this.checkpressureb);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.Pbgrptxt);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.Pweighttxt);
+            this.panel1.Controls.Add(this.pheighttxt);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.Pgendercb);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.Pcontacttxt);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.Susertxt);
-            this.panel1.Controls.Add(this.Slnametxt);
+            this.panel1.Controls.Add(this.Ppasstxt);
+            this.panel1.Controls.Add(this.Pusertxt);
+            this.panel1.Controls.Add(this.Plnametxt);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label8);
@@ -553,7 +553,7 @@ namespace HMA
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.Sfnametxt);
+            this.panel1.Controls.Add(this.Pfnametxt);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(303, 1);
@@ -569,7 +569,9 @@ namespace HMA
             this.ClientSize = new System.Drawing.Size(1079, 702);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PatientSignup_UI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registration";
             this.Load += new System.EventHandler(this.Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -586,7 +588,7 @@ namespace HMA
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Sfnametxt;
+        private System.Windows.Forms.TextBox Pfnametxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -594,33 +596,33 @@ namespace HMA
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox Slnametxt;
-        private System.Windows.Forms.TextBox Susertxt;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Plnametxt;
+        private System.Windows.Forms.TextBox Pusertxt;
+        private System.Windows.Forms.TextBox Ppasstxt;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Pcontacttxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Pgendercb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox pheighttxt;
+        private System.Windows.Forms.TextBox Pweighttxt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Pbgrptxt;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkpressureb;
+        private System.Windows.Forms.CheckBox checksugerb;
+        private System.Windows.Forms.CheckBox checkheartdb;
+        private System.Windows.Forms.CheckBox checkgastrickb;
+        private System.Windows.Forms.CheckBox checknoneb;
+        private System.Windows.Forms.CheckBox checkallergyb;
+        private System.Windows.Forms.CheckBox checkanemiab;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnexit;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Pagetxt;
         private System.Windows.Forms.Panel panel1;
     }
 }

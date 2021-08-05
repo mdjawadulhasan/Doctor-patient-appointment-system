@@ -56,7 +56,7 @@ namespace DataLayer_HMA.Entity
             this.UserName = UserName;
             this.Password = Password;
         }
-        public Person(string firstName, string lastName, string password, string userName, int age, double heightInCm, double weightInKg, string gender, string bloodGroup, string phone, int personType)
+        public Person(string firstName, string lastName, string password, string userName, int age, double heightInCm, double weightInKg, string gender, string bloodGroup, string phone)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -68,7 +68,7 @@ namespace DataLayer_HMA.Entity
             Gender = gender;
             BloodGroup = bloodGroup;
             Phone = phone;
-            PersonType = personType;
+          
         }
 
 

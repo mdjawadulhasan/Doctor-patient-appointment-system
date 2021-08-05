@@ -15,7 +15,7 @@ namespace HMA
     public partial class DoctorSIgnup_UI : Form
     {
         Doctor d = new Doctor();
-        
+
         RegisteredDoctorOperations OP = new RegisteredDoctorOperations();
         public DoctorSIgnup_UI()
         {
@@ -38,7 +38,7 @@ namespace HMA
 
         private void DoctorSIgnup_UI_Load(object sender, EventArgs e)
         {
-            
+
             populateData();
             this.RegDoctorDGV.Columns["Did"].Visible = false;
             this.RegDoctorDGV.Columns["Dtdegree"].Visible = false;
@@ -88,16 +88,7 @@ namespace HMA
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            d.FirstName = RDtfnametxt.Text;
-            d.LastName = RDtlnametxt.Text;
-            d.Degree = RDtdegree.Text;
-            d.Department = RDtdept.Text;
-            d.Chammber = RDtcham.Text;
-            d.Visitng_Hours = RDtvhours.Text;
-            d.visiting_days = RDtvisitingdys.Text;
-            d.Appoinment_CallNo = RDtApt.Text;
-            d.UserName = usernametxt.Text;
-            d.Password = passwordtxt.Text;
+
 
             if (OP.CheckSignup(d.id) >= 1)
             {
@@ -153,6 +144,16 @@ namespace HMA
 
             else
             {
+                d.FirstName = RDtfnametxt.Text;
+                d.LastName = RDtlnametxt.Text;
+                d.Degree = RDtdegree.Text;
+                d.Department = RDtdept.Text;
+                d.Chammber = RDtcham.Text;
+                d.Visitng_Hours = RDtvhours.Text;
+                d.visiting_days = RDtvisitingdys.Text;
+                d.Appoinment_CallNo = RDtApt.Text;
+                d.UserName = usernametxt.Text;
+                d.Password = passwordtxt.Text;
 
                 try
                 {
@@ -167,6 +168,6 @@ namespace HMA
             }
         }
 
-       
+
     }
 }
