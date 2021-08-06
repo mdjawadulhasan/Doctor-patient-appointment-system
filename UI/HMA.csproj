@@ -114,6 +114,12 @@
     <Compile Include="PatientSignup_UI.Designer.cs">
       <DependentUpon>PatientSignup_UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAppointment_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAppointment_UI.Designer.cs">
+      <DependentUpon>ViewAppointment_UI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddDoctor.resx">
       <DependentUpon>AddDoctor.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="PatientSignup_UI.resx">
       <DependentUpon>PatientSignup_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAppointment_UI.resx">
+      <DependentUpon>ViewAppointment_UI.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

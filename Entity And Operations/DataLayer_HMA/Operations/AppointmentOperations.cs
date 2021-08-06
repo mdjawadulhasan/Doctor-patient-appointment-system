@@ -1,6 +1,7 @@
 ﻿using DataLayer_HMA.Entity;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace DataLayer_HMA.Operations
 
         }
 
-        public int CheckSignup(int pid,int did)
+        public int ChecApt(int pid,int did)
         {
             int count = 0;
 
@@ -48,6 +49,41 @@ namespace DataLayer_HMA.Operations
                 Console.WriteLine(ex.Message);
             }
             return count;
+        }
+
+
+        public DataSet ShowUpComingApt(int pid)
+        {
+            string Query = "select * from AppointmentTbl where  Pid=" + pid + " AND AppDate>GETDATE()";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+
+        public DataSet ShowPrevApt(int pid)
+        {
+            string Query = "select * from AppointmentTbl where  Pid=" + pid + " AND AppDate<GETDATE()";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+
+        public void DeleteApt(int key)
+        {
+            string Query = "Delete from AppointmentTbl where Apid=" + key + "";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

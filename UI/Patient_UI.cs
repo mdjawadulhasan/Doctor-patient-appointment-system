@@ -51,5 +51,11 @@ namespace HMA
             new AppointmentUI(Pt).Show();
             this.Hide();
         }
+
+        private void SetAppointment_Click(object sender, EventArgs e)
+        {
+            new ViewAppointment_UI(Pt).Show();
+            this.Hide();
+        }
     }
 }

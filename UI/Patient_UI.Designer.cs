@@ -41,14 +41,14 @@ namespace HMA
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.SetAppointment = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -57,7 +57,7 @@ namespace HMA
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -182,7 +182,7 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.SetAppointment);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pictureBox6);
@@ -200,6 +200,17 @@ namespace HMA
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 789);
             this.panel1.TabIndex = 33;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(67, 249);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(120, 44);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "See \r\nAppoinment";
             // 
             // label13
             // 
@@ -267,26 +278,16 @@ namespace HMA
             this.label1.TabIndex = 24;
             this.label1.Text = "Welcome !";
             // 
-            // label12
+            // SetAppointment
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(67, 249);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 44);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "See \r\nAppoinment";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::HMA.Properties.Resources.appointment;
-            this.pictureBox7.Location = new System.Drawing.Point(19, 249);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 25;
-            this.pictureBox7.TabStop = false;
+            this.SetAppointment.Image = global::HMA.Properties.Resources.appointment;
+            this.SetAppointment.Location = new System.Drawing.Point(19, 249);
+            this.SetAppointment.Name = "SetAppointment";
+            this.SetAppointment.Size = new System.Drawing.Size(42, 56);
+            this.SetAppointment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SetAppointment.TabIndex = 25;
+            this.SetAppointment.TabStop = false;
+            this.SetAppointment.Click += new System.EventHandler(this.SetAppointment_Click);
             // 
             // pictureBox4
             // 
@@ -388,7 +389,7 @@ namespace HMA
             this.Load += new System.EventHandler(this.Patient_UI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -429,6 +430,6 @@ namespace HMA
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox SetAppointment;
     }
 }

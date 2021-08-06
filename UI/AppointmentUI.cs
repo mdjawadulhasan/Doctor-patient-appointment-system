@@ -89,7 +89,7 @@ namespace HMA
         {
             Pt.Date = AptDatePicker.Value.Date;
             AppointmentOperations op = new AppointmentOperations();
-            if(op.CheckSignup(Pt.id, D.id)>=1)
+            if(op.ChecApt(Pt.id, D.id)>=1)
             {
                 MessageBox.Show("Appointment Set Already !");
             }
