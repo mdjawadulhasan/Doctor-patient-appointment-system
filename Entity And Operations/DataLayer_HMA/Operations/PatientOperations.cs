@@ -75,6 +75,7 @@ namespace DataLayer_HMA.Operations
                     P.WeightInKg = reader.GetInt32(7);
                     P.BloodGroup = reader.GetString(8);
                     P.Diseases = reader.GetString(9);
+                    P.UserName= reader.GetString(10);
 
                 }
                 reader.Close();

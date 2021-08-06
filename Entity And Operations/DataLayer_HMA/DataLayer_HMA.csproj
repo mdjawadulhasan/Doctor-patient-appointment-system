@@ -48,6 +48,7 @@
     <Compile Include="Entity\Patient.cs" />
     <Compile Include="Entity\Person.cs" />
     <Compile Include="Operations\AdminOperation.cs" />
+    <Compile Include="Operations\AppointmentOperations.cs" />
     <Compile Include="Operations\DBConnection.cs" />
     <Compile Include="Operations\DoctorOperations.cs" />
     <Compile Include="Operations\DonorOperations.cs" />

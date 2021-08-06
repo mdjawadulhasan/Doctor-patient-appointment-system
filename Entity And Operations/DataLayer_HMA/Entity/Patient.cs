@@ -9,12 +9,13 @@ namespace DataLayer_HMA.Entity
     public class Patient : Person
     {
         public string Diseases;
+        public DateTime Date;
         public Patient()
         {
 
         }
 
-        public Patient(string firstName, string lastName, string password, string userName, int age, double heightInCm, double weightInKg, string gender, string bloodGroup, string phone,string Diseases) :base( firstName,  lastName,  password,  userName,  age,  heightInCm,  weightInKg,  gender,  bloodGroup, phone)
+        public Patient(string firstName, string lastName, string password, string userName, int age, double heightInCm, double weightInKg, string gender, string bloodGroup, string phone,string Diseases, DateTime Date) :base( firstName,  lastName,  password,  userName,  age,  heightInCm,  weightInKg,  gender,  bloodGroup, phone)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -27,6 +28,7 @@ namespace DataLayer_HMA.Entity
             BloodGroup = bloodGroup;
             Phone = phone;
             this.Diseases = Diseases;
+            this.Date = Date;
 
         }
     }

@@ -14,10 +14,10 @@ namespace HMA
 {
     public partial class AppointmentUI : Form
     {
-        Person Pt;
+        Patient Pt;
         Doctor D = new Doctor();
 
-        public AppointmentUI(Person P)
+        public AppointmentUI(Patient P)
         {
             Pt = P;
             InitializeComponent();
@@ -65,13 +65,43 @@ namespace HMA
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.DoctorApDGV.Rows[e.RowIndex];
-                dtnamelb.Text = row.Cells["Dtlname"].Value.ToString() + " "+ row.Cells["Dtlname"].Value.ToString();  
+                dtnamelb.Text = row.Cells["Dtfname"].Value.ToString() + " "+ row.Cells["Dtlname"].Value.ToString();  
                 dtdeptlb.Text = row.Cells["Dtdept"].Value.ToString();          
                 dtvisitinglv.Text = row.Cells["Dtvdays"].Value.ToString();
-                D.FirstName = row.Cells["Dtlname"].Value.ToString();
+                Chamberlb.Text= row.Cells["Dtchamber"].Value.ToString();
+               
+                D.FirstName = row.Cells["Dtfname"].Value.ToString();
                 D.LastName= row.Cells["Dtlname"].Value.ToString();
                 D.Department= row.Cells["Dtdept"].Value.ToString();
                 D.visiting_days= row.Cells["Dtvdays"].Value.ToString();
+                D.Chammber= row.Cells["Dtchamber"].Value.ToString();
+                D.id = Convert.ToInt32(row.Cells["Did"].Value.ToString());
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            new Patient_UI(Pt).Show();
+            this.Hide();
+        }
+
+        private void SetAppBtn_Click(object sender, EventArgs e)
+        {
+            Pt.Date = AptDatePicker.Value.Date;
+            AppointmentOperations op = new AppointmentOperations();
+            if(op.CheckSignup(Pt.id, D.id)>=1)
+            {
+                MessageBox.Show("Appointment Set Already !");
+            }
+            try
+            {
+
+                
+                op.SetAppointment(Pt, D);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }
