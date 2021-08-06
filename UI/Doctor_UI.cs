@@ -35,5 +35,22 @@ namespace HMA
             new loginorsignup().Show();
             this.Hide();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ViewAptlist_Click(object sender, EventArgs e)
+        {
+            new ViewAppointmentList(Dr).Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Show();
+        }
     }
 }

@@ -64,11 +64,11 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="AppointmentUI.cs">
+    <Compile Include="BookAppointmentUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AppointmentUI.Designer.cs">
-      <DependentUpon>AppointmentUI.cs</DependentUpon>
+    <Compile Include="BookAppointmentUI.Designer.cs">
+      <DependentUpon>BookAppointmentUI.cs</DependentUpon>
     </Compile>
     <Compile Include="BloodBankUI.cs">
       <SubType>Form</SubType>
@@ -114,6 +114,12 @@
     <Compile Include="PatientSignup_UI.Designer.cs">
       <DependentUpon>PatientSignup_UI.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewAppointmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAppointmentList.Designer.cs">
+      <DependentUpon>ViewAppointmentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewAppointment_UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,8 +135,8 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppointmentUI.resx">
-      <DependentUpon>AppointmentUI.cs</DependentUpon>
+    <EmbeddedResource Include="BookAppointmentUI.resx">
+      <DependentUpon>BookAppointmentUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BloodBankUI.resx">
       <DependentUpon>BloodBankUI.cs</DependentUpon>
@@ -162,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="PatientSignup_UI.resx">
       <DependentUpon>PatientSignup_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAppointmentList.resx">
+      <DependentUpon>ViewAppointmentList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAppointment_UI.resx">
       <DependentUpon>ViewAppointment_UI.cs</DependentUpon>

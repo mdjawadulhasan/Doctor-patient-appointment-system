@@ -34,7 +34,7 @@ namespace DataLayer_HMA.Operations
         {
             int count = 0;
 
-            string Query = "select count(*) from AppointmentTbl where Did=" + did + " AND Pid=" + pid + "";
+            string Query = "select count(*) from AppointmentTbl where Did=" + did + " AND Pid=" + pid + " AND AppDate>GETDATE()";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);
@@ -85,5 +85,20 @@ namespace DataLayer_HMA.Operations
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+
+        public DataSet ShowDtAptList(int Did)
+        {
+            string Query = "select * from AppointmentTbl where  Did=" + Did + " AND AppDate<GETDATE()";
+            SqlConnection con = new SqlConnection(db.connect);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(Query, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            sda.Fill(ds);
+            return ds;
+        }
+
+       
     }
 }

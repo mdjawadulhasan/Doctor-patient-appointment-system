@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class AppointmentUI : Form
+    public partial class BookAppointmentUI : Form
     {
         Patient Pt;
         Doctor D = new Doctor();
 
-        public AppointmentUI(Patient P)
+        public BookAppointmentUI(Patient P)
         {
             Pt = P;
             InitializeComponent();
@@ -93,15 +93,18 @@ namespace HMA
             {
                 MessageBox.Show("Appointment Set Already !");
             }
-            try
+            else
             {
+                try
+                {
 
-                
-                op.SetAppointment(Pt, D);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+
+                    op.SetAppointment(Pt, D);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
         }
     }

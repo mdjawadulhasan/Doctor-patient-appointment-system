@@ -69,5 +69,6 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.Patient_UI.resour
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.DoctorSIgnup_UI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PatientSignup_UI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.BloodBankUI.resources
-C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.AppointmentUI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.ViewAppointment_UI.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.BookAppointmentUI.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.ViewAppointmentList.resources

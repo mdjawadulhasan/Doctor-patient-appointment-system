@@ -103,7 +103,7 @@ namespace HMA
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            new AppointmentUI(Pt).Show();
+            new BookAppointmentUI(Pt).Show();
             this.Hide();
         }
 
@@ -117,6 +117,11 @@ namespace HMA
         {
             new BloodBankUI(Pt).Show();
             this.Hide();
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

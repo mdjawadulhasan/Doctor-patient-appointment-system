@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class AppointmentUI
+    partial class BookAppointmentUI
     {
         /// <summary>
         /// Required designer variable.
