@@ -72,6 +72,11 @@ namespace HMA
                     new DoctorSIgnup_UI().Show();
                     this.Hide();
                 }
+                else if (p.PersonType == 1)
+                {
+                    new PatientSignup_UI().Show();
+                    this.Hide();
+                }
             }
         }
 

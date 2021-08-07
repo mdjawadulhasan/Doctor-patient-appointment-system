@@ -41,6 +41,7 @@ namespace HMA
             AdminOperation op = new AdminOperation();
             dtcount.Text = Convert.ToString(op.Doctorcount());
             dnrcount.Text = Convert.ToString(op.DonorCount());
+            patcountlb.Text= Convert.ToString(op.PatientCount());
         }
     }
 }

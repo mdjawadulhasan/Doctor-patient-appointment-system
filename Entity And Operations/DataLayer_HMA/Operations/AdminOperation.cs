@@ -51,5 +51,28 @@ namespace DataLayer_HMA.Operations
             }
             return count;
         }
+
+        
+
+        public int PatientCount()
+        {
+            int count = 0;
+
+            string Query = "select count(*) from PatientTbl";
+            try
+            {
+                SqlConnection con = new SqlConnection(db.connect);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(Query, con);
+                //cmd.ExecuteNonQuery();
+                count = (Int32)cmd.ExecuteScalar();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return count;
+        }
     }
 }
