@@ -53,6 +53,7 @@
     <Compile Include="Operations\DoctorOperations.cs" />
     <Compile Include="Operations\DonorOperations.cs" />
     <Compile Include="Operations\PatientOperations.cs" />
+    <Compile Include="Operations\PrescriptionOperations.cs" />
     <Compile Include="Operations\RegisteredDoctorOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

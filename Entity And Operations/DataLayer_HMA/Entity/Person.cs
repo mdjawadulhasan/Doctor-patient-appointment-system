@@ -15,8 +15,8 @@ namespace DataLayer_HMA.Entity
         public string Password { get; set; }
         public string UserName { get; set; }
         public int Age { get; set; }
-        public double HeightInCm { get; set; }
-        public double WeightInKg { get; set; }
+        public int HeightInCm { get; set; }
+        public int WeightInKg { get; set; }
 
         public string Gender { get; set; }
 
@@ -56,7 +56,7 @@ namespace DataLayer_HMA.Entity
             this.UserName = UserName;
             this.Password = Password;
         }
-        public Person(string firstName, string lastName, string password, string userName, int age, double heightInCm, double weightInKg, string gender, string bloodGroup, string phone)
+        public Person(string firstName, string lastName, string password, string userName, int age, int heightInCm, int weightInKg, string gender, string bloodGroup, string phone)
         {
             FirstName = firstName;
             LastName = lastName;

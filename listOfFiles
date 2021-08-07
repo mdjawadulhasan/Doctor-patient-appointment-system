@@ -1,0 +1,139 @@
+Entity And Operations/DataLayer_HMA/Class1.cs
+Entity And Operations/DataLayer_HMA/DataLayer_HMA.csproj
+Entity And Operations/DataLayer_HMA/Entity/Address.cs
+Entity And Operations/DataLayer_HMA/Entity/Doctor.cs
+Entity And Operations/DataLayer_HMA/Entity/Donor.cs
+Entity And Operations/DataLayer_HMA/Entity/Patient.cs
+Entity And Operations/DataLayer_HMA/Entity/Person.cs
+Entity And Operations/DataLayer_HMA/Operations/AdminOperation.cs
+Entity And Operations/DataLayer_HMA/Operations/AppointmentOperations.cs
+Entity And Operations/DataLayer_HMA/Operations/DBConnection.cs
+Entity And Operations/DataLayer_HMA/Operations/DoctorOperations.cs
+Entity And Operations/DataLayer_HMA/Operations/DonorOperations.cs
+Entity And Operations/DataLayer_HMA/Operations/PatientOperations.cs
+Entity And Operations/DataLayer_HMA/Operations/RegisteredDoctorOperations.cs
+Entity And Operations/DataLayer_HMA/Properties/AssemblyInfo.cs
+Entity And Operations/DataLayer_HMA/bin/Debug/DataLayer_HMA.dll
+Entity And Operations/DataLayer_HMA/bin/Debug/DataLayer_HMA.pdb
+Entity And Operations/DataLayer_HMA/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+Entity And Operations/DataLayer_HMA/obj/Debug/DataLayer_HMA.csproj.CoreCompileInputs.cache
+Entity And Operations/DataLayer_HMA/obj/Debug/DataLayer_HMA.csproj.FileListAbsolute.txt
+Entity And Operations/DataLayer_HMA/obj/Debug/DataLayer_HMA.csprojAssemblyReference.cache
+Entity And Operations/DataLayer_HMA/obj/Debug/DataLayer_HMA.dll
+Entity And Operations/DataLayer_HMA/obj/Debug/DataLayer_HMA.pdb
+Entity And Operations/DataLayer_HMA/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+UI/.vs/HMA/DesignTimeBuild/.dtbcache.v2
+UI/.vs/HMA/v16/.suo
+UI/AddDoctor.Designer.cs
+UI/AddDoctor.cs
+UI/AddDoctor.resx
+UI/AddDonor.Designer.cs
+UI/AddDonor.cs
+UI/AddDonor.resx
+UI/Admin.Designer.cs
+UI/Admin.cs
+UI/Admin.resx
+UI/App.config
+UI/BloodBankUI.Designer.cs
+UI/BloodBankUI.cs
+UI/BloodBankUI.resx
+UI/BookAppointmentUI.Designer.cs
+UI/BookAppointmentUI.cs
+UI/BookAppointmentUI.resx
+UI/Doctor.resx
+UI/DoctorSIgnup_UI.Designer.cs
+UI/DoctorSIgnup_UI.cs
+UI/DoctorSIgnup_UI.resx
+UI/Doctor_UI.Designer.cs
+UI/Doctor_UI.cs
+UI/Doctor_UI.resx
+UI/HMA.csproj
+UI/HMA.sln
+UI/Login.Designer.cs
+UI/Login.cs
+UI/Login.resx
+UI/PatientSignup_UI.Designer.cs
+UI/PatientSignup_UI.cs
+UI/PatientSignup_UI.resx
+UI/Patient_UI.Designer.cs
+UI/Patient_UI.cs
+UI/Patient_UI.resx
+UI/Program.cs
+UI/Properties/AssemblyInfo.cs
+UI/Properties/Resources.Designer.cs
+UI/Properties/Resources.resx
+UI/Properties/Settings.Designer.cs
+UI/Properties/Settings.settings
+UI/Resources/1234.PNG
+UI/Resources/2loiigo.png
+UI/Resources/5.PNG
+UI/Resources/BACK.jpg
+UI/Resources/Data_integration.jpg
+UI/Resources/L.png
+UI/Resources/LOGO.jpg
+UI/Resources/MD.png
+UI/Resources/appointment-book.png
+UI/Resources/appointment.png
+UI/Resources/back-arrow.png
+UI/Resources/back.png
+UI/Resources/bg.jpg
+UI/Resources/blood-bank.png
+UI/Resources/blood-bank1.png
+UI/Resources/blood-donation.png
+UI/Resources/cancel.png
+UI/Resources/counter.PNG
+UI/Resources/disease.png
+UI/Resources/doctor.png
+UI/Resources/doctor1.png
+UI/Resources/files.png
+UI/Resources/logout.png
+UI/Resources/medical-history.png
+UI/Resources/passicon.png
+UI/Resources/patient.png
+UI/Resources/prescription.png
+UI/Resources/regpass.png
+UI/Resources/reguser.png
+UI/Resources/see.jpg
+UI/Resources/user.png
+UI/Resources/v870-tang-36.jpg
+UI/ViewAppointmentList.Designer.cs
+UI/ViewAppointmentList.cs
+UI/ViewAppointmentList.resx
+UI/ViewAppointment_UI.Designer.cs
+UI/ViewAppointment_UI.cs
+UI/ViewAppointment_UI.resx
+UI/bin/Debug/DataLayer_HMA.dll
+UI/bin/Debug/DataLayer_HMA.pdb
+UI/bin/Debug/HMA.exe
+UI/bin/Debug/HMA.exe.config
+UI/bin/Debug/HMA.pdb
+UI/loginorsignup.Designer.cs
+UI/loginorsignup.cs
+UI/loginorsignup.resx
+UI/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+UI/obj/Debug/DataLayer_HMA.csproj.CoreCompileInputs.cache
+UI/obj/Debug/DataLayer_HMA.csproj.FileListAbsolute.txt
+UI/obj/Debug/DesignTimeResolveAssemblyReferences.cache
+UI/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+UI/obj/Debug/HMA.AddDoctor.resources
+UI/obj/Debug/HMA.AddDonor.resources
+UI/obj/Debug/HMA.Admin.resources
+UI/obj/Debug/HMA.BloodBankUI.resources
+UI/obj/Debug/HMA.BookAppointmentUI.resources
+UI/obj/Debug/HMA.DoctorSIgnup_UI.resources
+UI/obj/Debug/HMA.Doctor_UI.resources
+UI/obj/Debug/HMA.Login.resources
+UI/obj/Debug/HMA.PatientSignup_UI.resources
+UI/obj/Debug/HMA.Patient_UI.resources
+UI/obj/Debug/HMA.Properties.Resources.resources
+UI/obj/Debug/HMA.ViewAppointmentList.resources
+UI/obj/Debug/HMA.ViewAppointment_UI.resources
+UI/obj/Debug/HMA.csproj.CopyComplete
+UI/obj/Debug/HMA.csproj.CoreCompileInputs.cache
+UI/obj/Debug/HMA.csproj.FileListAbsolute.txt
+UI/obj/Debug/HMA.csproj.GenerateResource.cache
+UI/obj/Debug/HMA.csprojAssemblyReference.cache
+UI/obj/Debug/HMA.exe
+UI/obj/Debug/HMA.loginorsignup.resources
+UI/obj/Debug/HMA.pdb
+UI/obj/Debug/TempPE/Properties.Resources.Designer.cs.dll

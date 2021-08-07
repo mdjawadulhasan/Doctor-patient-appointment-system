@@ -84,5 +84,23 @@ namespace HMA
                 key = Convert.ToInt32(DrAptList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            new Doctor_UI(Dr).Show();
+            this.Hide();
+        }
+
+        private void Trtload_Click(object sender, EventArgs e)
+        {
+            new TreatmentUI(Dr).Show();
+            this.Hide();
+        }
+
+        private void Logoutpage_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Hide();
+        }
     }
 }

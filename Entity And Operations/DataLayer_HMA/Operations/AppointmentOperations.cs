@@ -89,7 +89,7 @@ namespace DataLayer_HMA.Operations
 
         public DataSet ShowDtAptList(int Did)
         {
-            string Query = "select * from AppointmentTbl where  Did=" + Did + " AND AppDate<GETDATE()";
+            string Query = "select * from AppointmentTbl where  Did=" + Did + " AND AppDate>GETDATE()";
             SqlConnection con = new SqlConnection(db.connect);
             con.Open();
             SqlCommand cmd = new SqlCommand(Query, con);

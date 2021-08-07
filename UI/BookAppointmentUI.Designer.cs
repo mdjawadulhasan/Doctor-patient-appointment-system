@@ -29,8 +29,8 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -199,7 +199,7 @@ namespace HMA
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.Chamberlb);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.dtvisitinglv);
@@ -220,7 +220,7 @@ namespace HMA
             // Chamberlb
             // 
             this.Chamberlb.AutoSize = true;
-            this.Chamberlb.BackColor = System.Drawing.Color.Teal;
+            this.Chamberlb.BackColor = System.Drawing.Color.Transparent;
             this.Chamberlb.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.Chamberlb.Location = new System.Drawing.Point(8, 173);
             this.Chamberlb.Name = "Chamberlb";
@@ -242,7 +242,7 @@ namespace HMA
             // dtvisitinglv
             // 
             this.dtvisitinglv.AutoSize = true;
-            this.dtvisitinglv.BackColor = System.Drawing.Color.Teal;
+            this.dtvisitinglv.BackColor = System.Drawing.Color.Transparent;
             this.dtvisitinglv.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.dtvisitinglv.Location = new System.Drawing.Point(498, 54);
             this.dtvisitinglv.Name = "dtvisitinglv";
@@ -252,7 +252,7 @@ namespace HMA
             // dtdeptlb
             // 
             this.dtdeptlb.AutoSize = true;
-            this.dtdeptlb.BackColor = System.Drawing.Color.Teal;
+            this.dtdeptlb.BackColor = System.Drawing.Color.Transparent;
             this.dtdeptlb.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.dtdeptlb.Location = new System.Drawing.Point(8, 104);
             this.dtdeptlb.Name = "dtdeptlb";
@@ -263,7 +263,7 @@ namespace HMA
             // dtnamelb
             // 
             this.dtnamelb.AutoSize = true;
-            this.dtnamelb.BackColor = System.Drawing.Color.Teal;
+            this.dtnamelb.BackColor = System.Drawing.Color.Transparent;
             this.dtnamelb.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold);
             this.dtnamelb.Location = new System.Drawing.Point(6, 38);
             this.dtnamelb.Name = "dtnamelb";
@@ -344,7 +344,7 @@ namespace HMA
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Lime;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(88, -25);
             this.pictureBox2.Name = "pictureBox2";
@@ -358,14 +358,14 @@ namespace HMA
             this.DoctorApDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DoctorApDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DoctorApDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DoctorApDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DoctorApDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DoctorApDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DoctorApDGV.EnableHeadersVisualStyles = false;
             this.DoctorApDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -374,11 +374,11 @@ namespace HMA
             this.DoctorApDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DoctorApDGV.RowHeadersVisible = false;
             this.DoctorApDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DoctorApDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DoctorApDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DoctorApDGV.RowTemplate.Height = 24;
             this.DoctorApDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DoctorApDGV.Size = new System.Drawing.Size(867, 410);
@@ -419,7 +419,7 @@ namespace HMA
             this.flowLayoutPanel11.Size = new System.Drawing.Size(290, 1);
             this.flowLayoutPanel11.TabIndex = 218;
             // 
-            // AppointmentUI
+            // BookAppointmentUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -432,7 +432,7 @@ namespace HMA
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AppointmentUI";
+            this.Name = "BookAppointmentUI";
             this.Text = "AppointmentUI";
             this.Load += new System.EventHandler(this.AppointmentUI_Load);
             this.panel1.ResumeLayout(false);

@@ -52,5 +52,11 @@ namespace HMA
             new loginorsignup().Show();
             this.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            new TreatmentUI(Dr).Show();
+            this.Hide();
+        }
     }
 }

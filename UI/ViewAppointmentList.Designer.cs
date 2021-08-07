@@ -33,9 +33,9 @@ namespace HMA
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Logoutpage = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Trtload = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,8 +44,8 @@ namespace HMA
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.dltlb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Trtload)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DrAptList)).BeginInit();
@@ -73,15 +73,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // pictureBox6
+            // Logoutpage
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 633);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
+            this.Logoutpage.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpage.Location = new System.Drawing.Point(21, 633);
+            this.Logoutpage.Name = "Logoutpage";
+            this.Logoutpage.Size = new System.Drawing.Size(48, 67);
+            this.Logoutpage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpage.TabIndex = 13;
+            this.Logoutpage.TabStop = false;
+            this.Logoutpage.Click += new System.EventHandler(this.Logoutpage_Click);
             // 
             // label5
             // 
@@ -94,15 +95,16 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Give \r\nTreatment";
             // 
-            // pictureBox1
+            // Trtload
             // 
-            this.pictureBox1.Image = global::HMA.Properties.Resources.prescription;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 334);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.Trtload.Image = global::HMA.Properties.Resources.prescription;
+            this.Trtload.Location = new System.Drawing.Point(21, 334);
+            this.Trtload.Name = "Trtload";
+            this.Trtload.Size = new System.Drawing.Size(48, 74);
+            this.Trtload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Trtload.TabIndex = 9;
+            this.Trtload.TabStop = false;
+            this.Trtload.Click += new System.EventHandler(this.Trtload_Click);
             // 
             // label2
             // 
@@ -114,15 +116,16 @@ namespace HMA
             this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Doctor";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Logoutpage);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Trtload);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -227,8 +230,8 @@ namespace HMA
             this.Text = "ViewAppointmentList";
             this.Load += new System.EventHandler(this.ViewAppointmentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Trtload)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -242,9 +245,9 @@ namespace HMA
 
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox Logoutpage;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Trtload;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
