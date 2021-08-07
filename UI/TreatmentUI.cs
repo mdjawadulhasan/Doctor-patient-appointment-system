@@ -65,7 +65,7 @@ namespace HMA
             try
             {
                 PrescriptionOperations op = new PrescriptionOperations();
-                op.InsertDoctor(Dr, Pt);
+                op.InsertPrescription(Dr, Pt);
                 MessageBox.Show("Prescription Given !");
             }
             catch (Exception ex)
@@ -87,6 +87,11 @@ namespace HMA
             }
 
             
+        }
+
+        private void prevrecordload_Click(object sender, EventArgs e)
+        {
+            new PreviousRecordUI(Pt).Show();
         }
     }
 }
