@@ -25,53 +25,59 @@ namespace HMA
         {
             Doctor dr = new Doctor();
             DoctorOperations OP = new DoctorOperations();
+            string s = Dtfnametxt.Text;
 
-            
             if (String.IsNullOrEmpty(Dtfnametxt.Text))
             {
-                MessageBox.Show("First Name field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
+            
             else if (String.IsNullOrEmpty(Dtlnametxt.Text))
             {
-                MessageBox.Show("Last Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (char.IsDigit(s[0]))
+            {
+                MessageBox.Show("First Letter can not be a number!");
             }
             else if (String.IsNullOrEmpty(Dtvisitingdys.Text))
             {
-                MessageBox.Show("Visiting days field   Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtvisithrs.Text))
             {
-                MessageBox.Show("Visiting hours field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtcham.Text))
             {
-                MessageBox.Show("Chamber Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtdegree.Text))
             {
-                MessageBox.Show("Degree field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtdept.Text))
             {
-                MessageBox.Show("Department Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(DtApt.Text))
             {
-                MessageBox.Show("Appointmnet time field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else
             {
-                dr.FirstName = Dtfnametxt.Text;
-                dr.LastName = Dtlnametxt.Text;
-                dr.visiting_days = Dtvisitingdys.Text;
-                dr.Visitng_Hours = Dtvisithrs.Text;
-                dr.Chammber = Dtcham.Text;
-                dr.Degree = Dtdegree.Text;
-                dr.Department = Dtdept.Text;
-                dr.Appoinment_CallNo = DtApt.Text;
+                
                 try
                 {
-
+                    dr.FirstName = Dtfnametxt.Text;
+                    dr.LastName = Dtlnametxt.Text;
+                    dr.visiting_days = Dtvisitingdys.Text;
+                    dr.Visitng_Hours = Dtvisithrs.Text;
+                    dr.Chammber = Dtcham.Text;
+                    dr.Degree = Dtdegree.Text;
+                    dr.Department = Dtdept.Text;
+                    dr.Appoinment_CallNo = DtApt.Text;
+                    MessageBox.Show("Doctor info Succesfully Added!");
                     OP.InsertDoctor(dr);
                     populateData();
                 }
@@ -79,9 +85,7 @@ namespace HMA
                 {
                     Console.WriteLine(ex.Message);
                 }
-            }
-
-            
+            }           
         }
         void populateData()
         {
@@ -111,58 +115,62 @@ namespace HMA
         {
             Doctor dr = new Doctor();
             DoctorOperations op = new DoctorOperations();
+            string s = Dtfnametxt.Text;
             if (key == 0)
             {
                 MessageBox.Show("Select the DOCTOR");
             }
-
+            
             else if (String.IsNullOrEmpty(Dtfnametxt.Text))
             {
-                MessageBox.Show("First Name field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (char.IsDigit(s[0]))
+            {
+                MessageBox.Show("First Letter can not be a number!");
             }
             else if (String.IsNullOrEmpty(Dtlnametxt.Text))
             {
-                MessageBox.Show("Last Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtvisitingdys.Text))
             {
-                MessageBox.Show("Visiting days field   Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtvisithrs.Text))
             {
-                MessageBox.Show("Visiting hours field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtcham.Text))
             {
-                MessageBox.Show("Chamber Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtdegree.Text))
             {
-                MessageBox.Show("Degree field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dtdept.Text))
             {
-                MessageBox.Show("Department Name field  Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(DtApt.Text))
             {
-                MessageBox.Show("Appointmnet time field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
 
             else
             {
 
-                dr.FirstName = Dtfnametxt.Text;
-                dr.LastName = Dtlnametxt.Text;
-                dr.visiting_days = Dtvisitingdys.Text;
-                dr.Visitng_Hours = Dtvisithrs.Text;
-                dr.Chammber = Dtcham.Text;
-                dr.Degree = Dtdegree.Text;
-                dr.Department = Dtdept.Text;
-                dr.Appoinment_CallNo = DtApt.Text;
-
                 try
                 {
+                    dr.FirstName = Dtfnametxt.Text;
+                    dr.LastName = Dtlnametxt.Text;
+                    dr.visiting_days = Dtvisitingdys.Text;
+                    dr.Visitng_Hours = Dtvisithrs.Text;
+                    dr.Chammber = Dtcham.Text;
+                    dr.Degree = Dtdegree.Text;
+                    dr.Department = Dtdept.Text;
+                    dr.Appoinment_CallNo = DtApt.Text;
                     op.UpdateDoctors(key, dr);
                     MessageBox.Show("Doctor info Succesfully Updated");
                     populateData();
@@ -210,13 +218,28 @@ namespace HMA
             {
                 MessageBox.Show("Select the Doctor");
             }
+            else if (Dtfnametxt.Text == "" || Dtlnametxt.Text == "" || Dtvisitingdys.Text == "" || Dtvisithrs.Text == "" || Dtcham.Text == "" || Dtdegree.Text == "" || Dtdept.Text == "" || DtApt.Text == "")
+            {
+                MessageBox.Show("Select the Doctor");
+            }
+
             else
             {
+                
+
                 try
                 {
 
                     op.DeleteDoctors(key);
                     MessageBox.Show("Doctor Succesfully Deleted");
+                    Dtfnametxt.Text = "";
+                    Dtlnametxt.Text = "";
+                    Dtvisitingdys.Text = "";
+                    Dtvisithrs.Text = "";
+                    Dtcham.Text = "";
+                    Dtdegree.Text = "";
+                    Dtdept.Text = "";
+                    DtApt.Text = "";
                     populateData();
                 }
                 catch (Exception ex)

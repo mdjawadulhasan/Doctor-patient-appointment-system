@@ -96,9 +96,8 @@ namespace HMA
             this.textusrname.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textusrname.ForeColor = System.Drawing.Color.Teal;
             this.textusrname.Location = new System.Drawing.Point(81, 195);
-            this.textusrname.Multiline = true;
             this.textusrname.Name = "textusrname";
-            this.textusrname.Size = new System.Drawing.Size(252, 31);
+            this.textusrname.Size = new System.Drawing.Size(252, 23);
             this.textusrname.TabIndex = 28;
             // 
             // textpassword
@@ -107,9 +106,8 @@ namespace HMA
             this.textpassword.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textpassword.ForeColor = System.Drawing.Color.Teal;
             this.textpassword.Location = new System.Drawing.Point(81, 286);
-            this.textpassword.Multiline = true;
             this.textpassword.Name = "textpassword";
-            this.textpassword.Size = new System.Drawing.Size(252, 31);
+            this.textpassword.Size = new System.Drawing.Size(252, 23);
             this.textpassword.TabIndex = 29;
             // 
             // btnexit

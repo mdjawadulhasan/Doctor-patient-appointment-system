@@ -65,7 +65,6 @@ namespace DataLayer_HMA.Operations
                 SqlConnection con = new SqlConnection(db.connect);
                 con.Open();
                 SqlCommand cmd = new SqlCommand(Query, con);
-                //cmd.ExecuteNonQuery();
                 count = (Int32)cmd.ExecuteScalar();
                 con.Close();
             }
@@ -79,7 +78,7 @@ namespace DataLayer_HMA.Operations
         public Doctor GetDoctor(String UserName, String Password)
         {
             Doctor D = null;
-            String Query = "select Rdid,Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall from RegisteredDtTbl where Dtusername='" + UserName + "' AND Dtpassword='" + Password + "';";
+            String Query = "select Rdid,Dtfname,Dtlname,Dtdegree,Dtdept,Dtchamber,Dtvhours,Dtvdays,Dtaptcall from RegisteredDtTbl where Dtusername='" + UserName + "' COLLATE Latin1_General_CS_AS  AND Dtpassword='" + Password + "' COLLATE Latin1_General_CS_AS ;";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

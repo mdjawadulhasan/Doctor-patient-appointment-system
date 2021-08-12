@@ -109,7 +109,7 @@ namespace HMA
             // 
             this.patcountlb.AutoSize = true;
             this.patcountlb.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patcountlb.Location = new System.Drawing.Point(455, 214);
+            this.patcountlb.Location = new System.Drawing.Point(426, 214);
             this.patcountlb.Name = "patcountlb";
             this.patcountlb.Size = new System.Drawing.Size(59, 68);
             this.patcountlb.TabIndex = 31;
@@ -119,7 +119,7 @@ namespace HMA
             // 
             this.dtcount.AutoSize = true;
             this.dtcount.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtcount.Location = new System.Drawing.Point(821, 214);
+            this.dtcount.Location = new System.Drawing.Point(796, 214);
             this.dtcount.Name = "dtcount";
             this.dtcount.Size = new System.Drawing.Size(59, 68);
             this.dtcount.TabIndex = 32;
@@ -129,7 +129,7 @@ namespace HMA
             // 
             this.dnrcount.AutoSize = true;
             this.dnrcount.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dnrcount.Location = new System.Drawing.Point(685, 449);
+            this.dnrcount.Location = new System.Drawing.Point(661, 453);
             this.dnrcount.Name = "dnrcount";
             this.dnrcount.Size = new System.Drawing.Size(59, 68);
             this.dnrcount.TabIndex = 33;
@@ -146,9 +146,10 @@ namespace HMA
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Location = new System.Drawing.Point(980, 2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1038, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 793);
+            this.panel1.Size = new System.Drawing.Size(236, 746);
             this.panel1.TabIndex = 34;
             // 
             // pictureBox5
@@ -211,7 +212,7 @@ namespace HMA
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(12, 320);
+            this.label12.Location = new System.Drawing.Point(12, 321);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(202, 25);
             this.label12.TabIndex = 6;
@@ -275,7 +276,7 @@ namespace HMA
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(-8, -6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1214, 770);
+            this.pictureBox2.Size = new System.Drawing.Size(1157, 770);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -284,7 +285,7 @@ namespace HMA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1194, 746);
+            this.ClientSize = new System.Drawing.Size(1274, 746);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dnrcount);
             this.Controls.Add(this.dtcount);

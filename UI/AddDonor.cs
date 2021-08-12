@@ -30,44 +30,49 @@ namespace HMA
             Address AD = new Address();
             Donor d = new Donor(AD);
             DonorOperations op = new DonorOperations();
+            string s = Dfnametxt.Text;
 
             if (String.IsNullOrEmpty(Dfnametxt.Text))
             {
-                MessageBox.Show("First Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (char.IsDigit(s[0]))
+            {
+                MessageBox.Show("First Letter can not be a number!");
             }
             else if (String.IsNullOrEmpty(Dlnametxt.Text))
             {
-                MessageBox.Show("Last Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dphontxt.Text))
             {
-                MessageBox.Show("Phone  Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(DBloodGrpcb.Text))
             {
-                MessageBox.Show("Blood Group Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dareatxt.Text))
             {
-                MessageBox.Show("Area Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dcitytxt.Text))
             {
-                MessageBox.Show("City Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
 
             else
             {
-                d.FirstName = Dfnametxt.Text;
-                d.LastName = Dlnametxt.Text;
-                d.Phone = Dphontxt.Text;
-                d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
-                d.address.Area = Dareatxt.Text;
-                d.address.City = Dcitytxt.Text;
+
 
                 try
                 {
-
+                    d.FirstName = Dfnametxt.Text;
+                    d.LastName = Dlnametxt.Text;
+                    d.Phone = Dphontxt.Text;
+                    d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
+                    d.address.Area = Dareatxt.Text;
+                    d.address.City = Dcitytxt.Text;
                     op.InsertDonor(d);
                     populateData();
                 }
@@ -97,47 +102,53 @@ namespace HMA
             Address AD = new Address();
             Donor d = new Donor(AD);
             DonorOperations op = new DonorOperations();
+            string s = Dfnametxt.Text;
             if (key == 0)
             {
-                MessageBox.Show("Select the Patient");
+                MessageBox.Show("Select the Donor");
             }
             else if (String.IsNullOrEmpty(Dfnametxt.Text))
             {
-                MessageBox.Show("First Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (char.IsDigit(s[0]))
+            {
+                MessageBox.Show("First Letter can not be a number!");
             }
             else if (String.IsNullOrEmpty(Dlnametxt.Text))
             {
-                MessageBox.Show("Last Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dphontxt.Text))
             {
-                MessageBox.Show("Phone  Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(DBloodGrpcb.Text))
             {
-                MessageBox.Show("Blood Group Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dareatxt.Text))
             {
-                MessageBox.Show("Area Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(Dcitytxt.Text))
             {
-                MessageBox.Show("City Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
 
             else
             {
-                d.FirstName = Dfnametxt.Text;
-                d.LastName = Dlnametxt.Text;
-                d.Phone = Dphontxt.Text;
-                d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
-                d.address.Area = Dareatxt.Text;
-                d.address.City = Dcitytxt.Text;
+
                 try
                 {
+                    d.FirstName = Dfnametxt.Text;
+                    d.LastName = Dlnametxt.Text;
+                    d.Phone = Dphontxt.Text;
+                    d.BloodGroup = DBloodGrpcb.SelectedItem.ToString();
+                    d.address.Area = Dareatxt.Text;
+                    d.address.City = Dcitytxt.Text;
                     op.UpdateDonors(key, d);
-                    MessageBox.Show("Patient info Succesfully Updated");
+                    MessageBox.Show("Donor info Succesfully Updated");
                     populateData();
                 }
                 catch (Exception ex)
@@ -178,22 +189,32 @@ namespace HMA
             DonorOperations op = new DonorOperations();
             if (key == 0)
             {
-                MessageBox.Show("Select the Patient");
+                MessageBox.Show("Select the Donor");
+            }
+            else if (Dfnametxt.Text == "" || Dlnametxt.Text == "" || Dphontxt.Text == "" || DBloodGrpcb.SelectedItem == null || Dareatxt.Text == "" || Dcitytxt.Text == "")
+            {
+                MessageBox.Show("Select the Donor");
             }
             else
-            {
-                try
-                {
+                    {
+                        try
+                        {
 
-                    op.DeleteDonors(key);
-                    MessageBox.Show("Patient Succesfully Deleted");
-                    populateData();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
+                            op.DeleteDonors(key);
+                            MessageBox.Show("Donor Succesfully Deleted");
+                            Dfnametxt.Text = "";
+                            Dlnametxt.Text = "";
+                            Dphontxt.Text = "";
+                            DBloodGrpcb.SelectedItem = null;
+                            Dareatxt.Text = "";
+                            Dcitytxt.Text = "";
+                            populateData();
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
         }
 
         private void pictureBox9_Click(object sender, EventArgs e)
