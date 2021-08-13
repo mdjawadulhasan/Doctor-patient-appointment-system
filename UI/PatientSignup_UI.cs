@@ -23,89 +23,152 @@ namespace HMA
         {
 
         }
-
+        string Disease = "";
         private void button1_Click(object sender, EventArgs e)//submit
         {
             Patient P = new Patient();
             PatientOperations op = new PatientOperations();
 
-
+            string s = Pfnametxt.Text;
             bool chk = false;
-            string Disease = "";
+            int value;
+
             if (checkpressureb.Checked == true)
             {
+                checknoneb.Checked =false;
                 chk = true;
                 Disease = "Blood presure";
             }
             if (checksugerb.Checked == true)
             {
+                checknoneb.Checked = false;
                 chk = true;
                 Disease = Disease + "   " + "Diabetes";
             }
             if (checkheartdb.Checked == true)
             {
+                checknoneb.Checked = false;
                 chk = true;
                 Disease = Disease + "   " + "Heart Diseases";
             }
             if (checkgastrickb.Checked == true)
             {
+                checknoneb.Checked = false;
                 chk = true;
                 Disease = Disease + "   " + "Gastrick";
             }
             if (checkanemiab.Checked == true)
             {
+                checknoneb.Checked = false;
                 chk = true;
                 Disease = Disease + "   " + "Anemia";
             }
             if (checkallergyb.Checked)
             {
+                checknoneb.Checked = false;
                 chk = true;
                 Disease = Disease + "   " + "Allergy";
             }
             if (checknoneb.Checked == true)
             {
+                checknoneb.Checked = false; 
                 chk = true;
-                Disease = null;
+                Disease = "";
 
             }
-            if (chk == false)
+         
+            if (String.IsNullOrEmpty(Pusertxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Pfnametxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (char.IsDigit(s[0]))
+            {
+                MessageBox.Show("First Letter can not be a number!");
+            }
+            else if (String.IsNullOrEmpty(Plnametxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+
+            else if (String.IsNullOrEmpty(Pcontacttxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Pgendercb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Pagetxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(pheighttxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Pweighttxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Pbgrptxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Ppasstxt.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (!int.TryParse(Pagetxt.Text.ToString(), out value))
+            {
+                MessageBox.Show("Age  must be a integer!");
+            }
+            else if (!int.TryParse(pheighttxt.Text.ToString(), out value))
+            {
+                MessageBox.Show("Height must be a integer!");
+            }
+            else if (!int.TryParse(Pweighttxt.Text.ToString(), out value))
+            {
+                MessageBox.Show("Weight must be a integer!");
+            }
+            else if (chk == false)
             {
                 MessageBox.Show("Disease Fild can not be Empty !");
             }
-
-
-            P.FirstName = Pfnametxt.Text;
-            P.LastName = Plnametxt.Text;
-            P.Phone = Pcontacttxt.Text;
-            P.Gender = Pgendercb.SelectedItem.ToString();
-            P.Age = Convert.ToInt32(Pagetxt.Text);
-            P.HeightInCm = Convert.ToInt32(pheighttxt.Text);
-            P.WeightInKg = Convert.ToInt32(Pweighttxt.Text);
-            P.BloodGroup = Pbgrptxt.SelectedItem.ToString();
-            P.UserName = Pusertxt.Text;
-            P.Password = Ppasstxt.Text;
-            P.Diseases = Disease;
-
-
-            if (op.CheckSignup(P.UserName) >= 1)
-            {
-                MessageBox.Show("Usrname Already Exixsts, Select Another !");
-            }
             else
             {
-                try
+                P.UserName = Pusertxt.Text;
+                if (op.CheckSignup(P.UserName) >= 1)
                 {
-
-                    op.InsertPatient(P);
-                    MessageBox.Show("Signup Succes !");
+                    MessageBox.Show("Usrname Already Exixsts, Select Another !");
                 }
-                catch (Exception ex)
+                else
                 {
-                    Console.WriteLine(ex.Message);
+                    try
+                    {
+                        P.FirstName = Pfnametxt.Text;
+                        P.LastName = Plnametxt.Text;
+                        P.Phone = Pcontacttxt.Text;
+                        P.Gender = Pgendercb.SelectedItem.ToString();
+                        P.Age = Convert.ToInt32(Pagetxt.Text);
+                        P.HeightInCm = Convert.ToInt32(pheighttxt.Text);
+                        P.WeightInKg = Convert.ToInt32(Pweighttxt.Text);
+                        P.BloodGroup = Pbgrptxt.SelectedItem.ToString();
+                        P.Password = Ppasstxt.Text;
+                        P.Diseases = Disease;
+                        op.InsertPatient(P);
+                        MessageBox.Show("Signup Succes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Provide the Information correctly");
+                    }
                 }
             }
-
-
 
 
 
@@ -122,6 +185,7 @@ namespace HMA
                 checkgastrickb.Checked = false;
                 checkanemiab.Checked = false;
                 checkallergyb.Checked = false;
+                Disease = "";
 
             }
         }

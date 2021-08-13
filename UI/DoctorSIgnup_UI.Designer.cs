@@ -67,13 +67,14 @@ namespace HMA
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
-            this.usernametxt = new System.Windows.Forms.TextBox();
-            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
-            this.passwordtxt = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.passwordtxt = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel10 = new System.Windows.Forms.FlowLayoutPanel();
+            this.usernametxt = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.RegDoctorDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -127,7 +128,7 @@ namespace HMA
             this.RegDoctorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.RegDoctorDGV.RowTemplate.Height = 24;
             this.RegDoctorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.RegDoctorDGV.Size = new System.Drawing.Size(489, 594);
+            this.RegDoctorDGV.Size = new System.Drawing.Size(538, 594);
             this.RegDoctorDGV.TabIndex = 203;
             this.RegDoctorDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RegDoctorDGV_CellContentClick);
             // 
@@ -303,9 +304,8 @@ namespace HMA
             this.RDtfnametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtfnametxt.ForeColor = System.Drawing.Color.Teal;
             this.RDtfnametxt.Location = new System.Drawing.Point(203, 141);
-            this.RDtfnametxt.Multiline = true;
             this.RDtfnametxt.Name = "RDtfnametxt";
-            this.RDtfnametxt.Size = new System.Drawing.Size(273, 31);
+            this.RDtfnametxt.Size = new System.Drawing.Size(323, 23);
             this.RDtfnametxt.TabIndex = 189;
             // 
             // flowLayoutPanel2
@@ -322,9 +322,8 @@ namespace HMA
             this.RDtlnametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtlnametxt.ForeColor = System.Drawing.Color.Teal;
             this.RDtlnametxt.Location = new System.Drawing.Point(202, 180);
-            this.RDtlnametxt.Multiline = true;
             this.RDtlnametxt.Name = "RDtlnametxt";
-            this.RDtlnametxt.Size = new System.Drawing.Size(273, 31);
+            this.RDtlnametxt.Size = new System.Drawing.Size(324, 23);
             this.RDtlnametxt.TabIndex = 191;
             // 
             // flowLayoutPanel3
@@ -341,9 +340,8 @@ namespace HMA
             this.RDtdept.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtdept.ForeColor = System.Drawing.Color.Teal;
             this.RDtdept.Location = new System.Drawing.Point(202, 241);
-            this.RDtdept.Multiline = true;
             this.RDtdept.Name = "RDtdept";
-            this.RDtdept.Size = new System.Drawing.Size(273, 31);
+            this.RDtdept.Size = new System.Drawing.Size(324, 23);
             this.RDtdept.TabIndex = 193;
             // 
             // flowLayoutPanel4
@@ -360,9 +358,8 @@ namespace HMA
             this.RDtdegree.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtdegree.ForeColor = System.Drawing.Color.Teal;
             this.RDtdegree.Location = new System.Drawing.Point(200, 285);
-            this.RDtdegree.Multiline = true;
             this.RDtdegree.Name = "RDtdegree";
-            this.RDtdegree.Size = new System.Drawing.Size(273, 31);
+            this.RDtdegree.Size = new System.Drawing.Size(326, 23);
             this.RDtdegree.TabIndex = 195;
             // 
             // flowLayoutPanel5
@@ -379,9 +376,8 @@ namespace HMA
             this.RDtcham.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtcham.ForeColor = System.Drawing.Color.Teal;
             this.RDtcham.Location = new System.Drawing.Point(190, 339);
-            this.RDtcham.Multiline = true;
             this.RDtcham.Name = "RDtcham";
-            this.RDtcham.Size = new System.Drawing.Size(273, 31);
+            this.RDtcham.Size = new System.Drawing.Size(336, 23);
             this.RDtcham.TabIndex = 197;
             // 
             // flowLayoutPanel6
@@ -398,9 +394,8 @@ namespace HMA
             this.RDtvisitingdys.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtvisitingdys.ForeColor = System.Drawing.Color.Teal;
             this.RDtvisitingdys.Location = new System.Drawing.Point(224, 413);
-            this.RDtvisitingdys.Multiline = true;
             this.RDtvisitingdys.Name = "RDtvisitingdys";
-            this.RDtvisitingdys.Size = new System.Drawing.Size(273, 31);
+            this.RDtvisitingdys.Size = new System.Drawing.Size(302, 23);
             this.RDtvisitingdys.TabIndex = 199;
             // 
             // flowLayoutPanel7
@@ -417,9 +412,8 @@ namespace HMA
             this.RDtvhours.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtvhours.ForeColor = System.Drawing.Color.Teal;
             this.RDtvhours.Location = new System.Drawing.Point(217, 461);
-            this.RDtvhours.Multiline = true;
             this.RDtvhours.Name = "RDtvhours";
-            this.RDtvhours.Size = new System.Drawing.Size(273, 31);
+            this.RDtvhours.Size = new System.Drawing.Size(309, 23);
             this.RDtvhours.TabIndex = 201;
             this.RDtvhours.TextChanged += new System.EventHandler(this.RDtvhours_TextChanged);
             // 
@@ -437,9 +431,8 @@ namespace HMA
             this.RDtApt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RDtApt.ForeColor = System.Drawing.Color.Teal;
             this.RDtApt.Location = new System.Drawing.Point(214, 513);
-            this.RDtApt.Multiline = true;
             this.RDtApt.Name = "RDtApt";
-            this.RDtApt.Size = new System.Drawing.Size(273, 31);
+            this.RDtApt.Size = new System.Drawing.Size(312, 23);
             this.RDtApt.TabIndex = 203;
             // 
             // label5
@@ -456,9 +449,9 @@ namespace HMA
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HMA.Properties.Resources.regpass;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 620);
+            this.pictureBox4.Location = new System.Drawing.Point(26, 618);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(29, 27);
+            this.pictureBox4.Size = new System.Drawing.Size(32, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 205;
             this.pictureBox4.TabStop = false;
@@ -519,34 +512,23 @@ namespace HMA
             this.panel1.Size = new System.Drawing.Size(594, 747);
             this.panel1.TabIndex = 156;
             // 
-            // pictureBox5
+            // panel2
             // 
-            this.pictureBox5.Image = global::HMA.Properties.Resources.reguser;
-            this.pictureBox5.Location = new System.Drawing.Point(40, 569);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(13, 25);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 207;
-            this.pictureBox5.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.Teal;
+            this.panel2.Location = new System.Drawing.Point(546, 6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(10, 741);
+            this.panel2.TabIndex = 212;
             // 
-            // flowLayoutPanel9
+            // passwordtxt
             // 
-            this.flowLayoutPanel9.BackColor = System.Drawing.Color.Teal;
-            this.flowLayoutPanel9.Location = new System.Drawing.Point(207, 600);
-            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
-            this.flowLayoutPanel9.Size = new System.Drawing.Size(290, 1);
-            this.flowLayoutPanel9.TabIndex = 208;
-            // 
-            // usernametxt
-            // 
-            this.usernametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernametxt.ForeColor = System.Drawing.Color.Teal;
-            this.usernametxt.Location = new System.Drawing.Point(217, 563);
-            this.usernametxt.Multiline = true;
-            this.usernametxt.Name = "usernametxt";
-            this.usernametxt.Size = new System.Drawing.Size(273, 31);
-            this.usernametxt.TabIndex = 209;
+            this.passwordtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordtxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordtxt.ForeColor = System.Drawing.Color.Teal;
+            this.passwordtxt.Location = new System.Drawing.Point(214, 616);
+            this.passwordtxt.Name = "passwordtxt";
+            this.passwordtxt.Size = new System.Drawing.Size(312, 23);
+            this.passwordtxt.TabIndex = 211;
             // 
             // flowLayoutPanel10
             // 
@@ -556,24 +538,33 @@ namespace HMA
             this.flowLayoutPanel10.Size = new System.Drawing.Size(290, 1);
             this.flowLayoutPanel10.TabIndex = 210;
             // 
-            // passwordtxt
+            // usernametxt
             // 
-            this.passwordtxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordtxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordtxt.ForeColor = System.Drawing.Color.Teal;
-            this.passwordtxt.Location = new System.Drawing.Point(214, 616);
-            this.passwordtxt.Multiline = true;
-            this.passwordtxt.Name = "passwordtxt";
-            this.passwordtxt.Size = new System.Drawing.Size(273, 31);
-            this.passwordtxt.TabIndex = 211;
+            this.usernametxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usernametxt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernametxt.ForeColor = System.Drawing.Color.Teal;
+            this.usernametxt.Location = new System.Drawing.Point(217, 563);
+            this.usernametxt.Name = "usernametxt";
+            this.usernametxt.Size = new System.Drawing.Size(309, 23);
+            this.usernametxt.TabIndex = 209;
             // 
-            // panel2
+            // flowLayoutPanel9
             // 
-            this.panel2.BackColor = System.Drawing.Color.Teal;
-            this.panel2.Location = new System.Drawing.Point(546, 6);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 741);
-            this.panel2.TabIndex = 212;
+            this.flowLayoutPanel9.BackColor = System.Drawing.Color.Teal;
+            this.flowLayoutPanel9.Location = new System.Drawing.Point(207, 600);
+            this.flowLayoutPanel9.Name = "flowLayoutPanel9";
+            this.flowLayoutPanel9.Size = new System.Drawing.Size(290, 1);
+            this.flowLayoutPanel9.TabIndex = 208;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::HMA.Properties.Resources.reguser;
+            this.pictureBox5.Location = new System.Drawing.Point(30, 569);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(23, 29);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 207;
+            this.pictureBox5.TabStop = false;
             // 
             // label12
             // 
@@ -585,12 +576,28 @@ namespace HMA
             this.label12.TabIndex = 214;
             this.label12.Text = "Doctor List";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Teal;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 10.2F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(969, 78);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(102, 33);
+            this.button1.TabIndex = 215;
+            this.button1.Text = "Show All";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // DoctorSIgnup_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1079, 747);
+            this.ClientSize = new System.Drawing.Size(1147, 747);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.SeacrhBtn);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.searchtxt);
@@ -658,5 +665,6 @@ namespace HMA
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button button1;
     }
 }

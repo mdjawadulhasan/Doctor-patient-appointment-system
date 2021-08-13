@@ -32,8 +32,15 @@ namespace HMA
         {
             String src = searchtxt.Text;
             RegisteredDoctorOperations OP = new RegisteredDoctorOperations();
-            DataSet ds = OP.ShowSpecificDoctor(src);
-            RegDoctorDGV.DataSource = ds.Tables[0];
+            try
+            {
+                DataSet ds = OP.ShowSpecificDoctor(src);
+                RegDoctorDGV.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void DoctorSIgnup_UI_Load(object sender, EventArgs e)
@@ -57,7 +64,6 @@ namespace HMA
             if (e.RowIndex >= 0)
             {
 
-
                 DataGridViewRow row = this.RegDoctorDGV.Rows[e.RowIndex];
                 RDtfnametxt.Text = row.Cells["Dtfname"].Value.ToString();
                 RDtlnametxt.Text = row.Cells["Dtlname"].Value.ToString();
@@ -69,9 +75,6 @@ namespace HMA
                 RDtApt.Text = row.Cells["Dtaptcall"].Value.ToString();
 
                 d.id = Convert.ToInt32(row.Cells["Did"].Value);
-
-
-
             }
         }
 
@@ -90,74 +93,73 @@ namespace HMA
         {
 
 
-            if (OP.CheckSignup(d.id) >= 1)
+            if (String.IsNullOrEmpty(RDtfnametxt.Text))
             {
-                MessageBox.Show("This Doctor Already Exists in the system");
-            }
-
-            else if (String.IsNullOrEmpty(RDtfnametxt.Text))
-            {
-                MessageBox.Show(" First Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtlnametxt.Text))
             {
-                MessageBox.Show(" Last Name Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtdegree.Text))
             {
-                MessageBox.Show("Degree Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtdept.Text))
             {
-                MessageBox.Show("Department Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtcham.Text))
             {
-                MessageBox.Show(" Chamber Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtvhours.Text))
             {
-                MessageBox.Show("Visiting Hours  Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtvisitingdys.Text))
             {
-                MessageBox.Show("Visiting  Days  Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(RDtApt.Text))
             {
-                MessageBox.Show("Appoinment Call No. Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
 
             else if (String.IsNullOrEmpty(passwordtxt.Text))
             {
-                MessageBox.Show("Password Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
             else if (String.IsNullOrEmpty(usernametxt.Text))
             {
-                MessageBox.Show("Username Field Can Not Be Empty!");
+                MessageBox.Show("All the information must be filled up!");
             }
 
             else if (passwordtxt.Text.Length < 5)
             {
-                MessageBox.Show("Password Must have more then 5 character");
+                MessageBox.Show("Password is too weak !");
+            }
+            else if (OP.CheckSignup(d.id) >= 1)
+            {
+                MessageBox.Show("This Doctor Already Exists in the system");
             }
 
             else
             {
-                d.FirstName = RDtfnametxt.Text;
-                d.LastName = RDtlnametxt.Text;
-                d.Degree = RDtdegree.Text;
-                d.Department = RDtdept.Text;
-                d.Chammber = RDtcham.Text;
-                d.Visitng_Hours = RDtvhours.Text;
-                d.visiting_days = RDtvisitingdys.Text;
-                d.Appoinment_CallNo = RDtApt.Text;
-                d.UserName = usernametxt.Text;
-                d.Password = passwordtxt.Text;
+
 
                 try
                 {
-
+                    d.FirstName = RDtfnametxt.Text;
+                    d.LastName = RDtlnametxt.Text;
+                    d.Degree = RDtdegree.Text;
+                    d.Department = RDtdept.Text;
+                    d.Chammber = RDtcham.Text;
+                    d.Visitng_Hours = RDtvhours.Text;
+                    d.visiting_days = RDtvisitingdys.Text;
+                    d.Appoinment_CallNo = RDtApt.Text;
+                    d.UserName = usernametxt.Text;
+                    d.Password = passwordtxt.Text;
                     OP.RegisterDoctor(d);
                     MessageBox.Show("Sign up Succes !");
                 }
@@ -168,6 +170,9 @@ namespace HMA
             }
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            populateData();
+        }
     }
 }
