@@ -375,6 +375,7 @@ namespace HMA
             this.checkpressureb.TabIndex = 174;
             this.checkpressureb.Text = "Blood Pressure";
             this.checkpressureb.UseVisualStyleBackColor = true;
+            this.checkpressureb.CheckedChanged += new System.EventHandler(this.checkpressureb_CheckedChanged);
             // 
             // checksugerb
             // 
@@ -386,6 +387,7 @@ namespace HMA
             this.checksugerb.TabIndex = 175;
             this.checksugerb.Text = "Diabetes";
             this.checksugerb.UseVisualStyleBackColor = true;
+            this.checksugerb.CheckedChanged += new System.EventHandler(this.checksugerb_CheckedChanged);
             // 
             // checkheartdb
             // 
@@ -397,6 +399,7 @@ namespace HMA
             this.checkheartdb.TabIndex = 176;
             this.checkheartdb.Text = "Heart Disease";
             this.checkheartdb.UseVisualStyleBackColor = true;
+            this.checkheartdb.CheckedChanged += new System.EventHandler(this.checkheartdb_CheckedChanged);
             // 
             // checkgastrickb
             // 
@@ -408,6 +411,7 @@ namespace HMA
             this.checkgastrickb.TabIndex = 177;
             this.checkgastrickb.Text = "Gastric";
             this.checkgastrickb.UseVisualStyleBackColor = true;
+            this.checkgastrickb.CheckedChanged += new System.EventHandler(this.checkgastrickb_CheckedChanged);
             // 
             // checknoneb
             // 
@@ -431,6 +435,7 @@ namespace HMA
             this.checkallergyb.TabIndex = 179;
             this.checkallergyb.Text = "Allergy";
             this.checkallergyb.UseVisualStyleBackColor = true;
+            this.checkallergyb.CheckedChanged += new System.EventHandler(this.checkallergyb_CheckedChanged);
             // 
             // checkanemiab
             // 
@@ -442,6 +447,7 @@ namespace HMA
             this.checkanemiab.TabIndex = 180;
             this.checkanemiab.Text = "Anemia";
             this.checkanemiab.UseVisualStyleBackColor = true;
+            this.checkanemiab.CheckedChanged += new System.EventHandler(this.checkanemiab_CheckedChanged);
             // 
             // button1
             // 

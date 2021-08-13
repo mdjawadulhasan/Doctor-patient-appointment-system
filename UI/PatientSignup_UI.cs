@@ -24,58 +24,60 @@ namespace HMA
 
         }
         string Disease = "";
+        bool chk = false;
+        
         private void button1_Click(object sender, EventArgs e)//submit
         {
             Patient P = new Patient();
             PatientOperations op = new PatientOperations();
 
             string s = Pfnametxt.Text;
-            bool chk = false;
+            
             int value;
 
-            if (checkpressureb.Checked == true)
-            {
-                checknoneb.Checked =false;
-                chk = true;
-                Disease = "Blood presure";
-            }
-            if (checksugerb.Checked == true)
-            {
-                checknoneb.Checked = false;
-                chk = true;
-                Disease = Disease + "   " + "Diabetes";
-            }
-            if (checkheartdb.Checked == true)
-            {
-                checknoneb.Checked = false;
-                chk = true;
-                Disease = Disease + "   " + "Heart Diseases";
-            }
-            if (checkgastrickb.Checked == true)
-            {
-                checknoneb.Checked = false;
-                chk = true;
-                Disease = Disease + "   " + "Gastrick";
-            }
-            if (checkanemiab.Checked == true)
-            {
-                checknoneb.Checked = false;
-                chk = true;
-                Disease = Disease + "   " + "Anemia";
-            }
-            if (checkallergyb.Checked)
-            {
-                checknoneb.Checked = false;
-                chk = true;
-                Disease = Disease + "   " + "Allergy";
-            }
-            if (checknoneb.Checked == true)
-            {
-                checknoneb.Checked = false; 
-                chk = true;
-                Disease = "";
+            //if (checkpressureb.Checked == true)
+            //{
+            //    checknoneb.Checked =false;
+            //    chk = true;
+            //    Disease = "Blood presure";
+            //}
+            //if (checksugerb.Checked == true)
+            //{
+            //    checknoneb.Checked = false;
+            //    chk = true;
+            //    Disease = Disease + " " + "Diabetes";
+            //}
+            //if (checkheartdb.Checked == true)
+            //{
+            //    checknoneb.Checked = false;
+            //    chk = true;
+            //    Disease = Disease + " " + "Heart Diseases";
+            //}
+            //if (checkgastrickb.Checked == true)
+            //{
+            //    checknoneb.Checked = false;
+            //    chk = true;
+            //    Disease = Disease + " " + "Gastrick";
+            //}
+            //if (checkanemiab.Checked == true)
+            //{
+            //    checknoneb.Checked = false;
+            //    chk = true;
+            //    Disease = Disease + " " + "Anemia";
+            //}
+            //if (checkallergyb.Checked)
+            //{
+            //    checknoneb.Checked = false;
+            //    chk = true;
+            //    Disease = Disease + " " + "Allergy";
+            //}
+            //if (checknoneb.Checked == true)
+            //{
+            //    checknoneb.Checked = false; 
+            //    chk = true;
+            //    Disease = "";
 
-            }
+            //}
          
             if (String.IsNullOrEmpty(Pusertxt.Text))
             {
@@ -178,7 +180,7 @@ namespace HMA
         {
             if (checknoneb.Checked == true)
             {
-
+                chk = true;
                 checkpressureb.Checked = false;
                 checksugerb.Checked = false;
                 checkheartdb.Checked = false;
@@ -188,7 +190,104 @@ namespace HMA
                 Disease = "";
 
             }
+            else
+            {
+                chk =false;
+            }
         }
+
+        private void checkpressureb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkpressureb.Checked == true)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = "Blood presure";
+            }
+            else
+            {
+                Disease= (Disease.Replace("Blood presure",""));
+                chk = false;
+            }
+        }
+
+        
+
+        private void checksugerb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checksugerb.Checked == true)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = Disease + " " + "Diabetes";
+            }
+            else
+            {
+                Disease = (Disease.Replace("Diabetes",""));
+                chk = false;
+            }
+        }
+
+        private void checkheartdb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkheartdb.Checked == true)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = Disease + " " + "Heart Diseases";
+            }
+            else
+            {
+                Disease = (Disease.Replace("Heart Diseases", ""));
+                chk = false;
+            }
+        }
+
+        private void checkgastrickb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkgastrickb.Checked == true)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = Disease + " " + "Gastrick";
+            }
+            else
+            {
+                Disease = (Disease.Replace("Gastrick", ""));
+                chk = false;
+            }
+        }
+
+        private void checkanemiab_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkanemiab.Checked == true)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = Disease + " " + "Anemia";
+            }
+            else
+            {
+                Disease = (Disease.Replace("Anemia", ""));
+                chk = false;
+            }
+        }
+
+        private void checkallergyb_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkallergyb.Checked)
+            {
+                checknoneb.Checked = false;
+                chk = true;
+                Disease = Disease + " " + "Allergy";
+            }
+            else
+            {
+                Disease = (Disease.Replace("Allergy", ""));
+                chk = false;
+            }
+        }
+
 
         private void btnexit_Click(object sender, EventArgs e)
         {
