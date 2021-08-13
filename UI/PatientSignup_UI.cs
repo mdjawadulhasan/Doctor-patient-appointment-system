@@ -34,50 +34,6 @@ namespace HMA
             string s = Pfnametxt.Text;
             
             int value;
-
-            //if (checkpressureb.Checked == true)
-            //{
-            //    checknoneb.Checked =false;
-            //    chk = true;
-            //    Disease = "Blood presure";
-            //}
-            //if (checksugerb.Checked == true)
-            //{
-            //    checknoneb.Checked = false;
-            //    chk = true;
-            //    Disease = Disease + " " + "Diabetes";
-            //}
-            //if (checkheartdb.Checked == true)
-            //{
-            //    checknoneb.Checked = false;
-            //    chk = true;
-            //    Disease = Disease + " " + "Heart Diseases";
-            //}
-            //if (checkgastrickb.Checked == true)
-            //{
-            //    checknoneb.Checked = false;
-            //    chk = true;
-            //    Disease = Disease + " " + "Gastrick";
-            //}
-            //if (checkanemiab.Checked == true)
-            //{
-            //    checknoneb.Checked = false;
-            //    chk = true;
-            //    Disease = Disease + " " + "Anemia";
-            //}
-            //if (checkallergyb.Checked)
-            //{
-            //    checknoneb.Checked = false;
-            //    chk = true;
-            //    Disease = Disease + " " + "Allergy";
-            //}
-            //if (checknoneb.Checked == true)
-            //{
-            //    checknoneb.Checked = false; 
-            //    chk = true;
-            //    Disease = "";
-
-            //}
          
             if (String.IsNullOrEmpty(Pusertxt.Text))
             {
@@ -140,12 +96,16 @@ namespace HMA
             {
                 MessageBox.Show("Disease Fild can not be Empty !");
             }
+            else if (Ppasstxt.Text.Length < 5)
+            {
+                MessageBox.Show("Password is too weak !");
+            }
             else
             {
                 P.UserName = Pusertxt.Text;
                 if (op.CheckSignup(P.UserName) >= 1)
                 {
-                    MessageBox.Show("Usrname Already Exixsts, Select Another !");
+                    MessageBox.Show("Username Already Exists, Select Another !");
                 }
                 else
                 {
@@ -202,11 +162,11 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = "Blood presure";
+                Disease = Disease+" "+"Blood Pressure";
             }
             else
             {
-                Disease= (Disease.Replace("Blood presure",""));
+                Disease= (Disease.Replace("Blood Pressure", ""));
                 chk = false;
             }
         }
@@ -219,7 +179,7 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = Disease + " " + "Diabetes";
+                Disease = Disease + "  " + "Diabetes";
             }
             else
             {
@@ -234,7 +194,7 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = Disease + " " + "Heart Diseases";
+                Disease = Disease + "  " + "Heart Diseases";
             }
             else
             {
@@ -249,7 +209,7 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = Disease + " " + "Gastrick";
+                Disease = Disease + "  " + "Gastrick";
             }
             else
             {
@@ -264,7 +224,7 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = Disease + " " + "Anemia";
+                Disease = Disease + "  " + "Anemia";
             }
             else
             {
@@ -279,7 +239,7 @@ namespace HMA
             {
                 checknoneb.Checked = false;
                 chk = true;
-                Disease = Disease + " " + "Allergy";
+                Disease = Disease + "  " + "Allergy";
             }
             else
             {

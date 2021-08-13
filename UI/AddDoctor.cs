@@ -249,16 +249,24 @@ namespace HMA
             }
         }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
-        {
-            new AddDonor().Show();
-            this.Close();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void Adminlb_Click(object sender, EventArgs e)
         {
             new Admin().Show();
-            this.Close();
+            this.Hide();
+        }
+
+       
+
+        private void Backpicbox_Click(object sender, EventArgs e)
+        {
+            new Admin().Show();
+            this.Hide();
+        }
+
+        private void AddDonorpicbox_Click(object sender, EventArgs e)
+        {
+            new AddDonor().Show();
+            this.Hide();
         }
     }
 }

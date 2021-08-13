@@ -52,21 +52,30 @@ namespace HMA
             new loginorsignup().Show();
             this.Hide();
         }
+      
 
-        private void label2_Click(object sender, EventArgs e)
+        private void BookAptLoad_Click(object sender, EventArgs e)
         {
-            new Patient_UI(pt).Show();
+            new BookAppointmentUI(pt).Show();
             this.Hide();
         }
 
-        private void searchtxt_TextChanged(object sender, EventArgs e)
+        private void SetAppointment_Click(object sender, EventArgs e)
         {
-
+            new ViewAppointment_UI(pt).Show();
+            this.Hide();
         }
 
-        private void flowLayoutPanel11_Paint(object sender, PaintEventArgs e)
+        private void MedicalHistory_Click(object sender, EventArgs e)
         {
+            new PatientMedicalHistory(pt).Show();
+            this.Hide();
+        }
 
+        private void Patientlb_Click(object sender, EventArgs e)
+        {
+            new Patient_UI(pt).Show();
+            this.Hide();
         }
     }
 }

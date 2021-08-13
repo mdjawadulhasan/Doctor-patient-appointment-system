@@ -55,7 +55,7 @@ namespace DataLayer_HMA.Operations
         public Patient GetPatient(String UserName, String Password)
         {
             Patient P = null;
-            String Query = "select Pid,Pfname,Plname,Pcontactno,Pgender,Page,Pheight,Pweight,Pbldgrp,PcrnDis,Pusername,PPassword from PatientTbl where Pusername='" + UserName + "' AND Ppassword='" + Password + "';";
+            String Query = "select Pid,Pfname,Plname,Pcontactno,Pgender,Page,Pheight,Pweight,Pbldgrp,PcrnDis,Pusername,PPassword from PatientTbl where Pusername='" + UserName + "' COLLATE Latin1_General_CS_AS AND Ppassword='" + Password + "' COLLATE Latin1_General_CS_AS;";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

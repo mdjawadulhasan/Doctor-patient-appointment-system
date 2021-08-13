@@ -74,3 +74,4 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.BookAppointmentUI
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.ViewAppointmentList.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.TreatmentUI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PreviousRecordUI.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PatientMedicalHistory.resources

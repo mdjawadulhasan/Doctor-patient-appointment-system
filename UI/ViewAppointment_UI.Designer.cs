@@ -42,7 +42,7 @@ namespace HMA
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.MedHistory = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,14 +51,14 @@ namespace HMA
             this.PrevAptDgv = new System.Windows.Forms.DataGridView();
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dltlb = new System.Windows.Forms.Label();
             this.Deletebtn = new System.Windows.Forms.Button();
+            this.dltlb = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpAptDgv)).BeginInit();
@@ -76,14 +76,14 @@ namespace HMA
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.MedHistory);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 789);
+            this.panel1.Size = new System.Drawing.Size(214, 789);
             this.panel1.TabIndex = 48;
             // 
             // pictureBox4
@@ -173,15 +173,16 @@ namespace HMA
             this.label4.TabIndex = 8;
             this.label4.Text = "Medical \r\n History";
             // 
-            // pictureBox3
+            // MedHistory
             // 
-            this.pictureBox3.Image = global::HMA.Properties.Resources.medical_history;
-            this.pictureBox3.Location = new System.Drawing.Point(19, 325);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.MedHistory.Image = global::HMA.Properties.Resources.medical_history;
+            this.MedHistory.Location = new System.Drawing.Point(19, 325);
+            this.MedHistory.Name = "MedHistory";
+            this.MedHistory.Size = new System.Drawing.Size(42, 56);
+            this.MedHistory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MedHistory.TabIndex = 7;
+            this.MedHistory.TabStop = false;
+            this.MedHistory.Click += new System.EventHandler(this.MedHistory_Click);
             // 
             // label3
             // 
@@ -223,14 +224,14 @@ namespace HMA
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(97, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1118, 788);
+            this.pictureBox2.Size = new System.Drawing.Size(1118, 779);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
             // 
             // UpAptDgv
             // 
-            this.UpAptDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.UpAptDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.UpAptDgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.UpAptDgv.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.UpAptDgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -251,7 +252,8 @@ namespace HMA
             this.UpAptDgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.UpAptDgv.RowHeadersVisible = false;
             this.UpAptDgv.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
@@ -264,7 +266,7 @@ namespace HMA
             // 
             // PrevAptDgv
             // 
-            this.PrevAptDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.PrevAptDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PrevAptDgv.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.PrevAptDgv.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.PrevAptDgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -285,7 +287,8 @@ namespace HMA
             this.PrevAptDgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.PrevAptDgv.RowHeadersVisible = false;
             this.PrevAptDgv.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
@@ -316,17 +319,6 @@ namespace HMA
             this.label1.TabIndex = 213;
             this.label1.Text = "Previous Appoinments";
             // 
-            // dltlb
-            // 
-            this.dltlb.AutoSize = true;
-            this.dltlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dltlb.ForeColor = System.Drawing.Color.White;
-            this.dltlb.Location = new System.Drawing.Point(928, 64);
-            this.dltlb.Name = "dltlb";
-            this.dltlb.Size = new System.Drawing.Size(78, 25);
-            this.dltlb.TabIndex = 25;
-            this.dltlb.Text = "sdgdsg";
-            // 
             // Deletebtn
             // 
             this.Deletebtn.BackColor = System.Drawing.Color.Teal;
@@ -341,6 +333,18 @@ namespace HMA
             this.Deletebtn.Text = "Delete";
             this.Deletebtn.UseVisualStyleBackColor = false;
             this.Deletebtn.Click += new System.EventHandler(this.Deletebtn_Click);
+            // 
+            // dltlb
+            // 
+            this.dltlb.AutoSize = true;
+            this.dltlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dltlb.ForeColor = System.Drawing.Color.White;
+            this.dltlb.Location = new System.Drawing.Point(928, 64);
+            this.dltlb.Name = "dltlb";
+            this.dltlb.Size = new System.Drawing.Size(78, 25);
+            this.dltlb.TabIndex = 25;
+            this.dltlb.Text = "sdgdsg";
+            this.dltlb.Visible = false;
             // 
             // ViewAppointment_UI
             // 
@@ -357,6 +361,7 @@ namespace HMA
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewAppointment_UI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAppointment_UI";
             this.Load += new System.EventHandler(this.ViewAppointment_UI_Load);
             this.panel1.ResumeLayout(false);
@@ -365,7 +370,7 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedHistory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpAptDgv)).EndInit();
@@ -385,7 +390,7 @@ namespace HMA
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox MedHistory;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label2;
@@ -394,7 +399,7 @@ namespace HMA
         private System.Windows.Forms.DataGridView PrevAptDgv;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label dltlb;
         private System.Windows.Forms.Button Deletebtn;
+        private System.Windows.Forms.Label dltlb;
     }
 }

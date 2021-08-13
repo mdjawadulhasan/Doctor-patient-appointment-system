@@ -29,15 +29,15 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Backpicbox = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.AddDoctorpicbox = new System.Windows.Forms.PictureBox();
+            this.Adminlb = new System.Windows.Forms.Label();
             this.Dfnametxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.DBloodGrpcb = new System.Windows.Forms.ComboBox();
@@ -57,8 +57,8 @@ namespace HMA
             this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Backpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDoctorpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,10 +67,10 @@ namespace HMA
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Backpicbox);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.AddDoctorpicbox);
+            this.panel1.Controls.Add(this.Adminlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -99,16 +99,16 @@ namespace HMA
             this.label8.TabIndex = 14;
             this.label8.Text = "Back";
             // 
-            // pictureBox6
+            // Backpicbox
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.back_arrow;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 604);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.Backpicbox.Image = global::HMA.Properties.Resources.back_arrow;
+            this.Backpicbox.Location = new System.Drawing.Point(21, 604);
+            this.Backpicbox.Name = "Backpicbox";
+            this.Backpicbox.Size = new System.Drawing.Size(48, 67);
+            this.Backpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Backpicbox.TabIndex = 13;
+            this.Backpicbox.TabStop = false;
+            this.Backpicbox.Click += new System.EventHandler(this.Backpicbox_Click);
             // 
             // label11
             // 
@@ -121,27 +121,28 @@ namespace HMA
             this.label11.TabIndex = 8;
             this.label11.Text = "Add Doctor";
             // 
-            // pictureBox9
+            // AddDoctorpicbox
             // 
-            this.pictureBox9.Image = global::HMA.Properties.Resources.doctor;
-            this.pictureBox9.Location = new System.Drawing.Point(56, 294);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(81, 91);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.AddDoctorpicbox.Image = global::HMA.Properties.Resources.doctor;
+            this.AddDoctorpicbox.Location = new System.Drawing.Point(56, 294);
+            this.AddDoctorpicbox.Name = "AddDoctorpicbox";
+            this.AddDoctorpicbox.Size = new System.Drawing.Size(81, 91);
+            this.AddDoctorpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AddDoctorpicbox.TabIndex = 7;
+            this.AddDoctorpicbox.TabStop = false;
+            this.AddDoctorpicbox.Click += new System.EventHandler(this.AddDoctorpicbox_Click);
             // 
-            // label13
+            // Adminlb
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(52, 133);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 25);
-            this.label13.TabIndex = 4;
-            this.label13.Text = "Admin";
+            this.Adminlb.AutoSize = true;
+            this.Adminlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Adminlb.ForeColor = System.Drawing.Color.White;
+            this.Adminlb.Location = new System.Drawing.Point(52, 133);
+            this.Adminlb.Name = "Adminlb";
+            this.Adminlb.Size = new System.Drawing.Size(85, 25);
+            this.Adminlb.TabIndex = 4;
+            this.Adminlb.Text = "Admin";
+            this.Adminlb.Click += new System.EventHandler(this.Adminlb_Click);
             // 
             // Dfnametxt
             // 
@@ -338,14 +339,14 @@ namespace HMA
             this.DonorDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DonorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DonorDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DonorDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.DonorDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DonorDGV.EnableHeadersVisualStyles = false;
             this.DonorDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -354,11 +355,11 @@ namespace HMA
             this.DonorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DonorDGV.RowHeadersVisible = false;
             this.DonorDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.DonorDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DonorDGV.RowTemplate.Height = 24;
             this.DonorDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DonorDGV.Size = new System.Drawing.Size(962, 317);
@@ -407,8 +408,8 @@ namespace HMA
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Backpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDoctorpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DonorDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -419,10 +420,10 @@ namespace HMA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox Backpicbox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox AddDoctorpicbox;
+        private System.Windows.Forms.Label Adminlb;
         private System.Windows.Forms.TextBox Dfnametxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox DBloodGrpcb;

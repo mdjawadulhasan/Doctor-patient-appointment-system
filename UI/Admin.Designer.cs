@@ -39,11 +39,11 @@ namespace HMA
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.AddDoctorPIcbox = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.AddDonorpicbox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -51,9 +51,9 @@ namespace HMA
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDoctorPIcbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDonorpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,11 +140,11 @@ namespace HMA
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.AddDoctorPIcbox);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.AddDonorpicbox);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(1038, 0);
@@ -174,16 +174,16 @@ namespace HMA
             this.label8.TabIndex = 14;
             this.label8.Text = "Logout";
             // 
-            // pictureBox6
+            // Logoutpicbox
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 625);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(35, 625);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(48, 67);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
             // label11
             // 
@@ -196,16 +196,16 @@ namespace HMA
             this.label11.TabIndex = 8;
             this.label11.Text = "Add Doctor";
             // 
-            // pictureBox9
+            // AddDoctorPIcbox
             // 
-            this.pictureBox9.Image = global::HMA.Properties.Resources.doctor;
-            this.pictureBox9.Location = new System.Drawing.Point(81, 399);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(81, 91);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            this.AddDoctorPIcbox.Image = global::HMA.Properties.Resources.doctor;
+            this.AddDoctorPIcbox.Location = new System.Drawing.Point(81, 399);
+            this.AddDoctorPIcbox.Name = "AddDoctorPIcbox";
+            this.AddDoctorPIcbox.Size = new System.Drawing.Size(81, 91);
+            this.AddDoctorPIcbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AddDoctorPIcbox.TabIndex = 7;
+            this.AddDoctorPIcbox.TabStop = false;
+            this.AddDoctorPIcbox.Click += new System.EventHandler(this.AddDoctorPIcbox_Click);
             // 
             // label12
             // 
@@ -218,16 +218,16 @@ namespace HMA
             this.label12.TabIndex = 6;
             this.label12.Text = "Add Blood Donor";
             // 
-            // pictureBox10
+            // AddDonorpicbox
             // 
-            this.pictureBox10.Image = global::HMA.Properties.Resources.blood_donation;
-            this.pictureBox10.Location = new System.Drawing.Point(81, 212);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(81, 91);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 5;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
+            this.AddDonorpicbox.Image = global::HMA.Properties.Resources.blood_donation;
+            this.AddDonorpicbox.Location = new System.Drawing.Point(81, 212);
+            this.AddDonorpicbox.Name = "AddDonorpicbox";
+            this.AddDonorpicbox.Size = new System.Drawing.Size(81, 91);
+            this.AddDonorpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AddDonorpicbox.TabIndex = 5;
+            this.AddDonorpicbox.TabStop = false;
+            this.AddDonorpicbox.Click += new System.EventHandler(this.AddDonorpicbox_Click);
             // 
             // label13
             // 
@@ -306,9 +306,9 @@ namespace HMA
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDoctorPIcbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AddDonorpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -334,11 +334,11 @@ namespace HMA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox AddDoctorPIcbox;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox AddDonorpicbox;
         private System.Windows.Forms.Label label13;
     }
 }

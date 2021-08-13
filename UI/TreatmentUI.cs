@@ -83,15 +83,13 @@ namespace HMA
                 string UserName= Convert.ToString(row.Cells["Patusername"].Value.ToString());
                 populatePatientData(UserName);     
 
-
-            }
-
-            
+            }          
         }
 
         private void prevrecordload_Click(object sender, EventArgs e)
         {
             new PreviousRecordUI(Pt).Show();
+
         }
     }
 }

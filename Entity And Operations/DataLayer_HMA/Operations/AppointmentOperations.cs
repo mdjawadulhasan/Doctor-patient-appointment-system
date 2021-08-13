@@ -40,7 +40,7 @@ namespace DataLayer_HMA.Operations
                 SqlConnection con = new SqlConnection(db.connect);
                 con.Open();
                 SqlCommand cmd = new SqlCommand(Query, con);
-                //cmd.ExecuteNonQuery();
+                
                 count = (Int32)cmd.ExecuteScalar();
                 con.Close();
             }

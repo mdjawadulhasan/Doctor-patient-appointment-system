@@ -30,8 +30,8 @@ namespace HMA
         void populateData()
         {
             PrescriptionOperations OP = new PrescriptionOperations(); 
-                DataSet ds = OP.ShowPrescription(Pt.id);
-                PrevRecordDGV.DataSource = ds.Tables[0];
+            DataSet ds = OP.ShowPrescription(Pt.id);
+            PrevRecordDGV.DataSource = ds.Tables[0];
             
 
         }

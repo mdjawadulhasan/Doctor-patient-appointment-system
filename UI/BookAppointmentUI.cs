@@ -23,11 +23,7 @@ namespace HMA
             InitializeComponent();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            new loginorsignup().Show();
-            this.Hide();
-        }
+
 
         void populateData()
         {
@@ -79,33 +75,83 @@ namespace HMA
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            new Patient_UI(Pt).Show();
-            this.Hide();
-        }
 
         private void SetAppBtn_Click(object sender, EventArgs e)
         {
             Pt.Date = AptDatePicker.Value.Date;
             AppointmentOperations op = new AppointmentOperations();
-            if(op.ChecApt(Pt.id, D.id)>=1)
+            if (String.IsNullOrEmpty(dtnamelb.Text))
             {
-                MessageBox.Show("Appointment Set Already !");
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(dtdeptlb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(dtvisitinglv.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Chamberlb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if(AptDatePicker.Value<DateTime.Today)
+            {
+                MessageBox.Show("Invalid Date!");
+            }
+            else if (op.ChecApt(Pt.id, D.id)>=1)
+            {
+                MessageBox.Show("Appointment Set Already!");
             }
             else
             {
                 try
                 {
-
-
                     op.SetAppointment(Pt, D);
+                    MessageBox.Show("Appointment has been set succesfully.!");
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    MessageBox.Show(ex.Message);
+                   
                 }
             }
+        }
+
+        private void SetAptpicbox_Click(object sender, EventArgs e)
+        {
+            new BookAppointmentUI(Pt).Show();
+            this.Hide();
+        }
+
+        private void Medhistorypicbox_Click(object sender, EventArgs e)
+        {
+            new PatientMedicalHistory(Pt).Show();
+            this.Hide();
+        }
+
+        private void Diseaseprdpicbox_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void Bloodbankpicbox_Click(object sender, EventArgs e)
+        {
+            new BloodBankUI(Pt).Show();
+            this.Hide();
+        }
+
+        private void Logoutpicbox_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Hide();
+        }
+
+        private void Patientlb_Click(object sender, EventArgs e)
+        {
+            new Patient_UI(Pt).Show();
+            this.Hide();
         }
     }
 }

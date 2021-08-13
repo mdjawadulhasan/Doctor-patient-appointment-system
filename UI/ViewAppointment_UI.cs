@@ -47,12 +47,12 @@ namespace HMA
             this.PrevAptDgv.Columns["Did"].Visible = false;
 
             UpAptDgv.Columns["Patname"].HeaderText = "Name";
-            UpAptDgv.Columns["Patusername"].HeaderText = "Usre Name";
+            UpAptDgv.Columns["Patusername"].HeaderText = "User Name";
             UpAptDgv.Columns["Doctorname"].HeaderText = "Doctor Name";
             UpAptDgv.Columns["AppDAte"].HeaderText = "Appointment Date";
 
             PrevAptDgv.Columns["Patname"].HeaderText = "Name";
-            PrevAptDgv.Columns["Patusername"].HeaderText = "Usre Name";
+            PrevAptDgv.Columns["Patusername"].HeaderText = "User Name";
             PrevAptDgv.Columns["Doctorname"].HeaderText = "Doctor Name";
             PrevAptDgv.Columns["AppDAte"].HeaderText = "Appointment Date";
 
@@ -101,7 +101,7 @@ namespace HMA
             }
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
+        private void pictureBox8_Click(object sender, EventArgs e)//BookAppointmentUI
         {
             new BookAppointmentUI(Pt).Show();
             this.Hide();
@@ -113,7 +113,7 @@ namespace HMA
             this.Hide();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void pictureBox5_Click(object sender, EventArgs e)//Blood Bank
         {
             new BloodBankUI(Pt).Show();
             this.Hide();
@@ -122,6 +122,12 @@ namespace HMA
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void MedHistory_Click(object sender, EventArgs e)
+        {
+            new PatientMedicalHistory(Pt).Show();
+            this.Hide();
         }
     }
 }
