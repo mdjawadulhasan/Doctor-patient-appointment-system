@@ -29,23 +29,23 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.BloodBankpicbox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DiseasePredpicbox = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.MedHistory = new System.Windows.Forms.PictureBox();
+            this.MedHistorypicbox = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.BookAPtpicbox = new System.Windows.Forms.PictureBox();
+            this.Patientlb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.UpAptDgv = new System.Windows.Forms.DataGridView();
             this.PrevAptDgv = new System.Windows.Forms.DataGridView();
@@ -55,11 +55,11 @@ namespace HMA
             this.dltlb = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MedHistory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodBankpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedHistorypicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAPtpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpAptDgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrevAptDgv)).BeginInit();
@@ -70,16 +70,16 @@ namespace HMA
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.BloodBankpicbox);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.DiseasePredpicbox);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.MedHistory);
+            this.panel1.Controls.Add(this.MedHistorypicbox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.BookAPtpicbox);
+            this.panel1.Controls.Add(this.Patientlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -108,16 +108,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // pictureBox6
+            // Logoutpicbox
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(19, 605);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(19, 605);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(42, 56);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
             // label6
             // 
@@ -130,16 +130,16 @@ namespace HMA
             this.label6.TabIndex = 12;
             this.label6.Text = "Blood Bank";
             // 
-            // pictureBox5
+            // BloodBankpicbox
             // 
-            this.pictureBox5.Image = global::HMA.Properties.Resources.blood_bank;
-            this.pictureBox5.Location = new System.Drawing.Point(16, 510);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.BloodBankpicbox.Image = global::HMA.Properties.Resources.blood_bank;
+            this.BloodBankpicbox.Location = new System.Drawing.Point(16, 510);
+            this.BloodBankpicbox.Name = "BloodBankpicbox";
+            this.BloodBankpicbox.Size = new System.Drawing.Size(42, 56);
+            this.BloodBankpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BloodBankpicbox.TabIndex = 11;
+            this.BloodBankpicbox.TabStop = false;
+            this.BloodBankpicbox.Click += new System.EventHandler(this.BloodBankpicbox_Click);
             // 
             // label5
             // 
@@ -152,15 +152,16 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Predict \r\nDisease";
             // 
-            // pictureBox1
+            // DiseasePredpicbox
             // 
-            this.pictureBox1.Image = global::HMA.Properties.Resources.disease;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 419);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.DiseasePredpicbox.Image = global::HMA.Properties.Resources.disease;
+            this.DiseasePredpicbox.Location = new System.Drawing.Point(19, 419);
+            this.DiseasePredpicbox.Name = "DiseasePredpicbox";
+            this.DiseasePredpicbox.Size = new System.Drawing.Size(42, 56);
+            this.DiseasePredpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DiseasePredpicbox.TabIndex = 9;
+            this.DiseasePredpicbox.TabStop = false;
+            this.DiseasePredpicbox.Click += new System.EventHandler(this.DiseasePredpicbox_Click);
             // 
             // label4
             // 
@@ -173,16 +174,16 @@ namespace HMA
             this.label4.TabIndex = 8;
             this.label4.Text = "Medical \r\n History";
             // 
-            // MedHistory
+            // MedHistorypicbox
             // 
-            this.MedHistory.Image = global::HMA.Properties.Resources.medical_history;
-            this.MedHistory.Location = new System.Drawing.Point(19, 325);
-            this.MedHistory.Name = "MedHistory";
-            this.MedHistory.Size = new System.Drawing.Size(42, 56);
-            this.MedHistory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MedHistory.TabIndex = 7;
-            this.MedHistory.TabStop = false;
-            this.MedHistory.Click += new System.EventHandler(this.MedHistory_Click);
+            this.MedHistorypicbox.Image = global::HMA.Properties.Resources.medical_history;
+            this.MedHistorypicbox.Location = new System.Drawing.Point(19, 325);
+            this.MedHistorypicbox.Name = "MedHistorypicbox";
+            this.MedHistorypicbox.Size = new System.Drawing.Size(42, 56);
+            this.MedHistorypicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MedHistorypicbox.TabIndex = 7;
+            this.MedHistorypicbox.TabStop = false;
+            this.MedHistorypicbox.Click += new System.EventHandler(this.MedHistorypicbox_Click);
             // 
             // label3
             // 
@@ -195,28 +196,28 @@ namespace HMA
             this.label3.TabIndex = 6;
             this.label3.Text = "Book \r\nAppointment";
             // 
-            // pictureBox8
+            // BookAPtpicbox
             // 
-            this.pictureBox8.Image = global::HMA.Properties.Resources.appointment_book;
-            this.pictureBox8.Location = new System.Drawing.Point(19, 229);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.BookAPtpicbox.Image = global::HMA.Properties.Resources.appointment_book;
+            this.BookAPtpicbox.Location = new System.Drawing.Point(19, 229);
+            this.BookAPtpicbox.Name = "BookAPtpicbox";
+            this.BookAPtpicbox.Size = new System.Drawing.Size(42, 56);
+            this.BookAPtpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BookAPtpicbox.TabIndex = 5;
+            this.BookAPtpicbox.TabStop = false;
+            this.BookAPtpicbox.Click += new System.EventHandler(this.BookAPtpicbox_Click);
             // 
-            // label2
+            // Patientlb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(14, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Patient ";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Patientlb.AutoSize = true;
+            this.Patientlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patientlb.ForeColor = System.Drawing.Color.White;
+            this.Patientlb.Location = new System.Drawing.Point(14, 122);
+            this.Patientlb.Name = "Patientlb";
+            this.Patientlb.Size = new System.Drawing.Size(99, 25);
+            this.Patientlb.TabIndex = 4;
+            this.Patientlb.Text = "Patient ";
+            this.Patientlb.Click += new System.EventHandler(this.Patientlb_Click);
             // 
             // pictureBox2
             // 
@@ -224,7 +225,7 @@ namespace HMA
             this.pictureBox2.Image = global::HMA.Properties.Resources.v870_tang_36;
             this.pictureBox2.Location = new System.Drawing.Point(97, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1118, 779);
+            this.pictureBox2.Size = new System.Drawing.Size(1118, 791);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 46;
             this.pictureBox2.TabStop = false;
@@ -236,14 +237,14 @@ namespace HMA
             this.UpAptDgv.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.UpAptDgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UpAptDgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UpAptDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UpAptDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.UpAptDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.UpAptDgv.EnableHeadersVisualStyles = false;
             this.UpAptDgv.GridColor = System.Drawing.Color.MidnightBlue;
@@ -252,12 +253,12 @@ namespace HMA
             this.UpAptDgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.UpAptDgv.RowHeadersVisible = false;
             this.UpAptDgv.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.UpAptDgv.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+            this.UpAptDgv.RowsDefaultCellStyle = dataGridViewCellStyle22;
             this.UpAptDgv.RowTemplate.Height = 24;
             this.UpAptDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.UpAptDgv.Size = new System.Drawing.Size(867, 236);
@@ -271,14 +272,14 @@ namespace HMA
             this.PrevAptDgv.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.PrevAptDgv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PrevAptDgv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PrevAptDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PrevAptDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.PrevAptDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PrevAptDgv.EnableHeadersVisualStyles = false;
             this.PrevAptDgv.GridColor = System.Drawing.Color.MidnightBlue;
@@ -287,12 +288,12 @@ namespace HMA
             this.PrevAptDgv.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.PrevAptDgv.RowHeadersVisible = false;
             this.PrevAptDgv.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
-            this.PrevAptDgv.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.White;
+            this.PrevAptDgv.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.PrevAptDgv.RowTemplate.Height = 24;
             this.PrevAptDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PrevAptDgv.Size = new System.Drawing.Size(867, 236);
@@ -307,7 +308,6 @@ namespace HMA
             this.label12.Size = new System.Drawing.Size(216, 23);
             this.label12.TabIndex = 212;
             this.label12.Text = "Upcoming Appointments";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label1
             // 
@@ -339,11 +339,11 @@ namespace HMA
             this.dltlb.AutoSize = true;
             this.dltlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dltlb.ForeColor = System.Drawing.Color.White;
-            this.dltlb.Location = new System.Drawing.Point(928, 64);
+            this.dltlb.Location = new System.Drawing.Point(1097, 85);
             this.dltlb.Name = "dltlb";
-            this.dltlb.Size = new System.Drawing.Size(78, 25);
+            this.dltlb.Size = new System.Drawing.Size(48, 25);
             this.dltlb.TabIndex = 25;
-            this.dltlb.Text = "sdgdsg";
+            this.dltlb.Text = "See";
             this.dltlb.Visible = false;
             // 
             // ViewAppointment_UI
@@ -367,11 +367,11 @@ namespace HMA
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MedHistory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodBankpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedHistorypicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAPtpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UpAptDgv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PrevAptDgv)).EndInit();
@@ -384,16 +384,16 @@ namespace HMA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox BloodBankpicbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox DiseasePredpicbox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox MedHistory;
+        private System.Windows.Forms.PictureBox MedHistorypicbox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox BookAPtpicbox;
+        private System.Windows.Forms.Label Patientlb;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView UpAptDgv;
         private System.Windows.Forms.DataGridView PrevAptDgv;

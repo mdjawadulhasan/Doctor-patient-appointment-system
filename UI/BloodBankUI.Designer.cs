@@ -40,16 +40,16 @@ namespace HMA
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.SetAppointment = new System.Windows.Forms.PictureBox();
+            this.SetAptpicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Logout = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.DiseasePredict = new System.Windows.Forms.PictureBox();
+            this.DiseasePredpicbox = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.MedicalHistory = new System.Windows.Forms.PictureBox();
+            this.MedlHistorypicbox = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.BookAptLoad = new System.Windows.Forms.PictureBox();
+            this.BookAptpicbox = new System.Windows.Forms.PictureBox();
             this.Patientlb = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,12 +60,12 @@ namespace HMA
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logout)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredict)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MedicalHistory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookAptLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedlHistorypicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAptpicbox)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DonorLitsDGV)).BeginInit();
@@ -142,16 +142,16 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.SetAppointment);
+            this.panel1.Controls.Add(this.SetAptpicbox);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.Logout);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.DiseasePredict);
+            this.panel1.Controls.Add(this.DiseasePredpicbox);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.MedicalHistory);
+            this.panel1.Controls.Add(this.MedlHistorypicbox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.BookAptLoad);
+            this.panel1.Controls.Add(this.BookAptpicbox);
             this.panel1.Controls.Add(this.Patientlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -170,16 +170,16 @@ namespace HMA
             this.label12.TabIndex = 28;
             this.label12.Text = "See \r\nAppoinment";
             // 
-            // SetAppointment
+            // SetAptpicbox
             // 
-            this.SetAppointment.Image = global::HMA.Properties.Resources.appointment;
-            this.SetAppointment.Location = new System.Drawing.Point(12, 291);
-            this.SetAppointment.Name = "SetAppointment";
-            this.SetAppointment.Size = new System.Drawing.Size(42, 56);
-            this.SetAppointment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SetAppointment.TabIndex = 27;
-            this.SetAppointment.TabStop = false;
-            this.SetAppointment.Click += new System.EventHandler(this.SetAppointment_Click);
+            this.SetAptpicbox.Image = global::HMA.Properties.Resources.appointment;
+            this.SetAptpicbox.Location = new System.Drawing.Point(12, 291);
+            this.SetAptpicbox.Name = "SetAptpicbox";
+            this.SetAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.SetAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SetAptpicbox.TabIndex = 27;
+            this.SetAptpicbox.TabStop = false;
+            this.SetAptpicbox.Click += new System.EventHandler(this.SetAptpicbox_Click);
             // 
             // pictureBox4
             // 
@@ -203,16 +203,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // Logout
+            // Logoutpicbox
             // 
-            this.Logout.Image = global::HMA.Properties.Resources.logout;
-            this.Logout.Location = new System.Drawing.Point(12, 565);
-            this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(42, 56);
-            this.Logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logout.TabIndex = 13;
-            this.Logout.TabStop = false;
-            this.Logout.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(12, 565);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(42, 56);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
             // label5
             // 
@@ -225,15 +225,16 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Predict \r\nDisease";
             // 
-            // DiseasePredict
+            // DiseasePredpicbox
             // 
-            this.DiseasePredict.Image = global::HMA.Properties.Resources.disease;
-            this.DiseasePredict.Location = new System.Drawing.Point(12, 461);
-            this.DiseasePredict.Name = "DiseasePredict";
-            this.DiseasePredict.Size = new System.Drawing.Size(42, 56);
-            this.DiseasePredict.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.DiseasePredict.TabIndex = 9;
-            this.DiseasePredict.TabStop = false;
+            this.DiseasePredpicbox.Image = global::HMA.Properties.Resources.disease;
+            this.DiseasePredpicbox.Location = new System.Drawing.Point(12, 461);
+            this.DiseasePredpicbox.Name = "DiseasePredpicbox";
+            this.DiseasePredpicbox.Size = new System.Drawing.Size(42, 56);
+            this.DiseasePredpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DiseasePredpicbox.TabIndex = 9;
+            this.DiseasePredpicbox.TabStop = false;
+            this.DiseasePredpicbox.Click += new System.EventHandler(this.DiseasePredpicbox_Click);
             // 
             // label4
             // 
@@ -246,16 +247,16 @@ namespace HMA
             this.label4.TabIndex = 8;
             this.label4.Text = "Medical \r\n History";
             // 
-            // MedicalHistory
+            // MedlHistorypicbox
             // 
-            this.MedicalHistory.Image = global::HMA.Properties.Resources.medical_history;
-            this.MedicalHistory.Location = new System.Drawing.Point(12, 367);
-            this.MedicalHistory.Name = "MedicalHistory";
-            this.MedicalHistory.Size = new System.Drawing.Size(42, 56);
-            this.MedicalHistory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MedicalHistory.TabIndex = 7;
-            this.MedicalHistory.TabStop = false;
-            this.MedicalHistory.Click += new System.EventHandler(this.MedicalHistory_Click);
+            this.MedlHistorypicbox.Image = global::HMA.Properties.Resources.medical_history;
+            this.MedlHistorypicbox.Location = new System.Drawing.Point(12, 367);
+            this.MedlHistorypicbox.Name = "MedlHistorypicbox";
+            this.MedlHistorypicbox.Size = new System.Drawing.Size(42, 56);
+            this.MedlHistorypicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MedlHistorypicbox.TabIndex = 7;
+            this.MedlHistorypicbox.TabStop = false;
+            this.MedlHistorypicbox.Click += new System.EventHandler(this.MedlHistorypicbox_Click);
             // 
             // label3
             // 
@@ -268,16 +269,16 @@ namespace HMA
             this.label3.TabIndex = 6;
             this.label3.Text = "Book \r\nAppointment";
             // 
-            // BookAptLoad
+            // BookAptpicbox
             // 
-            this.BookAptLoad.Image = global::HMA.Properties.Resources.appointment_book;
-            this.BookAptLoad.Location = new System.Drawing.Point(12, 219);
-            this.BookAptLoad.Name = "BookAptLoad";
-            this.BookAptLoad.Size = new System.Drawing.Size(42, 56);
-            this.BookAptLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BookAptLoad.TabIndex = 5;
-            this.BookAptLoad.TabStop = false;
-            this.BookAptLoad.Click += new System.EventHandler(this.BookAptLoad_Click);
+            this.BookAptpicbox.Image = global::HMA.Properties.Resources.appointment_book;
+            this.BookAptpicbox.Location = new System.Drawing.Point(12, 219);
+            this.BookAptpicbox.Name = "BookAptpicbox";
+            this.BookAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.BookAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BookAptpicbox.TabIndex = 5;
+            this.BookAptpicbox.TabStop = false;
+            this.BookAptpicbox.Click += new System.EventHandler(this.BookAptpicbox_Click);
             // 
             // Patientlb
             // 
@@ -415,12 +416,12 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logout)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredict)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MedicalHistory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookAptLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MedlHistorypicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAptpicbox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -442,13 +443,13 @@ namespace HMA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox Logout;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox DiseasePredict;
+        private System.Windows.Forms.PictureBox DiseasePredpicbox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox MedicalHistory;
+        private System.Windows.Forms.PictureBox MedlHistorypicbox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox BookAptLoad;
+        private System.Windows.Forms.PictureBox BookAptpicbox;
         private System.Windows.Forms.Label Patientlb;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -458,6 +459,6 @@ namespace HMA
         private System.Windows.Forms.TextBox searchtxt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox SetAppointment;
+        private System.Windows.Forms.PictureBox SetAptpicbox;
     }
 }

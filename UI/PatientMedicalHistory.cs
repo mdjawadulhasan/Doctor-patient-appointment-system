@@ -21,11 +21,7 @@ namespace HMA
             InitializeComponent();
         }
 
-        private void PatientLoad_Click(object sender, EventArgs e)
-        {
-            new Patient_UI(Pt).Show();
-            this.Hide();
-        }
+      
 
         void populateData()
         {
@@ -50,25 +46,36 @@ namespace HMA
             HistoryDGV.Columns["PrescDate"].HeaderText = "Date";
         }
 
-        private void BookAptLoad_Click(object sender, EventArgs e)
+        private void Patientlb_Click(object sender, EventArgs e)
         {
-            new BookAppointmentUI(Pt).Show();
+            new Patient_UI(Pt).Show();
             this.Hide();
         }
 
-        private void SetAppointment_Click(object sender, EventArgs e)
-        {
-            new ViewAppointment_UI(Pt).Show();
-            this.Hide();
-        }
-
-        private void BloodBankLoad_Click(object sender, EventArgs e)
+        private void BloodBankpicbox_Click(object sender, EventArgs e)
         {
             new BloodBankUI(Pt).Show();
             this.Hide();
         }
 
-        private void LogoutLoad_Click(object sender, EventArgs e)
+        private void SeeAptpicbox_Click(object sender, EventArgs e)
+        {
+            new ViewAppointment_UI(Pt).Show();
+            this.Hide();
+        }
+
+        private void DiseasePredpicbox_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void BookAptpicbox_Click(object sender, EventArgs e)
+        {
+            new BookAppointmentUI(Pt).Show();
+            this.Hide();
+        }
+
+        private void Logoutpicbox_Click(object sender, EventArgs e)
         {
             new loginorsignup().Show();
             this.Hide();

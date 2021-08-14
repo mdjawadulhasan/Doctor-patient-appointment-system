@@ -47,34 +47,39 @@ namespace HMA
             DonorLitsDGV.DataSource = ds.Tables[0];
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+       
+        private void Patientlb_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new Patient_UI(pt).Show();
             this.Hide();
         }
-      
 
-        private void BookAptLoad_Click(object sender, EventArgs e)
+        private void BookAptpicbox_Click(object sender, EventArgs e)
         {
             new BookAppointmentUI(pt).Show();
             this.Hide();
         }
 
-        private void SetAppointment_Click(object sender, EventArgs e)
+        private void SetAptpicbox_Click(object sender, EventArgs e)
         {
             new ViewAppointment_UI(pt).Show();
             this.Hide();
         }
 
-        private void MedicalHistory_Click(object sender, EventArgs e)
+        private void MedlHistorypicbox_Click(object sender, EventArgs e)
         {
             new PatientMedicalHistory(pt).Show();
             this.Hide();
         }
 
-        private void Patientlb_Click(object sender, EventArgs e)
+        private void DiseasePredpicbox_Click(object sender, EventArgs e)
         {
-            new Patient_UI(pt).Show();
+            //
+        }
+
+        private void Logoutpicbox_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
             this.Hide();
         }
     }

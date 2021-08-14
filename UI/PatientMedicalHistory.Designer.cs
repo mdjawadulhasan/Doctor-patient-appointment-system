@@ -29,31 +29,31 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.SetAppointment = new System.Windows.Forms.PictureBox();
+            this.SeeAptpicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.LogoutLoad = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.BloodBankLoad = new System.Windows.Forms.PictureBox();
+            this.BloodBankpicbox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.DiseasePredpicbox = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.BookAptLoad = new System.Windows.Forms.PictureBox();
-            this.PatientLoad = new System.Windows.Forms.Label();
+            this.BookAptpicbox = new System.Windows.Forms.PictureBox();
+            this.Patientlb = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.HistoryDGV = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutLoad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BloodBankLoad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookAptLoad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodBankpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HistoryDGV)).BeginInit();
             this.SuspendLayout();
@@ -62,17 +62,17 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.SetAppointment);
+            this.panel1.Controls.Add(this.SeeAptpicbox);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.LogoutLoad);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.BloodBankLoad);
+            this.panel1.Controls.Add(this.BloodBankpicbox);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.DiseasePredpicbox);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.BookAptLoad);
-            this.panel1.Controls.Add(this.PatientLoad);
+            this.panel1.Controls.Add(this.BookAptpicbox);
+            this.panel1.Controls.Add(this.Patientlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -90,16 +90,16 @@ namespace HMA
             this.label12.TabIndex = 26;
             this.label12.Text = "See \r\nAppoinment";
             // 
-            // SetAppointment
+            // SeeAptpicbox
             // 
-            this.SetAppointment.Image = global::HMA.Properties.Resources.appointment;
-            this.SetAppointment.Location = new System.Drawing.Point(16, 307);
-            this.SetAppointment.Name = "SetAppointment";
-            this.SetAppointment.Size = new System.Drawing.Size(42, 56);
-            this.SetAppointment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SetAppointment.TabIndex = 25;
-            this.SetAppointment.TabStop = false;
-            this.SetAppointment.Click += new System.EventHandler(this.SetAppointment_Click);
+            this.SeeAptpicbox.Image = global::HMA.Properties.Resources.appointment;
+            this.SeeAptpicbox.Location = new System.Drawing.Point(16, 307);
+            this.SeeAptpicbox.Name = "SeeAptpicbox";
+            this.SeeAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.SeeAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SeeAptpicbox.TabIndex = 25;
+            this.SeeAptpicbox.TabStop = false;
+            this.SeeAptpicbox.Click += new System.EventHandler(this.SeeAptpicbox_Click);
             // 
             // pictureBox4
             // 
@@ -123,16 +123,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // LogoutLoad
+            // Logoutpicbox
             // 
-            this.LogoutLoad.Image = global::HMA.Properties.Resources.logout;
-            this.LogoutLoad.Location = new System.Drawing.Point(19, 584);
-            this.LogoutLoad.Name = "LogoutLoad";
-            this.LogoutLoad.Size = new System.Drawing.Size(42, 56);
-            this.LogoutLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutLoad.TabIndex = 13;
-            this.LogoutLoad.TabStop = false;
-            this.LogoutLoad.Click += new System.EventHandler(this.LogoutLoad_Click);
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(19, 584);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(42, 56);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
             // label6
             // 
@@ -145,16 +145,16 @@ namespace HMA
             this.label6.TabIndex = 12;
             this.label6.Text = "Blood Bank";
             // 
-            // BloodBankLoad
+            // BloodBankpicbox
             // 
-            this.BloodBankLoad.Image = global::HMA.Properties.Resources.blood_bank;
-            this.BloodBankLoad.Location = new System.Drawing.Point(16, 489);
-            this.BloodBankLoad.Name = "BloodBankLoad";
-            this.BloodBankLoad.Size = new System.Drawing.Size(42, 56);
-            this.BloodBankLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BloodBankLoad.TabIndex = 11;
-            this.BloodBankLoad.TabStop = false;
-            this.BloodBankLoad.Click += new System.EventHandler(this.BloodBankLoad_Click);
+            this.BloodBankpicbox.Image = global::HMA.Properties.Resources.blood_bank;
+            this.BloodBankpicbox.Location = new System.Drawing.Point(16, 489);
+            this.BloodBankpicbox.Name = "BloodBankpicbox";
+            this.BloodBankpicbox.Size = new System.Drawing.Size(42, 56);
+            this.BloodBankpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BloodBankpicbox.TabIndex = 11;
+            this.BloodBankpicbox.TabStop = false;
+            this.BloodBankpicbox.Click += new System.EventHandler(this.BloodBankpicbox_Click);
             // 
             // label5
             // 
@@ -167,15 +167,16 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Predict \r\nDisease";
             // 
-            // pictureBox1
+            // DiseasePredpicbox
             // 
-            this.pictureBox1.Image = global::HMA.Properties.Resources.disease;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 398);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.DiseasePredpicbox.Image = global::HMA.Properties.Resources.disease;
+            this.DiseasePredpicbox.Location = new System.Drawing.Point(19, 398);
+            this.DiseasePredpicbox.Name = "DiseasePredpicbox";
+            this.DiseasePredpicbox.Size = new System.Drawing.Size(42, 56);
+            this.DiseasePredpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DiseasePredpicbox.TabIndex = 9;
+            this.DiseasePredpicbox.TabStop = false;
+            this.DiseasePredpicbox.Click += new System.EventHandler(this.DiseasePredpicbox_Click);
             // 
             // label3
             // 
@@ -188,28 +189,28 @@ namespace HMA
             this.label3.TabIndex = 6;
             this.label3.Text = "Book \r\nAppointment";
             // 
-            // BookAptLoad
+            // BookAptpicbox
             // 
-            this.BookAptLoad.Image = global::HMA.Properties.Resources.appointment_book;
-            this.BookAptLoad.Location = new System.Drawing.Point(16, 236);
-            this.BookAptLoad.Name = "BookAptLoad";
-            this.BookAptLoad.Size = new System.Drawing.Size(42, 56);
-            this.BookAptLoad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BookAptLoad.TabIndex = 5;
-            this.BookAptLoad.TabStop = false;
-            this.BookAptLoad.Click += new System.EventHandler(this.BookAptLoad_Click);
+            this.BookAptpicbox.Image = global::HMA.Properties.Resources.appointment_book;
+            this.BookAptpicbox.Location = new System.Drawing.Point(16, 236);
+            this.BookAptpicbox.Name = "BookAptpicbox";
+            this.BookAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.BookAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BookAptpicbox.TabIndex = 5;
+            this.BookAptpicbox.TabStop = false;
+            this.BookAptpicbox.Click += new System.EventHandler(this.BookAptpicbox_Click);
             // 
-            // PatientLoad
+            // Patientlb
             // 
-            this.PatientLoad.AutoSize = true;
-            this.PatientLoad.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PatientLoad.ForeColor = System.Drawing.Color.White;
-            this.PatientLoad.Location = new System.Drawing.Point(14, 122);
-            this.PatientLoad.Name = "PatientLoad";
-            this.PatientLoad.Size = new System.Drawing.Size(99, 25);
-            this.PatientLoad.TabIndex = 4;
-            this.PatientLoad.Text = "Patient ";
-            this.PatientLoad.Click += new System.EventHandler(this.PatientLoad_Click);
+            this.Patientlb.AutoSize = true;
+            this.Patientlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patientlb.ForeColor = System.Drawing.Color.White;
+            this.Patientlb.Location = new System.Drawing.Point(14, 122);
+            this.Patientlb.Name = "Patientlb";
+            this.Patientlb.Size = new System.Drawing.Size(99, 25);
+            this.Patientlb.TabIndex = 4;
+            this.Patientlb.Text = "Patient ";
+            this.Patientlb.Click += new System.EventHandler(this.Patientlb_Click);
             // 
             // pictureBox2
             // 
@@ -228,14 +229,14 @@ namespace HMA
             this.HistoryDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.HistoryDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.HistoryDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.HistoryDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.HistoryDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.HistoryDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.HistoryDGV.EnableHeadersVisualStyles = false;
             this.HistoryDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -244,11 +245,11 @@ namespace HMA
             this.HistoryDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.HistoryDGV.RowHeadersVisible = false;
             this.HistoryDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.HistoryDGV.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.HistoryDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.HistoryDGV.RowTemplate.Height = 24;
             this.HistoryDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.HistoryDGV.Size = new System.Drawing.Size(867, 410);
@@ -281,12 +282,12 @@ namespace HMA
             this.Load += new System.EventHandler(this.PatientMedicalHistory_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAppointment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutLoad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BloodBankLoad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BookAptLoad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BloodBankpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookAptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HistoryDGV)).EndInit();
             this.ResumeLayout(false);
@@ -297,17 +298,17 @@ namespace HMA
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox SetAppointment;
+        private System.Windows.Forms.PictureBox SeeAptpicbox;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox LogoutLoad;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox BloodBankLoad;
+        private System.Windows.Forms.PictureBox BloodBankpicbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox DiseasePredpicbox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox BookAptLoad;
-        private System.Windows.Forms.Label PatientLoad;
+        private System.Windows.Forms.PictureBox BookAptpicbox;
+        private System.Windows.Forms.Label Patientlb;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView HistoryDGV;
         private System.Windows.Forms.Label label1;

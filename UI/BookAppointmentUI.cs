@@ -121,7 +121,7 @@ namespace HMA
 
         private void SetAptpicbox_Click(object sender, EventArgs e)
         {
-            new BookAppointmentUI(Pt).Show();
+            new ViewAppointment_UI(Pt).Show();
             this.Hide();
         }
 

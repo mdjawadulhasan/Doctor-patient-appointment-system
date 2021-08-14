@@ -21,11 +21,7 @@ namespace HMA
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-            new Patient_UI(Pt).Show();
-            this.Hide();
-        }
+        
 
         void populateData()
         {
@@ -101,32 +97,39 @@ namespace HMA
             }
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)//BookAppointmentUI
+        private void Patientlb_Click(object sender, EventArgs e)
         {
+            new Patient_UI(Pt).Show();
+            this.Hide();
+        }
+
+        private void BookAPtpicbox_Click(object sender, EventArgs e)
+        {
+
             new BookAppointmentUI(Pt).Show();
             this.Hide();
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void MedHistorypicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new PatientMedicalHistory(Pt).Show();
             this.Hide();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)//Blood Bank
+        private void DiseasePredpicbox_Click(object sender, EventArgs e)
+        {
+            //
+        }
+
+        private void BloodBankpicbox_Click(object sender, EventArgs e)
         {
             new BloodBankUI(Pt).Show();
             this.Hide();
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void MedHistory_Click(object sender, EventArgs e)
-        {
-            new PatientMedicalHistory(Pt).Show();
+            new loginorsignup().Show();
             this.Hide();
         }
     }
