@@ -32,16 +32,26 @@ namespace HMA
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Doctorlb = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.ViewAptlist = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
+            this.Aptpicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.TreatDGV = new System.Windows.Forms.DataGridView();
-            this.prevrecordload = new System.Windows.Forms.Button();
+            this.PrevrecordBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.DoneBtn = new System.Windows.Forms.Button();
+            this.GiveTrttxt = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.patBgrplb = new System.Windows.Forms.Label();
+            this.patweightlb = new System.Windows.Forms.Label();
+            this.patheightlb = new System.Windows.Forms.Label();
+            this.patgenderlb = new System.Windows.Forms.Label();
+            this.patagelb = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Diseaselb = new System.Windows.Forms.Label();
             this.patnamelb = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,21 +59,11 @@ namespace HMA
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Diseaselb = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.patagelb = new System.Windows.Forms.Label();
-            this.patgenderlb = new System.Windows.Forms.Label();
-            this.patheightlb = new System.Windows.Forms.Label();
-            this.patweightlb = new System.Windows.Forms.Label();
-            this.Bgrplb = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.GiveTrttxt = new System.Windows.Forms.TextBox();
-            this.DoneBtn = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewAptlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TreatDGV)).BeginInit();
             this.panel2.SuspendLayout();
@@ -80,26 +80,27 @@ namespace HMA
             this.label4.TabIndex = 8;
             this.label4.Text = "Appoinmnet\r\n        list";
             // 
-            // label2
+            // Doctorlb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(46, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Doctor";
+            this.Doctorlb.AutoSize = true;
+            this.Doctorlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doctorlb.ForeColor = System.Drawing.Color.White;
+            this.Doctorlb.Location = new System.Drawing.Point(46, 132);
+            this.Doctorlb.Name = "Doctorlb";
+            this.Doctorlb.Size = new System.Drawing.Size(83, 25);
+            this.Doctorlb.TabIndex = 4;
+            this.Doctorlb.Text = "Doctor";
+            this.Doctorlb.Click += new System.EventHandler(this.Doctorlb_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.ViewAptlist);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Aptpicbox);
+            this.panel1.Controls.Add(this.Doctorlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -128,25 +129,27 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // pictureBox6
+            // Logoutpicbox
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 606);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(21, 606);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(48, 67);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
-            // ViewAptlist
+            // Aptpicbox
             // 
-            this.ViewAptlist.Image = global::HMA.Properties.Resources.files;
-            this.ViewAptlist.Location = new System.Drawing.Point(12, 313);
-            this.ViewAptlist.Name = "ViewAptlist";
-            this.ViewAptlist.Size = new System.Drawing.Size(48, 74);
-            this.ViewAptlist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ViewAptlist.TabIndex = 7;
-            this.ViewAptlist.TabStop = false;
+            this.Aptpicbox.Image = global::HMA.Properties.Resources.files;
+            this.Aptpicbox.Location = new System.Drawing.Point(12, 313);
+            this.Aptpicbox.Name = "Aptpicbox";
+            this.Aptpicbox.Size = new System.Drawing.Size(48, 74);
+            this.Aptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Aptpicbox.TabIndex = 7;
+            this.Aptpicbox.TabStop = false;
+            this.Aptpicbox.Click += new System.EventHandler(this.Aptpicbox_Click);
             // 
             // pictureBox2
             // 
@@ -162,6 +165,7 @@ namespace HMA
             // 
             // TreatDGV
             // 
+            this.TreatDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.TreatDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.TreatDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TreatDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -181,7 +185,7 @@ namespace HMA
             this.TreatDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.TreatDGV.RowHeadersVisible = false;
             this.TreatDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Ivory;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
@@ -192,28 +196,28 @@ namespace HMA
             this.TreatDGV.TabIndex = 204;
             this.TreatDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TreatDGV_CellContentClick);
             // 
-            // prevrecordload
+            // PrevrecordBtn
             // 
-            this.prevrecordload.BackColor = System.Drawing.Color.Transparent;
-            this.prevrecordload.FlatAppearance.BorderSize = 2;
-            this.prevrecordload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prevrecordload.Font = new System.Drawing.Font("Bahnschrift", 12.2F, System.Drawing.FontStyle.Bold);
-            this.prevrecordload.ForeColor = System.Drawing.Color.Black;
-            this.prevrecordload.Location = new System.Drawing.Point(710, 132);
-            this.prevrecordload.Name = "prevrecordload";
-            this.prevrecordload.Size = new System.Drawing.Size(187, 45);
-            this.prevrecordload.TabIndex = 206;
-            this.prevrecordload.Text = "Previous records";
-            this.prevrecordload.UseVisualStyleBackColor = false;
-            this.prevrecordload.Click += new System.EventHandler(this.prevrecordload_Click);
+            this.PrevrecordBtn.BackColor = System.Drawing.Color.Transparent;
+            this.PrevrecordBtn.FlatAppearance.BorderSize = 2;
+            this.PrevrecordBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PrevrecordBtn.Font = new System.Drawing.Font("Bahnschrift", 12.2F, System.Drawing.FontStyle.Bold);
+            this.PrevrecordBtn.ForeColor = System.Drawing.Color.Black;
+            this.PrevrecordBtn.Location = new System.Drawing.Point(710, 132);
+            this.PrevrecordBtn.Name = "PrevrecordBtn";
+            this.PrevrecordBtn.Size = new System.Drawing.Size(187, 45);
+            this.PrevrecordBtn.TabIndex = 206;
+            this.PrevrecordBtn.Text = "Previous records";
+            this.PrevrecordBtn.UseVisualStyleBackColor = false;
+            this.PrevrecordBtn.Click += new System.EventHandler(this.PrevrecordBtn_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.DoneBtn);
             this.panel2.Controls.Add(this.GiveTrttxt);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.Bgrplb);
-            this.panel2.Controls.Add(this.prevrecordload);
+            this.panel2.Controls.Add(this.patBgrplb);
+            this.panel2.Controls.Add(this.PrevrecordBtn);
             this.panel2.Controls.Add(this.patweightlb);
             this.panel2.Controls.Add(this.patheightlb);
             this.panel2.Controls.Add(this.patgenderlb);
@@ -232,6 +236,114 @@ namespace HMA
             this.panel2.Size = new System.Drawing.Size(980, 299);
             this.panel2.TabIndex = 213;
             // 
+            // DoneBtn
+            // 
+            this.DoneBtn.BackColor = System.Drawing.Color.Teal;
+            this.DoneBtn.FlatAppearance.BorderSize = 2;
+            this.DoneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DoneBtn.Font = new System.Drawing.Font("Bahnschrift", 12.2F, System.Drawing.FontStyle.Bold);
+            this.DoneBtn.ForeColor = System.Drawing.Color.White;
+            this.DoneBtn.Location = new System.Drawing.Point(873, 217);
+            this.DoneBtn.Name = "DoneBtn";
+            this.DoneBtn.Size = new System.Drawing.Size(87, 38);
+            this.DoneBtn.TabIndex = 229;
+            this.DoneBtn.Text = "Done";
+            this.DoneBtn.UseVisualStyleBackColor = false;
+            this.DoneBtn.Click += new System.EventHandler(this.DoneBtn_Click);
+            // 
+            // GiveTrttxt
+            // 
+            this.GiveTrttxt.BackColor = System.Drawing.Color.White;
+            this.GiveTrttxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GiveTrttxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GiveTrttxt.ForeColor = System.Drawing.Color.Black;
+            this.GiveTrttxt.Location = new System.Drawing.Point(217, 194);
+            this.GiveTrttxt.Multiline = true;
+            this.GiveTrttxt.Name = "GiveTrttxt";
+            this.GiveTrttxt.Size = new System.Drawing.Size(650, 87);
+            this.GiveTrttxt.TabIndex = 228;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(24, 194);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(187, 29);
+            this.label10.TabIndex = 227;
+            this.label10.Text = "Give Treatment :";
+            // 
+            // patBgrplb
+            // 
+            this.patBgrplb.AutoSize = true;
+            this.patBgrplb.BackColor = System.Drawing.Color.Transparent;
+            this.patBgrplb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patBgrplb.Location = new System.Drawing.Point(796, 95);
+            this.patBgrplb.Name = "patBgrplb";
+            this.patBgrplb.Size = new System.Drawing.Size(0, 29);
+            this.patBgrplb.TabIndex = 226;
+            // 
+            // patweightlb
+            // 
+            this.patweightlb.AutoSize = true;
+            this.patweightlb.BackColor = System.Drawing.Color.Transparent;
+            this.patweightlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patweightlb.Location = new System.Drawing.Point(796, 48);
+            this.patweightlb.Name = "patweightlb";
+            this.patweightlb.Size = new System.Drawing.Size(0, 29);
+            this.patweightlb.TabIndex = 225;
+            // 
+            // patheightlb
+            // 
+            this.patheightlb.AutoSize = true;
+            this.patheightlb.BackColor = System.Drawing.Color.Transparent;
+            this.patheightlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patheightlb.Location = new System.Drawing.Point(533, 48);
+            this.patheightlb.Name = "patheightlb";
+            this.patheightlb.Size = new System.Drawing.Size(0, 29);
+            this.patheightlb.TabIndex = 224;
+            // 
+            // patgenderlb
+            // 
+            this.patgenderlb.AutoSize = true;
+            this.patgenderlb.BackColor = System.Drawing.Color.Transparent;
+            this.patgenderlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patgenderlb.Location = new System.Drawing.Point(296, 48);
+            this.patgenderlb.Name = "patgenderlb";
+            this.patgenderlb.Size = new System.Drawing.Size(0, 29);
+            this.patgenderlb.TabIndex = 223;
+            // 
+            // patagelb
+            // 
+            this.patagelb.AutoSize = true;
+            this.patagelb.BackColor = System.Drawing.Color.Transparent;
+            this.patagelb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patagelb.Location = new System.Drawing.Point(85, 48);
+            this.patagelb.Name = "patagelb";
+            this.patagelb.Size = new System.Drawing.Size(0, 29);
+            this.patagelb.TabIndex = 222;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(639, 95);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(151, 29);
+            this.label12.TabIndex = 221;
+            this.label12.Text = "Blood Group:";
+            // 
+            // Diseaselb
+            // 
+            this.Diseaselb.BackColor = System.Drawing.Color.Transparent;
+            this.Diseaselb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Diseaselb.Location = new System.Drawing.Point(223, 95);
+            this.Diseaselb.Name = "Diseaselb";
+            this.Diseaselb.Size = new System.Drawing.Size(316, 82);
+            this.Diseaselb.TabIndex = 220;
+            // 
             // patnamelb
             // 
             this.patnamelb.AutoSize = true;
@@ -239,9 +351,8 @@ namespace HMA
             this.patnamelb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patnamelb.Location = new System.Drawing.Point(198, 9);
             this.patnamelb.Name = "patnamelb";
-            this.patnamelb.Size = new System.Drawing.Size(138, 29);
+            this.patnamelb.Size = new System.Drawing.Size(0, 29);
             this.patnamelb.TabIndex = 219;
-            this.patnamelb.Text = "Patnamelb :";
             // 
             // label9
             // 
@@ -309,120 +420,6 @@ namespace HMA
             this.label1.TabIndex = 213;
             this.label1.Text = "Patient Name :";
             // 
-            // Diseaselb
-            // 
-            this.Diseaselb.BackColor = System.Drawing.Color.Transparent;
-            this.Diseaselb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Diseaselb.Location = new System.Drawing.Point(223, 95);
-            this.Diseaselb.Name = "Diseaselb";
-            this.Diseaselb.Size = new System.Drawing.Size(316, 82);
-            this.Diseaselb.TabIndex = 220;
-            this.Diseaselb.Text = "Current Diseases :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(639, 95);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(151, 29);
-            this.label12.TabIndex = 221;
-            this.label12.Text = "Blood Group:";
-            // 
-            // patagelb
-            // 
-            this.patagelb.AutoSize = true;
-            this.patagelb.BackColor = System.Drawing.Color.Transparent;
-            this.patagelb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patagelb.Location = new System.Drawing.Point(85, 48);
-            this.patagelb.Name = "patagelb";
-            this.patagelb.Size = new System.Drawing.Size(44, 29);
-            this.patagelb.TabIndex = 222;
-            this.patagelb.Text = "ag:";
-            // 
-            // patgenderlb
-            // 
-            this.patgenderlb.AutoSize = true;
-            this.patgenderlb.BackColor = System.Drawing.Color.Transparent;
-            this.patgenderlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patgenderlb.Location = new System.Drawing.Point(296, 48);
-            this.patgenderlb.Name = "patgenderlb";
-            this.patgenderlb.Size = new System.Drawing.Size(92, 29);
-            this.patgenderlb.TabIndex = 223;
-            this.patgenderlb.Text = "Gender:";
-            // 
-            // patheightlb
-            // 
-            this.patheightlb.AutoSize = true;
-            this.patheightlb.BackColor = System.Drawing.Color.Transparent;
-            this.patheightlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patheightlb.Location = new System.Drawing.Point(533, 48);
-            this.patheightlb.Name = "patheightlb";
-            this.patheightlb.Size = new System.Drawing.Size(92, 29);
-            this.patheightlb.TabIndex = 224;
-            this.patheightlb.Text = "Gender:";
-            // 
-            // patweightlb
-            // 
-            this.patweightlb.AutoSize = true;
-            this.patweightlb.BackColor = System.Drawing.Color.Transparent;
-            this.patweightlb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patweightlb.Location = new System.Drawing.Point(796, 48);
-            this.patweightlb.Name = "patweightlb";
-            this.patweightlb.Size = new System.Drawing.Size(92, 29);
-            this.patweightlb.TabIndex = 225;
-            this.patweightlb.Text = "Gender:";
-            // 
-            // Bgrplb
-            // 
-            this.Bgrplb.AutoSize = true;
-            this.Bgrplb.BackColor = System.Drawing.Color.Transparent;
-            this.Bgrplb.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bgrplb.Location = new System.Drawing.Point(796, 95);
-            this.Bgrplb.Name = "Bgrplb";
-            this.Bgrplb.Size = new System.Drawing.Size(92, 29);
-            this.Bgrplb.TabIndex = 226;
-            this.Bgrplb.Text = "Gender:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(24, 194);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(187, 29);
-            this.label10.TabIndex = 227;
-            this.label10.Text = "Give Treatment :";
-            // 
-            // GiveTrttxt
-            // 
-            this.GiveTrttxt.BackColor = System.Drawing.Color.White;
-            this.GiveTrttxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GiveTrttxt.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GiveTrttxt.ForeColor = System.Drawing.Color.Black;
-            this.GiveTrttxt.Location = new System.Drawing.Point(217, 194);
-            this.GiveTrttxt.Multiline = true;
-            this.GiveTrttxt.Name = "GiveTrttxt";
-            this.GiveTrttxt.Size = new System.Drawing.Size(650, 87);
-            this.GiveTrttxt.TabIndex = 228;
-            // 
-            // DoneBtn
-            // 
-            this.DoneBtn.BackColor = System.Drawing.Color.Teal;
-            this.DoneBtn.FlatAppearance.BorderSize = 2;
-            this.DoneBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DoneBtn.Font = new System.Drawing.Font("Bahnschrift", 12.2F, System.Drawing.FontStyle.Bold);
-            this.DoneBtn.ForeColor = System.Drawing.Color.White;
-            this.DoneBtn.Location = new System.Drawing.Point(873, 217);
-            this.DoneBtn.Name = "DoneBtn";
-            this.DoneBtn.Size = new System.Drawing.Size(87, 38);
-            this.DoneBtn.TabIndex = 229;
-            this.DoneBtn.Text = "Done";
-            this.DoneBtn.UseVisualStyleBackColor = false;
-            this.DoneBtn.Click += new System.EventHandler(this.DoneBtn_Click);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -452,8 +449,8 @@ namespace HMA
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewAptlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TreatDGV)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -466,18 +463,18 @@ namespace HMA
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Doctorlb;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox ViewAptlist;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
+        private System.Windows.Forms.PictureBox Aptpicbox;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.DataGridView TreatDGV;
-        private System.Windows.Forms.Button prevrecordload;
+        private System.Windows.Forms.Button PrevrecordBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label Bgrplb;
+        private System.Windows.Forms.Label patBgrplb;
         private System.Windows.Forms.Label patweightlb;
         private System.Windows.Forms.Label patheightlb;
         private System.Windows.Forms.Label patgenderlb;

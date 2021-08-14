@@ -48,7 +48,7 @@ namespace HMA
         private void TreatmentUI_Load(object sender, EventArgs e)
         {
             populateData();
-
+            TreatDGV.AllowUserToAddRows = false;
             this.TreatDGV.Columns["Apid"].Visible = false;
             this.TreatDGV.Columns["Pid"].Visible = false;
             this.TreatDGV.Columns["Did"].Visible = false;
@@ -61,35 +61,90 @@ namespace HMA
 
         private void DoneBtn_Click(object sender, EventArgs e)
         {
-            Pt.Prescription = GiveTrttxt.Text;
-            try
+
+
+            if (String.IsNullOrEmpty(patnamelb.Text))
             {
-                PrescriptionOperations op = new PrescriptionOperations();
-                op.InsertPrescription(Dr, Pt);
-                MessageBox.Show("Prescription Given !");
+                MessageBox.Show("All the information must be filled up!");
             }
-            catch (Exception ex)
+            else if (String.IsNullOrEmpty(patagelb.Text))
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(patgenderlb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(patheightlb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(patweightlb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(patBgrplb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(Diseaselb.Text))
+            {
+                MessageBox.Show("All the information must be filled up!");
+            }
+            else if (String.IsNullOrEmpty(GiveTrttxt.Text))
+            {
+                MessageBox.Show("Provide the Prescriptoin !");
+            }
+
+            else
+            {
+                Pt.Prescription = GiveTrttxt.Text;
+                try
+                {
+                    PrescriptionOperations op = new PrescriptionOperations();
+                    op.InsertPrescription(Dr, Pt);
+                    MessageBox.Show("Prescription Given !");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
         }
 
-        
+
         private void TreatDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = this.TreatDGV.Rows[e.RowIndex];
-                string UserName= Convert.ToString(row.Cells["Patusername"].Value.ToString());
-                populatePatientData(UserName);     
+                string UserName = Convert.ToString(row.Cells["Patusername"].Value.ToString());
+                populatePatientData(UserName);
 
-            }          
+            }
         }
 
-        private void prevrecordload_Click(object sender, EventArgs e)
+        private void PrevrecordBtn_Click(object sender, EventArgs e)
         {
             new PreviousRecordUI(Pt).Show();
+        }
 
+        private void Doctorlb_Click(object sender, EventArgs e)
+        {
+            new Doctor_UI(Dr).Show();
+            this.Hide();
+        }
+
+        private void Aptpicbox_Click(object sender, EventArgs e)
+        {
+            new ViewAppointmentList(Dr).Show();
+            this.Hide();
+        }
+
+        private void Logoutpicbox_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Hide();
         }
     }
 }

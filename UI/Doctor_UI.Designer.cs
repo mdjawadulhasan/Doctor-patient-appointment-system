@@ -44,18 +44,18 @@ namespace HMA
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Givetreatmentpicbox = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.ViewAptlist = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Aptlistpicbox = new System.Windows.Forms.PictureBox();
+            this.Doctorlb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewAptlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Givetreatmentpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aptlistpicbox)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +64,7 @@ namespace HMA
             this.label1.BackColor = System.Drawing.Color.AliceBlue;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(659, 16);
+            this.label1.Location = new System.Drawing.Point(474, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(386, 89);
             this.label1.TabIndex = 44;
@@ -86,61 +86,66 @@ namespace HMA
             // 
             this.Drhcham.AutoSize = true;
             this.Drhcham.BackColor = System.Drawing.Color.Transparent;
-            this.Drhcham.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Drhcham.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drhcham.ForeColor = System.Drawing.Color.Teal;
             this.Drhcham.Location = new System.Drawing.Point(694, 487);
             this.Drhcham.Name = "Drhcham";
-            this.Drhcham.Size = new System.Drawing.Size(0, 28);
+            this.Drhcham.Size = new System.Drawing.Size(0, 29);
             this.Drhcham.TabIndex = 183;
             // 
             // Drvhrs
             // 
             this.Drvhrs.AutoSize = true;
             this.Drvhrs.BackColor = System.Drawing.Color.Transparent;
-            this.Drvhrs.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Drvhrs.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drvhrs.ForeColor = System.Drawing.Color.Teal;
             this.Drvhrs.Location = new System.Drawing.Point(694, 422);
             this.Drvhrs.Name = "Drvhrs";
-            this.Drvhrs.Size = new System.Drawing.Size(0, 28);
+            this.Drvhrs.Size = new System.Drawing.Size(0, 29);
             this.Drvhrs.TabIndex = 182;
             // 
             // Drvdays
             // 
             this.Drvdays.AutoSize = true;
             this.Drvdays.BackColor = System.Drawing.Color.Transparent;
-            this.Drvdays.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Drvdays.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drvdays.ForeColor = System.Drawing.Color.Teal;
             this.Drvdays.Location = new System.Drawing.Point(692, 357);
             this.Drvdays.Name = "Drvdays";
-            this.Drvdays.Size = new System.Drawing.Size(0, 28);
+            this.Drvdays.Size = new System.Drawing.Size(0, 29);
             this.Drvdays.TabIndex = 181;
             // 
             // Drdpt
             // 
             this.Drdpt.AutoSize = true;
             this.Drdpt.BackColor = System.Drawing.Color.Transparent;
-            this.Drdpt.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Drdpt.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drdpt.ForeColor = System.Drawing.Color.Teal;
             this.Drdpt.Location = new System.Drawing.Point(694, 288);
             this.Drdpt.Name = "Drdpt";
-            this.Drdpt.Size = new System.Drawing.Size(0, 28);
+            this.Drdpt.Size = new System.Drawing.Size(0, 29);
             this.Drdpt.TabIndex = 180;
             // 
             // Drname
             // 
             this.Drname.AutoSize = true;
             this.Drname.BackColor = System.Drawing.Color.Transparent;
-            this.Drname.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Drname.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Drname.ForeColor = System.Drawing.Color.Teal;
             this.Drname.Location = new System.Drawing.Point(692, 232);
             this.Drname.Name = "Drname";
-            this.Drname.Size = new System.Drawing.Size(0, 28);
+            this.Drname.Size = new System.Drawing.Size(0, 29);
             this.Drname.TabIndex = 179;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Teal;
             this.label9.Location = new System.Drawing.Point(501, 422);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(164, 28);
+            this.label9.Size = new System.Drawing.Size(164, 29);
             this.label9.TabIndex = 178;
             this.label9.Text = "Visiting Hours:";
             // 
@@ -148,11 +153,11 @@ namespace HMA
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Teal;
             this.label11.Location = new System.Drawing.Point(587, 232);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 28);
+            this.label11.Size = new System.Drawing.Size(82, 29);
             this.label11.TabIndex = 174;
             this.label11.Text = "Name:";
             // 
@@ -160,11 +165,11 @@ namespace HMA
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Teal;
             this.label8.Location = new System.Drawing.Point(554, 487);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 28);
+            this.label8.Size = new System.Drawing.Size(114, 29);
             this.label8.TabIndex = 177;
             this.label8.Text = "Chamber:";
             // 
@@ -172,11 +177,11 @@ namespace HMA
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(514, 357);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 28);
+            this.label6.Size = new System.Drawing.Size(153, 29);
             this.label6.TabIndex = 176;
             this.label6.Text = "Visiting Days:";
             // 
@@ -184,11 +189,11 @@ namespace HMA
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(528, 288);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 28);
+            this.label3.Size = new System.Drawing.Size(146, 29);
             this.label3.TabIndex = 175;
             this.label3.Text = "Department:";
             // 
@@ -197,16 +202,16 @@ namespace HMA
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.Logoutpicbox);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Givetreatmentpicbox);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.ViewAptlist);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.Aptlistpicbox);
+            this.panel1.Controls.Add(this.Doctorlb);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(202, 746);
+            this.panel1.Size = new System.Drawing.Size(215, 746);
             this.panel1.TabIndex = 187;
             // 
             // pictureBox4
@@ -231,16 +236,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // pictureBox6
+            // Logoutpicbox
             // 
-            this.pictureBox6.Image = global::HMA.Properties.Resources.logout;
-            this.pictureBox6.Location = new System.Drawing.Point(21, 633);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
+            this.Logoutpicbox.Image = global::HMA.Properties.Resources.logout;
+            this.Logoutpicbox.Location = new System.Drawing.Point(21, 633);
+            this.Logoutpicbox.Name = "Logoutpicbox";
+            this.Logoutpicbox.Size = new System.Drawing.Size(48, 67);
+            this.Logoutpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logoutpicbox.TabIndex = 13;
+            this.Logoutpicbox.TabStop = false;
+            this.Logoutpicbox.Click += new System.EventHandler(this.Logoutpicbox_Click);
             // 
             // label5
             // 
@@ -253,16 +258,16 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Give \r\nTreatment";
             // 
-            // pictureBox1
+            // Givetreatmentpicbox
             // 
-            this.pictureBox1.Image = global::HMA.Properties.Resources.prescription;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 334);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Givetreatmentpicbox.Image = global::HMA.Properties.Resources.prescription;
+            this.Givetreatmentpicbox.Location = new System.Drawing.Point(21, 334);
+            this.Givetreatmentpicbox.Name = "Givetreatmentpicbox";
+            this.Givetreatmentpicbox.Size = new System.Drawing.Size(48, 74);
+            this.Givetreatmentpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Givetreatmentpicbox.TabIndex = 9;
+            this.Givetreatmentpicbox.TabStop = false;
+            this.Givetreatmentpicbox.Click += new System.EventHandler(this.Givetreatmentpicbox_Click);
             // 
             // label4
             // 
@@ -275,27 +280,27 @@ namespace HMA
             this.label4.TabIndex = 8;
             this.label4.Text = "Appoinmnet\r\n        list";
             // 
-            // ViewAptlist
+            // Aptlistpicbox
             // 
-            this.ViewAptlist.Image = global::HMA.Properties.Resources.files;
-            this.ViewAptlist.Location = new System.Drawing.Point(21, 205);
-            this.ViewAptlist.Name = "ViewAptlist";
-            this.ViewAptlist.Size = new System.Drawing.Size(48, 74);
-            this.ViewAptlist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ViewAptlist.TabIndex = 7;
-            this.ViewAptlist.TabStop = false;
-            this.ViewAptlist.Click += new System.EventHandler(this.ViewAptlist_Click);
+            this.Aptlistpicbox.Image = global::HMA.Properties.Resources.files;
+            this.Aptlistpicbox.Location = new System.Drawing.Point(21, 205);
+            this.Aptlistpicbox.Name = "Aptlistpicbox";
+            this.Aptlistpicbox.Size = new System.Drawing.Size(48, 74);
+            this.Aptlistpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Aptlistpicbox.TabIndex = 7;
+            this.Aptlistpicbox.TabStop = false;
+            this.Aptlistpicbox.Click += new System.EventHandler(this.Aptlistpicbox_Click);
             // 
-            // label2
+            // Doctorlb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(46, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Doctor";
+            this.Doctorlb.AutoSize = true;
+            this.Doctorlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doctorlb.ForeColor = System.Drawing.Color.White;
+            this.Doctorlb.Location = new System.Drawing.Point(46, 132);
+            this.Doctorlb.Name = "Doctorlb";
+            this.Doctorlb.Size = new System.Drawing.Size(83, 25);
+            this.Doctorlb.TabIndex = 4;
+            this.Doctorlb.Text = "Doctor";
             // 
             // Doctor_UI
             // 
@@ -317,15 +322,16 @@ namespace HMA
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Doctor_UI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor_UI";
             this.Load += new System.EventHandler(this.Doctor_UI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ViewAptlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Givetreatmentpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Aptlistpicbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,11 +354,11 @@ namespace HMA
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox Logoutpicbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Givetreatmentpicbox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox ViewAptlist;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox Aptlistpicbox;
+        private System.Windows.Forms.Label Doctorlb;
     }
 }

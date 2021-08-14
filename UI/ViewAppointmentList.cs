@@ -32,6 +32,8 @@ namespace HMA
         private void ViewAppointmentList_Load(object sender, EventArgs e)
         {
            populateData();
+            DrAptList.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            DrAptList.AllowUserToAddRows = false;
             this.DrAptList.Columns["Apid"].Visible = false;
             this.DrAptList.Columns["Pid"].Visible = false;
             this.DrAptList.Columns["Did"].Visible = false;
@@ -85,22 +87,36 @@ namespace HMA
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Doctorlb_Click(object sender, EventArgs e)
         {
             new Doctor_UI(Dr).Show();
             this.Hide();
         }
 
-        private void Trtload_Click(object sender, EventArgs e)
+        private void LogoutPicbox_Click(object sender, EventArgs e)
+        {
+            new loginorsignup().Show();
+            this.Hide();
+        }
+
+        private void TreatPicbox_Click(object sender, EventArgs e)
         {
             new TreatmentUI(Dr).Show();
             this.Hide();
         }
 
-        private void Logoutpage_Click(object sender, EventArgs e)
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
-            new loginorsignup().Show();
-            this.Hide();
+            Bitmap bip = new Bitmap(this.DrAptList.Width, this.DrAptList.Height);
+            DrAptList.DrawToBitmap(bip, new Rectangle(0, 0, this.DrAptList.Width, this.DrAptList.Height));
+            e.Graphics.DrawImage(bip, 100, 50);
+
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
         }
     }
 }

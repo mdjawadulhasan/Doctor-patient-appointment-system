@@ -34,7 +34,7 @@ namespace HMA
         private void AppointmentUI_Load(object sender, EventArgs e)
         {
             populateData();
-
+            DoctorApDGV.AllowUserToAddRows = false;
             this.DoctorApDGV.Columns["Did"].Visible = false;
             DoctorApDGV.Columns["Did"].HeaderText = "ID";
             DoctorApDGV.Columns["Dtfname"].HeaderText = "First Name";

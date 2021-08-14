@@ -47,6 +47,7 @@ namespace HMA
         {
 
             populateData();
+            RegDoctorDGV.AllowUserToAddRows = false;
             this.RegDoctorDGV.Columns["Did"].Visible = false;
             this.RegDoctorDGV.Columns["Dtdegree"].Visible = false;
             this.RegDoctorDGV.Columns["Dtdept"].Visible = false;

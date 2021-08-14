@@ -35,6 +35,9 @@ namespace HMA
         private void ViewAppointment_UI_Load(object sender, EventArgs e)
         {
             populateData();
+
+            UpAptDgv.AllowUserToAddRows = false;
+            PrevAptDgv.AllowUserToAddRows = false;
             this.UpAptDgv.Columns["Apid"].Visible = false;
             this.UpAptDgv.Columns["Pid"].Visible = false;
             this.UpAptDgv.Columns["Did"].Visible = false;

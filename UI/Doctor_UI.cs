@@ -30,32 +30,21 @@ namespace HMA
 
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void Logoutpicbox_Click(object sender, EventArgs e)
         {
             new loginorsignup().Show();
             this.Hide();
         }
 
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ViewAptlist_Click(object sender, EventArgs e)
-        {
-            new ViewAppointmentList(Dr).Show();
-            this.Hide();
-        }
-
-        private void pictureBox6_Click_1(object sender, EventArgs e)
-        {
-            new loginorsignup().Show();
-            this.Show();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Givetreatmentpicbox_Click(object sender, EventArgs e)
         {
             new TreatmentUI(Dr).Show();
+            this.Hide();
+        }
+
+        private void Aptlistpicbox_Click(object sender, EventArgs e)
+        {
+            new ViewAppointmentList(Dr).Show();
             this.Hide();
         }
     }

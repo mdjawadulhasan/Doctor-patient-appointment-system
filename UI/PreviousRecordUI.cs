@@ -39,7 +39,7 @@ namespace HMA
         private void PreviousRecordUI_Load(object sender, EventArgs e)
         {
             populateData();
-
+            PrevRecordDGV.AllowUserToAddRows = false;
             this.PrevRecordDGV.Columns["Prescid"].Visible = false;
             this.PrevRecordDGV.Columns["Patid"].Visible = false;
             this.PrevRecordDGV.Columns["Did"].Visible = false;

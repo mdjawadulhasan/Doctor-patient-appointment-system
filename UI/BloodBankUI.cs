@@ -30,6 +30,7 @@ namespace HMA
         {
 
             populateData();
+            DonorLitsDGV.AllowUserToAddRows = false;
             this.DonorLitsDGV.Columns["DoId"].Visible = false;
             DonorLitsDGV.Columns["Dfname"].HeaderText = "FirstName";
             DonorLitsDGV.Columns["Dlname"].HeaderText = "Last Name";

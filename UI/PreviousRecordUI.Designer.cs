@@ -51,6 +51,7 @@ namespace HMA
             // 
             // PrevRecordDGV
             // 
+            this.PrevRecordDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.PrevRecordDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.PrevRecordDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PrevRecordDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -70,7 +71,7 @@ namespace HMA
             this.PrevRecordDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.PrevRecordDGV.RowHeadersVisible = false;
             this.PrevRecordDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;

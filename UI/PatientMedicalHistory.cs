@@ -35,7 +35,7 @@ namespace HMA
         private void PatientMedicalHistory_Load(object sender, EventArgs e)
         {
             populateData();
-
+            HistoryDGV.AllowUserToAddRows = false;
             this.HistoryDGV.Columns["Prescid"].Visible = false;
             this.HistoryDGV.Columns["Patid"].Visible = false;
             this.HistoryDGV.Columns["Did"].Visible = false;

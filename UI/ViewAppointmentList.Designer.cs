@@ -31,21 +31,25 @@ namespace HMA
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAppointmentList));
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.Logoutpage = new System.Windows.Forms.PictureBox();
+            this.LogoutPicbox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.Trtload = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.TreatPicbox = new System.Windows.Forms.PictureBox();
+            this.Doctorlb = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.DrAptList = new System.Windows.Forms.DataGridView();
             this.DeleteBtn = new System.Windows.Forms.Button();
             this.dltlb = new System.Windows.Forms.Label();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logoutpage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Trtload)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatPicbox)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DrAptList)).BeginInit();
@@ -73,16 +77,16 @@ namespace HMA
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
             // 
-            // Logoutpage
+            // LogoutPicbox
             // 
-            this.Logoutpage.Image = global::HMA.Properties.Resources.logout;
-            this.Logoutpage.Location = new System.Drawing.Point(21, 633);
-            this.Logoutpage.Name = "Logoutpage";
-            this.Logoutpage.Size = new System.Drawing.Size(48, 67);
-            this.Logoutpage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logoutpage.TabIndex = 13;
-            this.Logoutpage.TabStop = false;
-            this.Logoutpage.Click += new System.EventHandler(this.Logoutpage_Click);
+            this.LogoutPicbox.Image = global::HMA.Properties.Resources.logout;
+            this.LogoutPicbox.Location = new System.Drawing.Point(21, 633);
+            this.LogoutPicbox.Name = "LogoutPicbox";
+            this.LogoutPicbox.Size = new System.Drawing.Size(48, 67);
+            this.LogoutPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutPicbox.TabIndex = 13;
+            this.LogoutPicbox.TabStop = false;
+            this.LogoutPicbox.Click += new System.EventHandler(this.LogoutPicbox_Click);
             // 
             // label5
             // 
@@ -95,38 +99,38 @@ namespace HMA
             this.label5.TabIndex = 10;
             this.label5.Text = "Give \r\nTreatment";
             // 
-            // Trtload
+            // TreatPicbox
             // 
-            this.Trtload.Image = global::HMA.Properties.Resources.prescription;
-            this.Trtload.Location = new System.Drawing.Point(21, 334);
-            this.Trtload.Name = "Trtload";
-            this.Trtload.Size = new System.Drawing.Size(48, 74);
-            this.Trtload.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Trtload.TabIndex = 9;
-            this.Trtload.TabStop = false;
-            this.Trtload.Click += new System.EventHandler(this.Trtload_Click);
+            this.TreatPicbox.Image = global::HMA.Properties.Resources.prescription;
+            this.TreatPicbox.Location = new System.Drawing.Point(21, 334);
+            this.TreatPicbox.Name = "TreatPicbox";
+            this.TreatPicbox.Size = new System.Drawing.Size(48, 74);
+            this.TreatPicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TreatPicbox.TabIndex = 9;
+            this.TreatPicbox.TabStop = false;
+            this.TreatPicbox.Click += new System.EventHandler(this.TreatPicbox_Click);
             // 
-            // label2
+            // Doctorlb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(46, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 25);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Doctor";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.Doctorlb.AutoSize = true;
+            this.Doctorlb.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Doctorlb.ForeColor = System.Drawing.Color.White;
+            this.Doctorlb.Location = new System.Drawing.Point(46, 132);
+            this.Doctorlb.Name = "Doctorlb";
+            this.Doctorlb.Size = new System.Drawing.Size(83, 25);
+            this.Doctorlb.TabIndex = 4;
+            this.Doctorlb.Text = "Doctor";
+            this.Doctorlb.Click += new System.EventHandler(this.Doctorlb_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.Logoutpage);
+            this.panel1.Controls.Add(this.LogoutPicbox);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.Trtload);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.TreatPicbox);
+            this.panel1.Controls.Add(this.Doctorlb);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 754);
@@ -156,7 +160,7 @@ namespace HMA
             // 
             // DrAptList
             // 
-            this.DrAptList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.DrAptList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DrAptList.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DrAptList.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DrAptList.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -177,8 +181,10 @@ namespace HMA
             this.DrAptList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DrAptList.RowHeadersVisible = false;
             this.DrAptList.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.PaleGreen;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Azure;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
             this.DrAptList.RowsDefaultCellStyle = dataGridViewCellStyle4;
@@ -210,15 +216,46 @@ namespace HMA
             this.dltlb.ForeColor = System.Drawing.Color.White;
             this.dltlb.Location = new System.Drawing.Point(928, 132);
             this.dltlb.Name = "dltlb";
-            this.dltlb.Size = new System.Drawing.Size(78, 25);
+            this.dltlb.Size = new System.Drawing.Size(48, 25);
             this.dltlb.TabIndex = 217;
-            this.dltlb.Text = "sdgdsg";
+            this.dltlb.Text = "See";
+            this.dltlb.Visible = false;
+            // 
+            // printBtn
+            // 
+            this.printBtn.BackColor = System.Drawing.Color.Navy;
+            this.printBtn.FlatAppearance.BorderSize = 2;
+            this.printBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printBtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.ForeColor = System.Drawing.Color.White;
+            this.printBtn.Location = new System.Drawing.Point(654, 677);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(119, 48);
+            this.printBtn.TabIndex = 218;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = false;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // ViewAppointmentList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1194, 746);
+            this.Controls.Add(this.printBtn);
             this.Controls.Add(this.dltlb);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.label12);
@@ -227,11 +264,12 @@ namespace HMA
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewAppointmentList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewAppointmentList";
             this.Load += new System.EventHandler(this.ViewAppointmentList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logoutpage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Trtload)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatPicbox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -245,15 +283,18 @@ namespace HMA
 
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox Logoutpage;
+        private System.Windows.Forms.PictureBox LogoutPicbox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox Trtload;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox TreatPicbox;
+        private System.Windows.Forms.Label Doctorlb;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView DrAptList;
         private System.Windows.Forms.Button DeleteBtn;
         private System.Windows.Forms.Label dltlb;
+        private System.Windows.Forms.Button printBtn;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
