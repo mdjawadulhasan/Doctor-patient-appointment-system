@@ -140,33 +140,37 @@ namespace HMA
             {
                 MessageBox.Show("Password is too weak !");
             }
-            else if (OP.CheckSignup(d.id) >= 1)
-            {
-                MessageBox.Show("This Doctor Already Exists in the system");
-            }
+
 
             else
             {
-
-
-                try
+                d.UserName = usernametxt.Text;
+                if (OP.CheckSignup(d.id, d.UserName) >= 1)
                 {
-                    d.FirstName = RDtfnametxt.Text;
-                    d.LastName = RDtlnametxt.Text;
-                    d.Degree = RDtdegree.Text;
-                    d.Department = RDtdept.Text;
-                    d.Chammber = RDtcham.Text;
-                    d.Visitng_Hours = RDtvhours.Text;
-                    d.visiting_days = RDtvisitingdys.Text;
-                    d.Appoinment_CallNo = RDtApt.Text;
-                    d.UserName = usernametxt.Text;
-                    d.Password = passwordtxt.Text;
-                    OP.RegisterDoctor(d);
-                    MessageBox.Show("Sign up Succes !");
+                    MessageBox.Show("This Doctor Already Exists in the system");
                 }
-                catch (Exception ex)
+
+                else
                 {
-                    Console.WriteLine(ex.Message);
+                    try
+                    {
+                        d.FirstName = RDtfnametxt.Text;
+                        d.LastName = RDtlnametxt.Text;
+                        d.Degree = RDtdegree.Text;
+                        d.Department = RDtdept.Text;
+                        d.Chammber = RDtcham.Text;
+                        d.Visitng_Hours = RDtvhours.Text;
+                        d.visiting_days = RDtvisitingdys.Text;
+                        d.Appoinment_CallNo = RDtApt.Text;
+
+                        d.Password = passwordtxt.Text;
+                        OP.RegisterDoctor(d);
+                        MessageBox.Show("Sign up Succes !");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
                 }
             }
         }

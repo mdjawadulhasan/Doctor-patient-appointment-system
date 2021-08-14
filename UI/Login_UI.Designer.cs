@@ -32,7 +32,7 @@ namespace HMA
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LoginBtn = new System.Windows.Forms.Button();
             this.textusrname = new System.Windows.Forms.TextBox();
             this.textpassword = new System.Windows.Forms.TextBox();
             this.btnexit = new System.Windows.Forms.Button();
@@ -75,20 +75,20 @@ namespace HMA
             this.flowLayoutPanel2.Size = new System.Drawing.Size(300, 1);
             this.flowLayoutPanel2.TabIndex = 25;
             // 
-            // button1
+            // LoginBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(33, 391);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 48);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "LOG IN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.LoginBtn.BackColor = System.Drawing.Color.Teal;
+            this.LoginBtn.FlatAppearance.BorderSize = 2;
+            this.LoginBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginBtn.Font = new System.Drawing.Font("Bahnschrift", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginBtn.ForeColor = System.Drawing.Color.White;
+            this.LoginBtn.Location = new System.Drawing.Point(33, 391);
+            this.LoginBtn.Name = "LoginBtn";
+            this.LoginBtn.Size = new System.Drawing.Size(300, 48);
+            this.LoginBtn.TabIndex = 27;
+            this.LoginBtn.Text = "LOG IN";
+            this.LoginBtn.UseVisualStyleBackColor = false;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // textusrname
             // 
@@ -123,14 +123,14 @@ namespace HMA
             this.btnexit.TabIndex = 30;
             this.btnexit.Text = "EXIT";
             this.btnexit.UseVisualStyleBackColor = false;
-            this.btnexit.Click += new System.EventHandler(this.btnexit_Click_1);
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.btnexit);
             this.panel1.Controls.Add(this.textpassword);
             this.panel1.Controls.Add(this.textusrname);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.LoginBtn);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.flowLayoutPanel2);
             this.panel1.Controls.Add(this.flowLayoutPanel1);
@@ -183,7 +183,7 @@ namespace HMA
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Login
+            // Login_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -192,10 +192,9 @@ namespace HMA
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Login";
+            this.Name = "Login_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -215,7 +214,7 @@ namespace HMA
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LoginBtn;
         private System.Windows.Forms.TextBox textusrname;
         private System.Windows.Forms.TextBox textpassword;
         private System.Windows.Forms.Button btnexit;

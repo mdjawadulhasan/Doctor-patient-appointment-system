@@ -55,11 +55,11 @@ namespace DataLayer_HMA.Operations
 
         }
 
-        public int CheckSignup(int key)
+        public int CheckSignup(int key,string username)
         {
             int count = 0;
 
-            string Query = "select count(*) from RegisteredDtTbl where Rdid=" + key + "";
+            string Query = "select count(*) from RegisteredDtTbl where Rdid=" + key + " OR Dtusername='" + username + "'";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

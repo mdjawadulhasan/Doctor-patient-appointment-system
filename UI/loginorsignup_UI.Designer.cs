@@ -35,10 +35,10 @@ namespace HMA
             this.label1 = new System.Windows.Forms.Label();
             this.rolecb = new System.Windows.Forms.ComboBox();
             this.adminlb = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Exitpicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exitpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +56,7 @@ namespace HMA
             this.signupbtn.TabIndex = 19;
             this.signupbtn.Text = "SIGN UP";
             this.signupbtn.UseVisualStyleBackColor = false;
-            this.signupbtn.Click += new System.EventHandler(this.button2_Click);
+            this.signupbtn.Click += new System.EventHandler(this.signupbtn_Click);
             // 
             // loginbtn
             // 
@@ -71,7 +71,7 @@ namespace HMA
             this.loginbtn.TabIndex = 18;
             this.loginbtn.Text = "LOG IN";
             this.loginbtn.UseVisualStyleBackColor = false;
-            this.loginbtn.Click += new System.EventHandler(this.button1_Click);
+            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click);
             // 
             // label2
             // 
@@ -121,17 +121,17 @@ namespace HMA
             this.adminlb.Text = "Admin";
             this.adminlb.Click += new System.EventHandler(this.adminlb_Click);
             // 
-            // pictureBox1
+            // Exitpicbox
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::HMA.Properties.Resources.cancel;
-            this.pictureBox1.Location = new System.Drawing.Point(902, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 56);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 25;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Exitpicbox.BackColor = System.Drawing.Color.White;
+            this.Exitpicbox.Image = global::HMA.Properties.Resources.cancel;
+            this.Exitpicbox.Location = new System.Drawing.Point(902, 1);
+            this.Exitpicbox.Name = "Exitpicbox";
+            this.Exitpicbox.Size = new System.Drawing.Size(71, 56);
+            this.Exitpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Exitpicbox.TabIndex = 25;
+            this.Exitpicbox.TabStop = false;
+            this.Exitpicbox.Click += new System.EventHandler(this.Exitpicbox_Click);
             // 
             // pictureBox4
             // 
@@ -154,13 +154,13 @@ namespace HMA
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
-            // loginorsignup
+            // loginorsignup_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(972, 574);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Exitpicbox);
             this.Controls.Add(this.adminlb);
             this.Controls.Add(this.rolecb);
             this.Controls.Add(this.pictureBox4);
@@ -170,11 +170,11 @@ namespace HMA
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "loginorsignup";
+            this.Name = "loginorsignup_UI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.loginorsignup_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Exitpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -191,6 +191,6 @@ namespace HMA
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.ComboBox rolecb;
         private System.Windows.Forms.Label adminlb;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Exitpicbox;
     }
 }

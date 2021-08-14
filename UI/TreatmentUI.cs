@@ -39,13 +39,17 @@ namespace HMA
             {
                 MessageBox.Show("Patient Doesn't Exists");
             }
-            patnamelb.Text = Pt.FirstName + " " + Pt.LastName;
-            patgenderlb.Text = Pt.Gender;
-            patheightlb.Text = Convert.ToString(Pt.HeightInCm);
-            patweightlb.Text = Convert.ToString(Pt.WeightInKg);
-            patagelb.Text = Convert.ToString(Pt.Age);
-            Diseaselb.Text = Pt.Diseases;
-            patgenderlb.Text = Pt.Gender;
+            else
+            {
+                patnamelb.Text = Pt.FirstName + " " + Pt.LastName;
+                patgenderlb.Text = Pt.Gender;
+                patheightlb.Text = Convert.ToString(Pt.HeightInCm);
+                patweightlb.Text = Convert.ToString(Pt.WeightInKg);
+                patagelb.Text = Convert.ToString(Pt.Age);
+                patBgrplb.Text = Pt.BloodGroup;
+                Diseaselb.Text = Pt.Diseases;
+                patgenderlb.Text = Pt.Gender;
+            }
 
 
         }

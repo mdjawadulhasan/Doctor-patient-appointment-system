@@ -22,17 +22,8 @@ namespace HMA
             textpassword.PasswordChar = '*';
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btnexit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
             string pass = textpassword.Text;
             string user = textusrname.Text;
@@ -94,7 +85,7 @@ namespace HMA
             }
         }
 
-        private void btnexit_Click_1(object sender, EventArgs e)
+        private void btnexit_Click(object sender, EventArgs e)
         {
             new loginorsignup_UI().Show();
             this.Close();
