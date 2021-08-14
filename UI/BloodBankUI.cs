@@ -61,26 +61,29 @@ namespace HMA
             this.Hide();
         }
 
-        private void SetAptpicbox_Click(object sender, EventArgs e)
-        {
-            new ViewAppointment_UI(pt).Show();
-            this.Hide();
-        }
+        
 
         private void MedlHistorypicbox_Click(object sender, EventArgs e)
         {
-            new PatientMedicalHistory(pt).Show();
+            new PatientMedicalHistory_UI(pt).Show();
             this.Hide();
         }
 
         private void DiseasePredpicbox_Click(object sender, EventArgs e)
         {
-            //
+            new CovidPredict_UI(pt).Show();
+            this.Hide();
         }
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
+            this.Hide();
+        }
+
+        private void SeeAptpicbox_Click(object sender, EventArgs e)
+        {
+            new ViewAppointment_UI(pt).Show();
             this.Hide();
         }
     }

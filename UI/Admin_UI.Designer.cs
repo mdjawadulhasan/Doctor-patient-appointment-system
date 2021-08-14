@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class Admin
+    partial class Admin_UI
     {
         /// <summary>
         /// Required designer variable.

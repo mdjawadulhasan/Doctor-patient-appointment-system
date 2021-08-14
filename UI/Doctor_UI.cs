@@ -32,7 +32,7 @@ namespace HMA
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
 
@@ -44,7 +44,7 @@ namespace HMA
 
         private void Aptlistpicbox_Click(object sender, EventArgs e)
         {
-            new ViewAppointmentList(Dr).Show();
+            new ViewAppointmentList_UI(Dr).Show();
             this.Hide();
         }
     }

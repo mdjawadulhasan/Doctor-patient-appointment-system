@@ -53,7 +53,7 @@ namespace HMA
             this.logoutpicbox = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.SetAptpicbox = new System.Windows.Forms.PictureBox();
+            this.SeeAptpicbox = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,7 +63,7 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.Bloodbankpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoutpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -325,16 +325,16 @@ namespace HMA
             this.pictureBox4.TabIndex = 24;
             this.pictureBox4.TabStop = false;
             // 
-            // SetAptpicbox
+            // SeeAptpicbox
             // 
-            this.SetAptpicbox.Image = global::HMA.Properties.Resources.appointment;
-            this.SetAptpicbox.Location = new System.Drawing.Point(19, 249);
-            this.SetAptpicbox.Name = "SetAptpicbox";
-            this.SetAptpicbox.Size = new System.Drawing.Size(42, 56);
-            this.SetAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SetAptpicbox.TabIndex = 25;
-            this.SetAptpicbox.TabStop = false;
-            this.SetAptpicbox.Click += new System.EventHandler(this.SetAptpicbox_Click);
+            this.SeeAptpicbox.Image = global::HMA.Properties.Resources.appointment;
+            this.SeeAptpicbox.Location = new System.Drawing.Point(19, 249);
+            this.SeeAptpicbox.Name = "SeeAptpicbox";
+            this.SeeAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.SeeAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SeeAptpicbox.TabIndex = 25;
+            this.SeeAptpicbox.TabStop = false;
+            this.SeeAptpicbox.Click += new System.EventHandler(this.SeeAptpicbox_Click);
             // 
             // label12
             // 
@@ -351,7 +351,7 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.SetAptpicbox);
+            this.panel1.Controls.Add(this.SeeAptpicbox);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.logoutpicbox);
@@ -400,7 +400,7 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.Bloodbankpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoutpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -434,7 +434,7 @@ namespace HMA
         private System.Windows.Forms.PictureBox logoutpicbox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox SetAptpicbox;
+        private System.Windows.Forms.PictureBox SeeAptpicbox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
     }

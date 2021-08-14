@@ -40,7 +40,7 @@ namespace HMA
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.SetAptpicbox = new System.Windows.Forms.PictureBox();
+            this.SeeAptpicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Logoutpicbox = new System.Windows.Forms.PictureBox();
@@ -60,7 +60,7 @@ namespace HMA
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).BeginInit();
@@ -142,7 +142,7 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.SetAptpicbox);
+            this.panel1.Controls.Add(this.SeeAptpicbox);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.Logoutpicbox);
@@ -170,16 +170,16 @@ namespace HMA
             this.label12.TabIndex = 28;
             this.label12.Text = "See \r\nAppoinment";
             // 
-            // SetAptpicbox
+            // SeeAptpicbox
             // 
-            this.SetAptpicbox.Image = global::HMA.Properties.Resources.appointment;
-            this.SetAptpicbox.Location = new System.Drawing.Point(12, 291);
-            this.SetAptpicbox.Name = "SetAptpicbox";
-            this.SetAptpicbox.Size = new System.Drawing.Size(42, 56);
-            this.SetAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SetAptpicbox.TabIndex = 27;
-            this.SetAptpicbox.TabStop = false;
-            this.SetAptpicbox.Click += new System.EventHandler(this.SetAptpicbox_Click);
+            this.SeeAptpicbox.Image = global::HMA.Properties.Resources.appointment;
+            this.SeeAptpicbox.Location = new System.Drawing.Point(12, 291);
+            this.SeeAptpicbox.Name = "SeeAptpicbox";
+            this.SeeAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.SeeAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SeeAptpicbox.TabIndex = 27;
+            this.SeeAptpicbox.TabStop = false;
+            this.SeeAptpicbox.Click += new System.EventHandler(this.SeeAptpicbox_Click);
             // 
             // pictureBox4
             // 
@@ -416,7 +416,7 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DiseasePredpicbox)).EndInit();
@@ -459,6 +459,6 @@ namespace HMA
         private System.Windows.Forms.TextBox searchtxt;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox SetAptpicbox;
+        private System.Windows.Forms.PictureBox SeeAptpicbox;
     }
 }

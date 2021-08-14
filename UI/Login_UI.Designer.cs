@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class Login
+    partial class Login_UI
     {
         /// <summary>
         /// Required designer variable.

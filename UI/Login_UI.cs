@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class Login : Form
+    public partial class Login_UI : Form
     {
         int persontype;
-        public Login(Person p)
+        public Login_UI(Person p)
         {
             persontype = p.PersonType;
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace HMA
                 {
                     if (pass == "admin" && user == "admin")
                     {
-                        new Admin().Show();
+                        new Admin_UI().Show();
 
                         this.Close();
                     }
@@ -96,7 +96,7 @@ namespace HMA
 
         private void btnexit_Click_1(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Close();
         }
     }

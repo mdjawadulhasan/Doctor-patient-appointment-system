@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataLayer_HMA.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,10 @@ namespace HMA
         [STAThread]
         static void Main()
         {
+            Patient p;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginorsignup());
+            Application.Run(new loginorsignup_UI());
         }
     }
 }

@@ -46,23 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddDoctor.cs">
+    <Compile Include="AddDoctor_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDoctor.Designer.cs">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <Compile Include="AddDoctor_UI.Designer.cs">
+      <DependentUpon>AddDoctor_UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddDonor.cs">
+    <Compile Include="AddDonor_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddDonor.Designer.cs">
-      <DependentUpon>AddDonor.cs</DependentUpon>
+    <Compile Include="AddDonor_UI.Designer.cs">
+      <DependentUpon>AddDonor_UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin.cs">
+    <Compile Include="Admin_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin.Designer.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <Compile Include="Admin_UI.Designer.cs">
+      <DependentUpon>Admin_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="BookAppointmentUI.cs">
       <SubType>Form</SubType>
@@ -76,6 +76,12 @@
     <Compile Include="BloodBankUI.Designer.cs">
       <DependentUpon>BloodBankUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="CovidPredict_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CovidPredict_UI.Designer.cs">
+      <DependentUpon>CovidPredict_UI.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorSIgnup_UI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,23 +94,24 @@
     <Compile Include="Doctor_UI.Designer.cs">
       <DependentUpon>Doctor_UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="IDiseasePrediction.cs" />
+    <Compile Include="Login_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Login_UI.Designer.cs">
+      <DependentUpon>Login_UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginorsignup.cs">
+    <Compile Include="loginorsignup_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginorsignup.Designer.cs">
-      <DependentUpon>loginorsignup.cs</DependentUpon>
+    <Compile Include="loginorsignup_UI.Designer.cs">
+      <DependentUpon>loginorsignup_UI.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientMedicalHistory.cs">
+    <Compile Include="PatientMedicalHistory_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientMedicalHistory.Designer.cs">
-      <DependentUpon>PatientMedicalHistory.cs</DependentUpon>
+    <Compile Include="PatientMedicalHistory_UI.Designer.cs">
+      <DependentUpon>PatientMedicalHistory_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="Patient_UI.cs">
       <SubType>Form</SubType>
@@ -132,11 +139,11 @@
     <Compile Include="TreatmentUI.Designer.cs">
       <DependentUpon>TreatmentUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewAppointmentList.cs">
+    <Compile Include="ViewAppointmentList_UI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewAppointmentList.Designer.cs">
-      <DependentUpon>ViewAppointmentList.cs</DependentUpon>
+    <Compile Include="ViewAppointmentList_UI.Designer.cs">
+      <DependentUpon>ViewAppointmentList_UI.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewAppointment_UI.cs">
       <SubType>Form</SubType>
@@ -144,14 +151,14 @@
     <Compile Include="ViewAppointment_UI.Designer.cs">
       <DependentUpon>ViewAppointment_UI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddDoctor.resx">
-      <DependentUpon>AddDoctor.cs</DependentUpon>
+    <EmbeddedResource Include="AddDoctor_UI.resx">
+      <DependentUpon>AddDoctor_UI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddDonor.resx">
-      <DependentUpon>AddDonor.cs</DependentUpon>
+    <EmbeddedResource Include="AddDonor_UI.resx">
+      <DependentUpon>AddDonor_UI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin.resx">
-      <DependentUpon>Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_UI.resx">
+      <DependentUpon>Admin_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BookAppointmentUI.resx">
       <DependentUpon>BookAppointmentUI.cs</DependentUpon>
@@ -159,20 +166,23 @@
     <EmbeddedResource Include="BloodBankUI.resx">
       <DependentUpon>BloodBankUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CovidPredict_UI.resx">
+      <DependentUpon>CovidPredict_UI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoctorSIgnup_UI.resx">
       <DependentUpon>DoctorSIgnup_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Doctor_UI.resx">
       <DependentUpon>Doctor_UI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Login_UI.resx">
+      <DependentUpon>Login_UI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginorsignup.resx">
-      <DependentUpon>loginorsignup.cs</DependentUpon>
+    <EmbeddedResource Include="loginorsignup_UI.resx">
+      <DependentUpon>loginorsignup_UI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PatientMedicalHistory.resx">
-      <DependentUpon>PatientMedicalHistory.cs</DependentUpon>
+    <EmbeddedResource Include="PatientMedicalHistory_UI.resx">
+      <DependentUpon>PatientMedicalHistory_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Patient_UI.resx">
       <DependentUpon>Patient_UI.cs</DependentUpon>
@@ -196,8 +206,8 @@
     <EmbeddedResource Include="TreatmentUI.resx">
       <DependentUpon>TreatmentUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewAppointmentList.resx">
-      <DependentUpon>ViewAppointmentList.cs</DependentUpon>
+    <EmbeddedResource Include="ViewAppointmentList_UI.resx">
+      <DependentUpon>ViewAppointmentList_UI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewAppointment_UI.resx">
       <DependentUpon>ViewAppointment_UI.cs</DependentUpon>
@@ -304,6 +314,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\covid-19-4975604_960_720.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redalert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert-128.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

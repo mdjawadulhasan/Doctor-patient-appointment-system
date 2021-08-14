@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class ViewAppointmentList : Form
+    public partial class ViewAppointmentList_UI : Form
     {
         Doctor Dr;
-        public ViewAppointmentList(Doctor D)
+        public ViewAppointmentList_UI(Doctor D)
         {
             Dr = D;
             InitializeComponent();
@@ -95,7 +95,7 @@ namespace HMA
 
         private void LogoutPicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
 

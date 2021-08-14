@@ -75,3 +75,4 @@ C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.ViewAppointmentLi
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.TreatmentUI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PreviousRecordUI.resources
 C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.PatientMedicalHistory.resources
+C:\Users\Lenovo\Desktop\Health Management APP\UI\obj\Debug\HMA.CovidPredict_UI.resources

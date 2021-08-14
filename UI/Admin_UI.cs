@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class Admin : Form
+    public partial class Admin_UI : Form
     {
-        public Admin()
+        public Admin_UI()
         {
             InitializeComponent();
         }
@@ -28,21 +28,21 @@ namespace HMA
 
         private void AddDonorpicbox_Click(object sender, EventArgs e)
         {
-            new AddDonor().Show();
+            new AddDonor_UI().Show();
             this.Close();
         }
 
         private void AddDoctorPIcbox_Click(object sender, EventArgs e)
         {
 
-            new AddDoctor().Show();
+            new AddDoctor_UI().Show();
             this.Close();
 
         }
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Close();
         }
     }

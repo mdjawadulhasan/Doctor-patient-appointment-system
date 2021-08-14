@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class ViewAppointmentList
+    partial class ViewAppointmentList_UI
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace HMA
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAppointmentList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAppointmentList_UI));
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.LogoutPicbox = new System.Windows.Forms.PictureBox();

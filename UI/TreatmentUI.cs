@@ -35,6 +35,10 @@ namespace HMA
         {
             PatientOperations OP = new PatientOperations();
             Pt = OP.GetPatient2(username);
+            if(Pt==null)
+            {
+                MessageBox.Show("Patient Doesn't Exists");
+            }
             patnamelb.Text = Pt.FirstName + " " + Pt.LastName;
             patgenderlb.Text = Pt.Gender;
             patheightlb.Text = Convert.ToString(Pt.HeightInCm);
@@ -137,13 +141,13 @@ namespace HMA
 
         private void Aptpicbox_Click(object sender, EventArgs e)
         {
-            new ViewAppointmentList(Dr).Show();
+            new ViewAppointmentList_UI(Dr).Show();
             this.Hide();
         }
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
     }

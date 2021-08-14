@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class AddDonor : Form
+    public partial class AddDonor_UI : Form
     {
-        public AddDonor()
+        public AddDonor_UI()
         {
             InitializeComponent();
         }
@@ -221,19 +221,19 @@ namespace HMA
 
         private void Adminlb_Click(object sender, EventArgs e)
         {
-            new Admin().Show();
+            new Admin_UI().Show();
             this.Hide();
         }
 
         private void AddDoctorpicbox_Click(object sender, EventArgs e)
         {
-            new AddDoctor().Show();
+            new AddDoctor_UI().Show();
             this.Close();
         }
 
         private void Backpicbox_Click(object sender, EventArgs e)
         {
-            new Admin().Show();
+            new Admin_UI().Show();
             this.Hide();
         }
     }

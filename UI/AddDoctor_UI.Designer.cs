@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class AddDoctor
+    partial class AddDoctor_UI
     {
         /// <summary>
         /// Required designer variable.

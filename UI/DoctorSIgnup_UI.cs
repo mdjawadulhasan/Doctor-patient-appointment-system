@@ -86,7 +86,7 @@ namespace HMA
 
         private void btnexit_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
 

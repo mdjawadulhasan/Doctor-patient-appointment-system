@@ -1,7 +1,7 @@
 ﻿
 namespace HMA
 {
-    partial class AddDonor
+    partial class AddDonor_UI
     {
         /// <summary>
         /// Required designer variable.

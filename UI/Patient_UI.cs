@@ -35,21 +35,18 @@ namespace HMA
             this.Hide();
         }
 
-        private void SetAptpicbox_Click(object sender, EventArgs e)
-        {
-            new BookAppointmentUI(Pt).Show();
-            this.Hide();
-        }
+       
 
         private void Medhistorypicbox_Click(object sender, EventArgs e)
         {
-            new PatientMedicalHistory(Pt).Show();
+            new PatientMedicalHistory_UI(Pt).Show();
             this.Hide();
         }
 
         private void Diseaseprdpicbox_Click(object sender, EventArgs e)
         {
-           //to be added
+            new CovidPredict_UI(Pt).Show();
+            this.Hide();
         }
 
         private void Bloodbankpicbox_Click(object sender, EventArgs e)
@@ -60,7 +57,13 @@ namespace HMA
 
         private void logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
+            this.Hide();
+        }
+
+        private void SeeAptpicbox_Click(object sender, EventArgs e)
+        {
+            new BookAppointmentUI(Pt).Show();
             this.Hide();
         }
     }

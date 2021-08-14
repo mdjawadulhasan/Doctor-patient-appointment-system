@@ -115,13 +115,14 @@ namespace HMA
 
         private void MedHistorypicbox_Click(object sender, EventArgs e)
         {
-            new PatientMedicalHistory(Pt).Show();
+            new PatientMedicalHistory_UI(Pt).Show();
             this.Hide();
         }
 
         private void DiseasePredpicbox_Click(object sender, EventArgs e)
         {
-            //
+            new CovidPredict_UI(Pt).Show();
+            this.Hide();
         }
 
         private void BloodBankpicbox_Click(object sender, EventArgs e)
@@ -132,7 +133,7 @@ namespace HMA
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
     }

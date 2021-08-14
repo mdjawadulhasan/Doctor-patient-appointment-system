@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class PatientMedicalHistory : Form
+    public partial class PatientMedicalHistory_UI : Form
     {
         Patient Pt;
-        public PatientMedicalHistory(Patient P)
+        public PatientMedicalHistory_UI(Patient P)
         {
             Pt = P;
             InitializeComponent();
@@ -66,7 +66,8 @@ namespace HMA
 
         private void DiseasePredpicbox_Click(object sender, EventArgs e)
         {
-            //
+            new CovidPredict_UI(Pt).Show();
+            this.Hide();
         }
 
         private void BookAptpicbox_Click(object sender, EventArgs e)
@@ -77,7 +78,7 @@ namespace HMA
 
         private void Logoutpicbox_Click(object sender, EventArgs e)
         {
-            new loginorsignup().Show();
+            new loginorsignup_UI().Show();
             this.Hide();
         }
     }

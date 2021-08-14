@@ -14,7 +14,7 @@ namespace DataLayer_HMA.Operations
         DBConnection db = new DBConnection();
         public void InsertPatient(Patient P)
         {
-            string Query = "insert into PatientTbl  values('" + P.FirstName + "','" + P.LastName + "','" + P.Phone + "','" + P.Gender + "','" + P.Age + "','" + P.HeightInCm + "','" + P.WeightInKg + "','" + P.BloodGroup + "','" + P.Diseases + "','" + P.UserName + "','" + P.Password + "')";
+            string Query = "insert into PatientTbl  values('" + P.FirstName + "','" + P.FirstName + "','" + P.LastName + "','" + P.Phone + "','" + P.Gender + "','" + P.Age + "','" + P.HeightInCm + "','" + P.WeightInKg + "','" + P.BloodGroup + "','" + P.Diseases + "','" + P.UserName + "','" + P.Password + "')";
             try
             {
                 SqlConnection con = new SqlConnection(db.connect);

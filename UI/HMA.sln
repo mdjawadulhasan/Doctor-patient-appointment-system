@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMA", "HMA.csproj", "{20405E38-D53E-4B4F-9468-D73474032B81}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design_HMA", "Design_HMA.csproj", "{20405E38-D53E-4B4F-9468-D73474032B81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer_HMA", "..\Entity And Operations\DataLayer_HMA\DataLayer_HMA.csproj", "{6942A182-56F9-48A4-A6CD-BE40F469FA68}"
 EndProject

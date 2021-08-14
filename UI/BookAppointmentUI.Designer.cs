@@ -29,11 +29,11 @@ namespace HMA
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.SetAptpicbox = new System.Windows.Forms.PictureBox();
+            this.SeeAptpicbox = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.Medhistorypicbox = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -62,7 +62,7 @@ namespace HMA
             this.searchtxt = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel11 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Medhistorypicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).BeginInit();
@@ -77,7 +77,7 @@ namespace HMA
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.SetAptpicbox);
+            this.panel1.Controls.Add(this.SeeAptpicbox);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.Medhistorypicbox);
             this.panel1.Controls.Add(this.pictureBox4);
@@ -105,16 +105,16 @@ namespace HMA
             this.label12.TabIndex = 30;
             this.label12.Text = "See \r\nAppoinment";
             // 
-            // SetAptpicbox
+            // SeeAptpicbox
             // 
-            this.SetAptpicbox.Image = global::HMA.Properties.Resources.appointment;
-            this.SetAptpicbox.Location = new System.Drawing.Point(9, 217);
-            this.SetAptpicbox.Name = "SetAptpicbox";
-            this.SetAptpicbox.Size = new System.Drawing.Size(42, 56);
-            this.SetAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SetAptpicbox.TabIndex = 29;
-            this.SetAptpicbox.TabStop = false;
-            this.SetAptpicbox.Click += new System.EventHandler(this.SetAptpicbox_Click);
+            this.SeeAptpicbox.Image = global::HMA.Properties.Resources.appointment;
+            this.SeeAptpicbox.Location = new System.Drawing.Point(9, 217);
+            this.SeeAptpicbox.Name = "SeeAptpicbox";
+            this.SeeAptpicbox.Size = new System.Drawing.Size(42, 56);
+            this.SeeAptpicbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SeeAptpicbox.TabIndex = 29;
+            this.SeeAptpicbox.TabStop = false;
+            this.SeeAptpicbox.Click += new System.EventHandler(this.SeeAptpicbox_Click);
             // 
             // label10
             // 
@@ -385,14 +385,14 @@ namespace HMA
             this.DoctorApDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.DoctorApDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DoctorApDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Aqua;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DoctorApDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Cambria", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DoctorApDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DoctorApDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DoctorApDGV.EnableHeadersVisualStyles = false;
             this.DoctorApDGV.GridColor = System.Drawing.Color.MidnightBlue;
@@ -401,11 +401,11 @@ namespace HMA
             this.DoctorApDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DoctorApDGV.RowHeadersVisible = false;
             this.DoctorApDGV.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Teal;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DoctorApDGV.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Teal;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.DoctorApDGV.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DoctorApDGV.RowTemplate.Height = 24;
             this.DoctorApDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DoctorApDGV.Size = new System.Drawing.Size(867, 410);
@@ -465,7 +465,7 @@ namespace HMA
             this.Load += new System.EventHandler(this.AppointmentUI_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SetAptpicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeeAptpicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Medhistorypicbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logoutpicbox)).EndInit();
@@ -508,7 +508,7 @@ namespace HMA
         private System.Windows.Forms.Label Chamberlb;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox SetAptpicbox;
+        private System.Windows.Forms.PictureBox SeeAptpicbox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox Medhistorypicbox;
     }

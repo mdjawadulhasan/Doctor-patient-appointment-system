@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace HMA
 {
-    public partial class loginorsignup : Form
+    public partial class loginorsignup_UI : Form
     {
         Person p = new Person();
 
-        public loginorsignup()
+        public loginorsignup_UI()
         {
             InitializeComponent();
         }
@@ -41,7 +41,7 @@ namespace HMA
                 }
 
 
-                new Login(p).Show();
+                new Login_UI(p).Show();
                 this.Hide();
             }
 
@@ -82,7 +82,7 @@ namespace HMA
 
         private void adminlb_Click(object sender, EventArgs e)
         {
-            new Login(p).Show();
+            new Login_UI(p).Show();
             this.Hide();
 
         }
