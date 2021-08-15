@@ -38,8 +38,9 @@ namespace HMA
             this.DrAptList.Columns["Pid"].Visible = false;
             this.DrAptList.Columns["Did"].Visible = false;
 
+
             DrAptList.Columns["Patname"].HeaderText = "Name";
-            DrAptList.Columns["Patusername"].HeaderText = "Usre Name";
+            DrAptList.Columns["Patusername"].HeaderText = "User Name";
             DrAptList.Columns["Doctorname"].HeaderText = "Doctor Name";
             DrAptList.Columns["AppDAte"].HeaderText = "Appointment Date";
         }

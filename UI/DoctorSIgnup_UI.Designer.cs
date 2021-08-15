@@ -99,7 +99,7 @@ namespace HMA
             // 
             // RegDoctorDGV
             // 
-            this.RegDoctorDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.RegDoctorDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.RegDoctorDGV.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.RegDoctorDGV.BackgroundColor = System.Drawing.SystemColors.Control;
             this.RegDoctorDGV.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -120,6 +120,7 @@ namespace HMA
             this.RegDoctorDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.RegDoctorDGV.RowHeadersVisible = false;
             this.RegDoctorDGV.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightYellow;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
