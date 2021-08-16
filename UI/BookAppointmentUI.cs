@@ -96,10 +96,10 @@ namespace HMA
             {
                 MessageBox.Show("All the information must be filled up!");
             }
-            //else if(AptDatePicker.Value<DateTime.Today)
-            //{
-            //    MessageBox.Show("Invalid Date!");
-            //}
+            else if (AptDatePicker.Value < DateTime.Today)
+            {
+                MessageBox.Show("Invalid Date!");
+            }
             else if (op.ChecApt(Pt.id, D.id)>=1)
             {
                 MessageBox.Show("Appointment Set Already!");
