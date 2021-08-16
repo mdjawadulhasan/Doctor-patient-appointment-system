@@ -254,5 +254,25 @@ namespace HMA
             new loginorsignup_UI().Show();
             this.Hide();
         }
+
+        private void pheighttxt_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Give an Integer Value";
+        }
+
+        private void pheighttxt_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
+
+        private void Pweighttxt_MouseHover(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "Give an Integer Value";
+        }
+
+        private void Pweighttxt_MouseLeave(object sender, EventArgs e)
+        {
+            toolStripStatusLabel1.Text = "";
+        }
     }
 }

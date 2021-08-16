@@ -67,11 +67,14 @@ namespace HMA
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Pagetxt = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -289,6 +292,8 @@ namespace HMA
             this.pheighttxt.Name = "pheighttxt";
             this.pheighttxt.Size = new System.Drawing.Size(167, 46);
             this.pheighttxt.TabIndex = 167;
+            this.pheighttxt.MouseLeave += new System.EventHandler(this.pheighttxt_MouseLeave);
+            this.pheighttxt.MouseHover += new System.EventHandler(this.pheighttxt_MouseHover);
             // 
             // Pweighttxt
             // 
@@ -301,6 +306,8 @@ namespace HMA
             this.Pweighttxt.Name = "Pweighttxt";
             this.Pweighttxt.Size = new System.Drawing.Size(172, 46);
             this.Pweighttxt.TabIndex = 168;
+            this.Pweighttxt.MouseLeave += new System.EventHandler(this.Pweighttxt_MouseLeave);
+            this.Pweighttxt.MouseHover += new System.EventHandler(this.Pweighttxt_MouseHover);
             // 
             // label9
             // 
@@ -555,12 +562,30 @@ namespace HMA
             this.panel1.Size = new System.Drawing.Size(777, 705);
             this.panel1.TabIndex = 5;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 676);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1079, 26);
+            this.statusStrip1.TabIndex = 6;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(151, 20);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
             // PatientSignup_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1079, 702);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -574,7 +599,10 @@ namespace HMA
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -617,5 +645,7 @@ namespace HMA
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox Pagetxt;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
