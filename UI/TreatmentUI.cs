@@ -35,7 +35,7 @@ namespace HMA
         {
             PatientOperations OP = new PatientOperations();
             Pt = OP.GetPatient2(username);
-            if(Pt==null)
+            if (Pt == null)
             {
                 MessageBox.Show("Patient Doesn't Exists");
             }
@@ -134,7 +134,14 @@ namespace HMA
 
         private void PrevrecordBtn_Click(object sender, EventArgs e)
         {
-            new PreviousRecordUI(Pt).Show();
+            if (Pt == null)
+            {
+                MessageBox.Show("Select the patient");
+            }
+            else
+            {
+                new PreviousRecordUI(Pt).Show();
+            }
         }
 
         private void Doctorlb_Click(object sender, EventArgs e)

@@ -74,6 +74,7 @@ namespace HMA
                     d.address.Area = Dareatxt.Text;
                     d.address.City = Dcitytxt.Text;
                     op.InsertDonor(d);
+                    MessageBox.Show("Donor Added!");
                     populateData();
                 }
                 catch (Exception ex)
